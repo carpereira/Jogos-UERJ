@@ -1,5 +1,11 @@
-#include <SDL2/SDL.h>
-//#include <SDL2_gfxPrimitives.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include string.h>
+
+#include <SDL_rotozoom.h>
+#include <SDL_gfxPrimitives.h>
+#include <SDL_gfxPrimitives_font.h>
 
 int main(int argc, char* args[])
 {
