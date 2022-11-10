@@ -1,22 +1,39 @@
-#define SDL2_GFXPRIMITIVES_SCOPE
-/*#define SDL2_gfxPrimitives_h*/
-#define M_PI 3.1415926535897932384626433832795
-#define SDL2_GFXPRIMITIVES_MAJOR        1
-#define SDL2_GFXPRIMITIVES_MINOR        0
-#define SDL2_GFXPRIMITIVES_MICRO        1
-#define SDL2_GFXPRIMITIVES_SCOPE __declspec(dllexport)
-#define SDL2_GFXPRIMITIVES_SCOPE __declspec(dllimport)
-#define SDL2_GFXPRIMITIVES_SCOPE extern
+#ifndef _SDL2_gfxPrimitives_h
+#define _SDL2_gfxPrimitives_h
 
-#include <stdio.h>
-#include <stdlib.h>
 #include <math.h>
-#include <string.h>
+#ifndef M_PI
+#define M_PI	3.1415926535897932384626433832795
+#endif
 
-#include <SDL2/SDL.h>
-//#include <SDL2_rotozoom.h>
-#include <SDL2_gfxPrimitives.h>
-#include <SDL2_gfxPrimitives_font.h>
+#include "SDL.h"
+
+/* Set up for C function definitions, even when using C++ */
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+	/* ----- Versioning */
+
+#define SDL2_GFXPRIMITIVES_MAJOR	1
+#define SDL2_GFXPRIMITIVES_MINOR	0
+#define SDL2_GFXPRIMITIVES_MICRO	2
+
+
+	/* ---- Function Prototypes */
+
+#ifdef _MSC_VER
+#  if defined(DLL_EXPORT) && !defined(LIBSDL2_GFX_DLL_IMPORT)
+#    define SDL2_GFXPRIMITIVES_SCOPE __declspec(dllexport)
+#  else
+#    ifdef LIBSDL2_GFX_DLL_IMPORT
+#      define SDL2_GFXPRIMITIVES_SCOPE __declspec(dllimport)
+#    endif
+#  endif
+#endif
+#ifndef SDL2_GFXPRIMITIVES_SCOPE
+#  define SDL2_GFXPRIMITIVES_SCOPE extern
+#endif
 
 int main(int argc, char* args[])
 {
