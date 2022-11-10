@@ -14,7 +14,7 @@
 #include <string.h>
 
 #include <SDL2/SDL.h>
-#include <SDL2_rotozoom.h>
+//#include <SDL2_rotozoom.h>
 #include <SDL2_gfxPrimitives.h>
 #include <SDL2_gfxPrimitives_font.h>
 
