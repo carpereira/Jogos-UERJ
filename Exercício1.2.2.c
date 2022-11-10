@@ -1,3 +1,5 @@
+#define SDL2_GFXPRIMITIVES_SCOPE
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
