@@ -13,7 +13,7 @@
 #include <math.h>
 #include <string.h>
 
-#include <SDL/SDL2>
+#include <SDL/SDL2.h>
 #include <SDL_rotozoom.h>
 #include <SDL2_gfxPrimitives.h>
 #include <SDL2_gfxPrimitives_font.h>
