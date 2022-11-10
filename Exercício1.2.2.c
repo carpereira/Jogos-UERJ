@@ -1,5 +1,5 @@
 #define SDL2_GFXPRIMITIVES_SCOPE
-#define SDL2_gfxPrimitives_h
+/*#define SDL2_gfxPrimitives_h*/
 #define M_PI 3.1415926535897932384626433832795
 #define SDL2_GFXPRIMITIVES_MAJOR        1
 #define SDL2_GFXPRIMITIVES_MINOR        0
@@ -14,7 +14,7 @@
 #include <string.h>
 
 #include <SDL2/SDL.h>
-//#include <SDL_rotozoom.h>
+#include <SDL2_rotozoom.h>
 #include <SDL2_gfxPrimitives.h>
 #include <SDL2_gfxPrimitives_font.h>
 
