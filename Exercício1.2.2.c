@@ -6,8 +6,8 @@
 #include <string.h>
 
 //#include <SDL_rotozoom.h>
-#include <SDL2_gfxPrimitives.h>
-#include <SDL2_gfxPrimitives_font.h>
+#include "SDL2_gfxPrimitives.h"
+#include "SDL2_gfxPrimitives_font.h"
 
 int main(int argc, char* args[])
 {
