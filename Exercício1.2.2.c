@@ -31,7 +31,7 @@ extern "C" {
 #      define SDL2_GFXPRIMITIVES_SCOPE __declspec(dllimport)
 #    endif
 #  endif
-#endif
+/*#endif*/
 #ifndef SDL2_GFXPRIMITIVES_SCOPE
 #  define SDL2_GFXPRIMITIVES_SCOPE extern
 #endif
