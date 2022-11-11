@@ -55,8 +55,8 @@ SDL_RenderClear(ren);
  
 /* Pixel */
  
-SDL2_GFXPRIMITIVES_SCOPE int pixelColor(SDL_Renderer * renderer, Sint16 200, Sint16 200, Uint32 255);
-SDL2_GFXPRIMITIVES_SCOPE int pixelRGBA(SDL_Renderer * renderer, Sint16 200, Sint16 200, Uint8 240, Uint8 255, Uint8 240, Uint8 0);
+SDL2_GFXPRIMITIVES_SCOPE int pixelColor(SDL_Renderer * renderer, Sint16, 200, Sint16 200, Uint32 255);
+SDL2_GFXPRIMITIVES_SCOPE int pixelRGBA(SDL_Renderer * renderer, Sint16, 200, Sint16 200, Uint8 240, Uint8 255, Uint8 240, Uint8 0);
  
 /* Horizontal line */
  
