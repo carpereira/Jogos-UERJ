@@ -1,5 +1,6 @@
 #ifndef _SDL2_gfxPrimitives_h
 #define _SDL2_gfxPrimitives_h
+#endif
 
 #include <math.h>
 #ifndef M_PI
