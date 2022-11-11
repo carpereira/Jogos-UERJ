@@ -31,7 +31,7 @@ extern "C" {
 #      define SDL2_GFXPRIMITIVES_SCOPE __declspec(dllimport)
 #    endif
 #  endif
-/*#endif*/
+#endif
 #ifndef SDL2_GFXPRIMITIVES_SCOPE
 #  define SDL2_GFXPRIMITIVES_SCOPE extern
 #endif
@@ -43,7 +43,7 @@ SDL_Init(SDL_INIT_EVERYTHING);
 SDL_Window* win = SDL_CreateWindow("Figuras Complexas!",
                       SDL_WINDOWPOS_UNDEFINED,
                       SDL_WINDOWPOS_UNDEFINED,
-                      400, 400, SDL_WINDOW_SHOWN
+                      500, 500, SDL_WINDOW_SHOWN
                       );
 SDL_Renderer* ren = SDL_CreateRenderer(win, -1,0);
 
