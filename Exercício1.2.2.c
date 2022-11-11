@@ -50,6 +50,8 @@ SDL_Renderer* ren = SDL_CreateRenderer(win, -1,0);
 /*EXECUÇÂO*/
  
 /* Note: all ___Color routines expect the color to be in format 0xRRGGBBAA */
+SDL_SetRenderDrawColor(ren, 0xFF, 0xFF, 0xFF, 0x00);
+SDL_RenderClear(ren);
  
 /* Pixel */
  
