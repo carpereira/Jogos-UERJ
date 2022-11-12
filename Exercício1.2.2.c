@@ -87,7 +87,7 @@ SDL2_GFXPRIMITIVES_SCOPE int roundedRectangleColor(SDL_Renderer * renderer, Sint
 SDL2_GFXPRIMITIVES_SCOPE int roundedRectangleRGBA(SDL_Renderer * renderer, Sint16 x1, Sint16 y1,
 Sint16 x2, Sint16 y2, Sint16 rad, Uint8 r, Uint8 g, Uint8 b, Uint8 a);
 	
-SDL_FillRect(SDL_FreeSurface,NULL,SDL_MapRGB(screenSurface->format,0xFF,0xFF,0xFF));
+SDL_FillRect(SDL_FreeSurface,NULL,SDL_MapRGB(SDL_FreeSurface->format,0xFF,0xFF,0xFF));
 SDL_UpdateWindowSurface(window);
    
   
