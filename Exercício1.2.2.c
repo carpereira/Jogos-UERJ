@@ -48,7 +48,7 @@ SDL_Window* win = SDL_CreateWindow("Figuras Complexas!",
 SDL_Renderer* ren = SDL_CreateRenderer(win, -1,0);
 	
 SDL_Surface*s;
-s=SDL_CreateRGBSurface(0,300,200,32,0,0,0,0);
+
 
 /*EXECUÇÂO*/
  
@@ -56,17 +56,7 @@ s=SDL_CreateRGBSurface(0,300,200,32,0,0,0,0);
 SDL_SetRenderDrawColor(ren, 0xFF, 0xFF, 0xFF, 0x00);
 SDL_RenderClear(ren);
  
-/* Pixel */
- 
-SDL2_GFXPRIMITIVES_SCOPE int pixelColor(SDL_Renderer * renderer, Sint16 200, Sint16 200, Uint32 255)
-{
-	Uint8 *c = (Uint8 *)&color;
-	return pixelRGBA(renderer,200,200, c[0],c[1],c[2],c[3]);
-}
-SDL2_GFXPRIMITIVES_SCOPE int pixelRGBA(SDL_Renderer * renderer, Sint16 200, Sint16 200, Uint8 255, Uint8 255, Uint8 255, Uint8 0);
-{
-	
-}
+
 	
 /* Horizontal line */
  
@@ -90,8 +80,9 @@ SDL2_GFXPRIMITIVES_SCOPE int roundedRectangleColor(SDL_Renderer * renderer, Sint
 SDL2_GFXPRIMITIVES_SCOPE int roundedRectangleRGBA(SDL_Renderer * renderer, Sint16 x1, Sint16 y1,
 Sint16 x2, Sint16 y2, Sint16 rad, Uint8 r, Uint8 g, Uint8 b, Uint8 a);
 	
+s=SDL_CreateRGBSurface(0,300,200,32,0,0,0,0);
 SDL_FillRect(s,NULL,SDL_MapRGB(s->format,0xFF,0x00,0x00));
-SDL_UpdateWindowSurface(window);
+
    
   
 SDL_RenderPresent(ren);
