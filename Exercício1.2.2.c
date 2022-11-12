@@ -91,8 +91,8 @@ SDL_FillRect(screenSurface,NULL,SDL_MapRGB(screenSurface->format,0xFF,0xFF,0xFF)
 SDL_UpdateWindowSurface(window);
    
   
-SDL_RenderPresent(ren);
-SDL_Delay(9000);
+/*SDL_RenderPresent(ren);
+SDL_Delay(9000);*/
 
 /*FINALIZAÇÃO*/
 SDL_DestroyRenderer(ren);
