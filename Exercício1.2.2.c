@@ -55,7 +55,7 @@ SDL_RenderClear(ren);
  
 /* Pixel */
  
-SDL2_GFXPRIMITIVES_SCOPE int pixelColor(SDL_Renderer * renderer, Sint16 255, Sint16 255, Uint32 255)
+SDL2_GFXPRIMITIVES_SCOPE int pixelColor(SDL_Renderer * renderer, Sint16 200, Sint16 200, Uint32 255)
 {
 	Uint8 *c = (Uint8 *)&color;
 	return pixelRGBA(renderer,200,200, c[0],c[1],c[2],c[3]);
@@ -87,7 +87,7 @@ SDL2_GFXPRIMITIVES_SCOPE int roundedRectangleColor(SDL_Renderer * renderer, Sint
 SDL2_GFXPRIMITIVES_SCOPE int roundedRectangleRGBA(SDL_Renderer * renderer, Sint16 x1, Sint16 y1,
 Sint16 x2, Sint16 y2, Sint16 rad, Uint8 r, Uint8 g, Uint8 b, Uint8 a);
 	
-SDL_FillRect(screenSurface,NULL,SDL_MapRGB(screenSurface->format,0xFF,0xFF,0xFF));
+SDL_FillRect(SDL_FreeSurface,NULL,SDL_MapRGB(screenSurface->format,0xFF,0xFF,0xFF));
 SDL_UpdateWindowSurface(window);
    
   
