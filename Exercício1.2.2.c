@@ -55,7 +55,7 @@ SDL_RenderClear(ren);
  
 /* Pixel */
  
-SDL2_GFXPRIMITIVES_SCOPE int pixelColor(SDL_Renderer * renderer, Sint16 200, Sint16 200, Uint32 255)
+/*SDL2_GFXPRIMITIVES_SCOPE int pixelColor(SDL_Renderer * renderer, Sint16 200, Sint16 200, Uint32 255)
 {
 	Uint8 *c = (Uint8 *)&color;
 	return pixelRGBA(renderer,200,200, c[0],c[1],c[2],c[3]);
@@ -64,7 +64,7 @@ SDL2_GFXPRIMITIVES_SCOPE int pixelRGBA(SDL_Renderer * renderer, Sint16 200, Sint
 {
 	
 }
-	
+*/	
 /* Horizontal line */
  
 SDL2_GFXPRIMITIVES_SCOPE int hlineColor(SDL_Renderer * renderer, Sint16 x1, Sint16 x2, Sint16 y, Uint32 color);
@@ -91,8 +91,8 @@ SDL_FillRect(screenSurface,NULL,SDL_MapRGB(screenSurface->format,0xFF,0xFF,0xFF)
 SDL_UpdateWindowSurface(window);
    
   
-/*SDL_RenderPresent(ren);
-SDL_Delay(9000);*/
+SDL_RenderPresent(ren);
+SDL_Delay(9000);
 
 /*FINALIZAÇÃO*/
 SDL_DestroyRenderer(ren);
