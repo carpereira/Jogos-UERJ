@@ -46,7 +46,7 @@ SDL_Window* win = SDL_CreateWindow("Figuras Complexas!",
                       500, 500, SDL_WINDOW_SHOWN
                       );
 SDL_Renderer* ren = SDL_CreateRenderer(win, -1,0);
-SDL_Surface*screenSurface;	
+SDL_Surface*s;	
 
 
 
@@ -57,7 +57,6 @@ SDL_SetRenderDrawColor(ren, 0xFF, 0xFF, 0xFF, 0x00);
 SDL_RenderClear(ren);
  
 
-SDL_Surface*s;
 s=SDL_CreateRGBSurface(0,300,200,32,0,0,0,0);
 SDL_FillRect(s,NULL,SDL_MapRGB(s->format,0xFF,0x00,0x00));
 
