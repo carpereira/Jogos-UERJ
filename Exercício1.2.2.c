@@ -67,7 +67,7 @@ SDL_Delay(9000);
 
 /*FINALIZAÇÃO*/
 SDL_DestroyRenderer(ren);
-SDL_FreeSurface(SDL_FreeSurface);
+SDL_FreeSurface(s);
 SDL_DestroyWindow(win);
 SDL_Quit();
 }
