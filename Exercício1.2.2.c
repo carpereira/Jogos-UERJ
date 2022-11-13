@@ -46,7 +46,7 @@ SDL_Window* win = SDL_CreateWindow("Figuras Complexas!",
                       500, 500, SDL_WINDOW_SHOWN
                       );
 SDL_Renderer* ren = SDL_CreateRenderer(win, -1,0);
-	
+SDL_Surface*screenSurface;	
 
 
 
@@ -68,6 +68,7 @@ SDL_Delay(9000);
 
 /*FINALIZAÇÃO*/
 SDL_DestroyRenderer(ren);
+SDL
 SDL_DestroyWindow(win);
 SDL_Quit();
 }
