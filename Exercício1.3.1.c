@@ -23,7 +23,7 @@ SDL_Rect r={40,20,10,10};
    SDL_RenderPresent(ren);
    SDL_Delay(500);
     r.x +=2;
-   /* r.y +=2;
+    
   }    
 
 /*FINALIZAÇÃO*/
