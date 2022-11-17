@@ -57,7 +57,7 @@ SDL_SetRenderDrawColor(ren, 0xFF, 0xFF, 0xFF, 0x00);
 SDL_RenderClear(ren);
  
 
-s=SDL_CreateRGBSurface(0,300,200,32,0,0,0,0);
+s=SDL_CreateRGBSurface(0,300,200,32,30,60,40,0);
 SDL_FillRect(s,NULL,SDL_MapRGB(s->format,0xFF,0x00,0x00));
 
    
