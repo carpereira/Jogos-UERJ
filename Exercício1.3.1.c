@@ -33,6 +33,28 @@ SDL_Rect r={40,20,10,10};
    SDL_RenderPresent(ren);
    SDL_Delay(300);
     r.y +=2;
+    
+ while (r.x>0){
+    SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
+    SDL_RenderClear(ren);
+    SDL_SetRenderDrawColor(ren, 0x00,0x00,0xFF,0x00);
+    SDL_RenderFillRect(ren,&r);
+      
+   SDL_RenderPresent(ren);
+   SDL_Delay(300);
+    r.x -=2;
+    
+  while (r.y>0){
+    SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
+    SDL_RenderClear(ren);
+    SDL_SetRenderDrawColor(ren, 0x00,0x00,0xFF,0x00);
+    SDL_RenderFillRect(ren,&r);
+      
+   SDL_RenderPresent(ren);
+   SDL_Delay(300);
+    r.y -=2;
+  }  
+  }  
   }  
   }    
 
