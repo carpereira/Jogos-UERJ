@@ -1,5 +1,7 @@
 #include <SDL2/SDL.h>
 
+#define SDL2_GFXPRIMITIVES_SCOPE
+
 int main(int argc, char* args[])
 {
 /*INICIALIZAÇÃO*/
