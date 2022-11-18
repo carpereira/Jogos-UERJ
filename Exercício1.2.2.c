@@ -18,8 +18,8 @@ SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
 SDL_RenderClear(ren);
 	
 /*retangulo*/  
-SDL2_GFXPRIMITIVES_SCOPE int rectangleColor(SDL_Renderer * renderer, Sint16 100, Sint16 100, Sint16 200, Sint16 200, Uint32 255);
-SDL2_GFXPRIMITIVES_SCOPE int rectangleRGBA(SDL_Renderer * renderer, Sint16 100, Sint16 100, Sint16 200, Sint16 200, Uint8 255, Uint8 0, Uint8 0, Uint8 0);
+SDL2_GFXPRIMITIVES_SCOPE int rectangleColor(SDL_Renderer * renderer, Sint16 LENGTH/4, Sint16 WIDTH/4, Sint16 LENGHT/2, Sint16 WIDTH/2, Uint32 255);
+SDL2_GFXPRIMITIVES_SCOPE int rectangleRGBA(SDL_Renderer * renderer, Sint16 LENGTH/4, Sint16 WIDTH/4, Sint16 LENGHT/2, Sint16 WIDTH/2, Uint8 255, Uint8 0, Uint8 0, Uint8 0);
 SDL_RenderPresent(ren);
 SDL_Delay(500);
 
