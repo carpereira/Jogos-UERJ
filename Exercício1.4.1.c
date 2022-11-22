@@ -20,6 +20,7 @@ int main (int argc, char* args[])
         SDL_SetRenderDrawColor(ren, 0x00,0x00,0xFF,0x00);
         SDL_RenderFillRect(ren, &r);
         SDL_RenderPresent(ren);
+    }
         
         /*SDL_KEYDOWN;*/
         SDL_MOUSEMOTION;
