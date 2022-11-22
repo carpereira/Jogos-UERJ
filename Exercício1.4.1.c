@@ -27,7 +27,7 @@ int main (int argc, char* args[])
         
         SDL_WaitEvent(&evt);
         for(int i=0; i<10; i++){
-            if (evt,type == SDL_MOUSEMOTION){                
+            if (evt.type == SDL_MOUSEMOTION){                
                 SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
                 SDL_RenderClear(ren);
                 SDL_SetRenderDrawColor(ren, 0x00,0x00,0xFF,0x00);
@@ -51,6 +51,7 @@ int main (int argc, char* args[])
             }
         }*/
     }
+        }
 
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
