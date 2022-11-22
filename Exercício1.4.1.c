@@ -12,7 +12,7 @@ int main (int argc, char* args[])
     SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
 
     /* EXECUÇÃO */
-    SDL_Rect r = { 20,100, 10,10 };
+    SDL_Rect r = { 100,100, 10,10 };
     SDL_Event evt;
     while (1) {
         SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
@@ -22,7 +22,7 @@ int main (int argc, char* args[])
         SDL_RenderPresent(ren);
     
         
-    /*SDL_KEYDOWN;*/
+    SDL_KEYDOWN;
     SDL_MOUSEBUTTONDOWN;
         /*SDL_QUIT;*/
         
@@ -36,10 +36,11 @@ int main (int argc, char* args[])
             SDL_Delay(200);
         }
         
-        /*if (evt.type == SDL_KEYDOWN) {
+        if (evt.type == SDL_KEYDOWN) {
             switch (evt.key.keysym.sym) {
                 case SDLK_UP:    
-                    r.y -= 5;                        
+                    r.y -= 5;
+                    if r.y==190;
                     break;
                 case SDLK_DOWN:
                     r.y += 5;
@@ -52,7 +53,7 @@ int main (int argc, char* args[])
                     break;
                     
             }
-        }*/
+        }
     }
         
     /* FINALIZACAO */
