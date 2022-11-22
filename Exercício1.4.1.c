@@ -22,7 +22,7 @@ int main (int argc, char* args[])
         SDL_RenderPresent(ren);
     
         
-    SDL_KEYDOWN;
+    /*SDL_KEYDOWN;*/
     SDL_MOUSEBUTTONDOWN;
         /*SDL_QUIT;*/
         
@@ -36,7 +36,7 @@ int main (int argc, char* args[])
             SDL_Delay(200);
         }
         
-        if (evt.type == SDL_KEYDOWN) {
+        /*if (evt.type == SDL_KEYDOWN) {
             switch (evt.key.keysym.sym) {
                 case SDLK_UP:    
                     r.y -= 5;                        
@@ -52,7 +52,7 @@ int main (int argc, char* args[])
                     break;
                     
             }
-        }
+        }*/
     }
         
     /* FINALIZACAO */
