@@ -7,12 +7,12 @@ int main (int argc, char* args[])
     SDL_Window* win = SDL_CreateWindow("Movendo um Retângulo",
                          SDL_WINDOWPOS_UNDEFINED,
                          SDL_WINDOWPOS_UNDEFINED,
-                         200, 100, SDL_WINDOW_SHOWN
+                         200, 200, SDL_WINDOW_SHOWN
                       );
     SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
 
     /* EXECUÇÃO */
-    SDL_Rect r = { 40,20, 10,10 };
+    SDL_Rect r = { 20,100, 10,10 };
     SDL_Event evt;
     while (1) {
         SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
