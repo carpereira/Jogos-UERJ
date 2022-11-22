@@ -40,7 +40,7 @@ int main (int argc, char* args[])
             switch (evt.key.keysym.sym) {
                 case SDLK_UP:    
                     r.y -= 5;
-                    if r.y==190;
+                    if (r.y==190);
                     break;
                 case SDLK_DOWN:
                     r.y += 5;
