@@ -21,12 +21,20 @@ int main (int argc, char* args[])
         SDL_RenderFillRect(ren, &r);
         SDL_RenderPresent(ren);
         
-        SDL_KEYDOWN;
+        /*SDL_KEYDOWN;*/
         SDL_MOUSEMOTION;
-        SDL_QUIT:
-
+        /*SDL_QUIT;*/
+        
         SDL_WaitEvent(&evt);
-        if (evt.type == SDL_KEYDOWN) {
+        for(int i=0; i<10; i++){
+            if (evt,type == SDL_MOUSEMOTION){                
+                SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
+                SDL_RenderClear(ren);
+                SDL_SetRenderDrawColor(ren, 0x00,0x00,0xFF,0x00);
+                SDL_RenderFillRect(ren, &r);
+                SDL_RenderPresent(ren);
+            
+        /*if (evt.type == SDL_KEYDOWN) {
             switch (evt.key.keysym.sym) {
                 case SDLK_UP:
                     r.y -= 5;
@@ -41,7 +49,7 @@ int main (int argc, char* args[])
                     r.x += 5;
                     break;
             }
-        }
+        }*/
     }
 
     /* FINALIZACAO */
