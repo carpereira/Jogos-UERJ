@@ -22,18 +22,18 @@ int main (int argc, char* args[])
         SDL_RenderPresent(ren);
     }
         
-        SDL_KEYDOWN;
-        SDL_MOUSEMOTION;
+    SDL_KEYDOWN;
+    SDL_MOUSEMOTION;
         /*SDL_QUIT;*/
         
-        SDL_WaitEvent(&evt);
+    SDL_WaitEvent(&evt);
+    if (evt.type == SDL_MOUSEBUTTONDOWN){
         for(int i=0; i<10; i++){
-            if (evt.type == SDL_MOUSEBUTTONDOWN){                
-                SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
-                SDL_RenderClear(ren);
-                SDL_SetRenderDrawColor(ren, 0x00,0x00,0xFF,0x00);
-                SDL_RenderFillRect(ren, &r);
-                SDL_RenderPresent(ren);
+            SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
+            SDL_RenderClear(ren);
+            SDL_SetRenderDrawColor(ren, 0x00,0x00,0xFF,0x00);
+            SDL_RenderFillRect(ren, &r);
+            SDL_RenderPresent(ren);
             
         if (evt.type == SDL_KEYDOWN) {
             switch (evt.key.keysym.sym) {
