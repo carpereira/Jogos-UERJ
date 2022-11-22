@@ -30,7 +30,7 @@ int main (int argc, char* args[])
         if (evt.type == SDL_KEYDOWN) {
             switch (evt.key.keysym.sym) {
                 case SDLK_UP:                    
-                    if(y>0){
+                    if(r.y>0){
                     r.y -= 5;}
                         else{
                     break;}
