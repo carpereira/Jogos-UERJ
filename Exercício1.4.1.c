@@ -29,11 +29,9 @@ int main (int argc, char* args[])
     SDL_WaitEvent(&evt);
         if (evt.type == SDL_KEYDOWN) {
             switch (evt.key.keysym.sym) {
-                case SDLK_UP:                    
-                    if(r.y>0){
-                    r.y -= 5;}
-                        else{
-                    break;}
+                case SDLK_UP:    
+                    r.y -= 5;                        
+                    break;
                 case SDLK_DOWN:
                     r.y += 5;
                     break;
