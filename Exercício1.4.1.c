@@ -23,10 +23,18 @@ int main (int argc, char* args[])
     
         
     SDL_KEYDOWN;
-    SDL_MOUSEMOTION;
+    SDL_MOUSEBUTTONDOWN;
         /*SDL_QUIT;*/
         
     SDL_WaitEvent(&evt);
+        if (evt.type == SDL_MOUSEBUTTONDOWN){
+            SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
+            SDL_RenderClear(ren);
+            SDL_SetRenderDrawColor(ren, 0xFF,0x00,0xFF,0x00);
+            SDL_RenderFillRect(ren, &r);
+            SDL_RenderPresent(ren);
+        }
+        
         if (evt.type == SDL_KEYDOWN) {
             switch (evt.key.keysym.sym) {
                 case SDLK_UP:    
