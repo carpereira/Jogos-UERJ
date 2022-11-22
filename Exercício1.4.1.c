@@ -22,7 +22,7 @@ int main (int argc, char* args[])
         SDL_RenderPresent(ren);
     }
         
-        /*SDL_KEYDOWN;*/
+        SDL_KEYDOWN;
         SDL_MOUSEMOTION;
         /*SDL_QUIT;*/
         
@@ -35,7 +35,7 @@ int main (int argc, char* args[])
                 SDL_RenderFillRect(ren, &r);
                 SDL_RenderPresent(ren);
             
-        /*if (evt.type == SDL_KEYDOWN) {
+        if (evt.type == SDL_KEYDOWN) {
             switch (evt.key.keysym.sym) {
                 case SDLK_UP:
                     r.y -= 5;
@@ -96,7 +96,7 @@ int main (int argc, char* args[])
     SDL_Quit();
 }
             }
-        }*/
+        }
     }
         }
 
