@@ -22,8 +22,8 @@ int main (int argc, char* args[])
         SDL_RenderPresent(ren);
     
         
-    SDL_KEYDOWN;
-    SDL_MOUSEBUTTONDOWN;
+    /*SDL_KEYDOWN;*/
+    /*SDL_MOUSEBUTTONDOWN;*/
         /*SDL_QUIT;*/
         
     SDL_WaitEvent(&evt);
@@ -39,11 +39,11 @@ int main (int argc, char* args[])
         if (evt.type == SDL_KEYDOWN) {
             switch (evt.key.keysym.sym) {
                 case SDLK_UP:
-                    if (r.y>20);
+                    if (r.y>20 && r.y<190);
                     r.y -= 5;                    
                     break;
                 case SDLK_DOWN:
-                    if(r.y<190);
+                    if(r.y>20 && r.y<190);
                     r.y += 5;                    
                     break;
                 case SDLK_LEFT:
