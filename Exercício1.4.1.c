@@ -11,6 +11,9 @@ int main (int argc, char* args[])
                          200, 200, SDL_WINDOW_SHOWN
                       );
     SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
+    
+    SDL_Renderer* gRenderer = NULL;
+    SDL_Texture* gTexture = NULL;
 
     /* EXECUÇÃO */
     SDL_Rect r = { 100,100, 10,10 };
