@@ -20,11 +20,6 @@ int main (int argc, char* args[])
         SDL_SetRenderDrawColor(ren, 0x00,0x00,0xFF,0x00);
         SDL_RenderFillRect(ren, &r);
         SDL_RenderPresent(ren);
-    
-        
-    /*SDL_KEYDOWN;*/
-    /*SDL_MOUSEBUTTONDOWN;*/
-        /*SDL_QUIT;*/
         
     SDL_WaitEvent(&evt);
         if (evt.type == SDL_MOUSEBUTTONDOWN){
@@ -39,11 +34,11 @@ int main (int argc, char* args[])
         if (evt.type == SDL_KEYDOWN) {
             switch (evt.key.keysym.sym) {
                 case SDLK_UP:
-                    if (r.y>10 || r.y<190){
+                    if (r.y>10 && r.y<190){
                     r.y -= 5;                    
                     break;}
                 case SDLK_DOWN:
-                    if(r.y>10 || r.y<190){
+                    if(r.y>10 && r.y<190){
                     r.y += 5;                    
                     break;}
                 case SDLK_LEFT:
