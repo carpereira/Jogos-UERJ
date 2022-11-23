@@ -30,8 +30,8 @@ int main (int argc, char* args[])
         topRightViewport.y = 10;
         topRightViewport.w = 190;
         topRightViewport.h = 190;
-        SDL_RenderSetViewport(gRenderer, &topRightViewport);
-        SDL_RenderCopy(gRenderer, gTexture, NULL, NULL);
+        SDL_RenderSetViewport(SDL_Renderer, &topRightViewport);
+        SDL_RenderCopy(SDL_Renderer, SDL_Texture, NULL, NULL);
         
     SDL_WaitEvent(&evt);
         
