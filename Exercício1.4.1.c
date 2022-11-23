@@ -57,13 +57,15 @@ int main (int argc, char* args[])
                     else {r.y=190;
                         break;}
                 case SDLK_LEFT:
-                    //if(r.x>10 && r.x<190){
-                        r.x -= 5;
-                        break;//}
+                    if(r.x>10){
+                        r.x -= 5;}
+                    else {r.x>10;
+                        break;}
                 case SDLK_RIGHT:
-                    //if(r.x>10 && r.x<190){
-                        r.x += 5;
-                        break;//}
+                    if(r.x<190){
+                        r.x += 5;}
+                    else {r.x=190;
+                        break;}
                     
             }
         }
