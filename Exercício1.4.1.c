@@ -49,7 +49,7 @@ int main (int argc, char* args[])
                 case SDLK_UP:
                     if (r.y>10){
                         r.y -= 5;}
-                    else {r.y=10    
+                    else {r.y=10;    
                         break;}
                 case SDLK_DOWN:
                     if(r.y<190){
