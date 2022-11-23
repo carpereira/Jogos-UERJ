@@ -39,13 +39,13 @@ int main (int argc, char* args[])
         if (evt.type == SDL_KEYDOWN) {
             switch (evt.key.keysym.sym) {
                 case SDLK_UP:
-                    if (r.y>20 && r.y<190){
-                    r.y -= 5;}                    
-                    break;
+                    if (r.y>10 || r.y<190){
+                    r.y -= 5;                    
+                    break;}
                 case SDLK_DOWN:
-                    if(r.y>20 && r.y<190){
-                    r.y += 5;}                    
-                    break;
+                    if(r.y>10 || r.y<190){
+                    r.y += 5;                    
+                    break;}
                 case SDLK_LEFT:
                     r.x -= 5;
                     break;
