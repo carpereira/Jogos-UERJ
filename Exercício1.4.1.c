@@ -50,19 +50,19 @@ int main (int argc, char* args[])
                 case SDLK_UP:
                     //if (r.y>10 && r.y<190){
                         r.y -= 5;                    
-                        break;}
+                        break;//}
                 case SDLK_DOWN:
                     //if(r.y>10 && r.y<190){
                         r.y += 5;                    
-                        break;}
+                        break;//}
                 case SDLK_LEFT:
                     //if(r.x>10 && r.x<190){
                         r.x -= 5;
-                        break;}
+                        break;//}
                 case SDLK_RIGHT:
                     //if(r.x>10 && r.x<190){
                         r.x += 5;
-                        break;}
+                        break;//}
                     
             }
         }
