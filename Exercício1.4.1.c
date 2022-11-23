@@ -23,10 +23,10 @@ int main (int argc, char* args[])
     SDL_Event evt;
     while (1) {
         SDL_Rect topLeftViewport;
-        topLeftViewport.x = 10;
-        topLeftViewport.y = 10;
-        topLeftViewport.w = 190;
-        topLeftViewport.h = 190;
+        topLeftViewport.x = 20;
+        topLeftViewport.y = 20;
+        topLeftViewport.w = 180;
+        topLeftViewport.h = 180;
         SDL_RenderSetViewport(gRenderer, &topLeftViewport);
         SDL_RenderCopy(gRenderer, gTexture, NULL, NULL);
         
