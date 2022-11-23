@@ -22,12 +22,6 @@ int main (int argc, char* args[])
     
     SDL_Event evt;
     while (1) {
-        SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
-        SDL_RenderClear(ren);
-        SDL_SetRenderDrawColor(ren, 0x00,0x00,0xFF,0x00);
-        SDL_RenderFillRect(ren, &r);
-        SDL_RenderPresent(ren);
-        
         SDL_Rect topLeftViewport;
         topLeftViewport.x = 10;
         topLeftViewport.y = 10;
@@ -35,6 +29,13 @@ int main (int argc, char* args[])
         topLeftViewport.h = 190;
         SDL_RenderSetViewport(gRenderer, &topLeftViewport);
         SDL_RenderCopy(gRenderer, gTexture, NULL, NULL);
+        
+        SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
+        SDL_RenderClear(ren);
+        SDL_SetRenderDrawColor(ren, 0x00,0x00,0xFF,0x00);
+        SDL_RenderFillRect(ren, &r);
+        SDL_RenderPresent(ren);        
+        
         
     SDL_WaitEvent(&evt);
         
