@@ -22,13 +22,7 @@ int main (int argc, char* args[])
     
     SDL_Event evt;
     while (1) {
-        SDL_Rect topLeftViewport;
-        topLeftViewport.x = 20;
-        topLeftViewport.y = 20;
-        topLeftViewport.w = 180;
-        topLeftViewport.h = 180;
-        SDL_RenderSetViewport(gRenderer, &topLeftViewport);
-        SDL_RenderCopy(gRenderer, gTexture, NULL, NULL);
+        
         
         SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
         SDL_RenderClear(ren);
@@ -50,6 +44,14 @@ int main (int argc, char* args[])
         }
         
         if (evt.type == SDL_KEYDOWN) {
+            SDL_Rect topLeftViewport;
+            topLeftViewport.x = 20;
+            topLeftViewport.y = 20;
+            topLeftViewport.w = 180;
+            topLeftViewport.h = 180;
+            SDL_RenderSetViewport(gRenderer, &topLeftViewport);
+            SDL_RenderCopy(gRenderer, gTexture, NULL, NULL);
+            
             switch (evt.key.keysym.sym) {
                 case SDLK_UP:
                     //if (r.y>10 && r.y<190){
