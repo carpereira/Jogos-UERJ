@@ -23,9 +23,9 @@ int main (int argc, char* args[])
         SDL_RenderPresent(ren);
         
     SDL_WaitEvent(&evt);
-        if(evt.type == SDL_QUIT){
+        /*if(evt.type == SDL_QUIT){
             quit=true;
-        }
+        }*/
         
         if (evt.type == SDL_MOUSEBUTTONDOWN){
             SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
