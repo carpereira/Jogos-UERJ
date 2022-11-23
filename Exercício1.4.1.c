@@ -43,24 +43,19 @@ int main (int argc, char* args[])
             SDL_Delay(200);
         }
         
-        if (evt.type == SDL_KEYDOWN) {
-            SDL_Rect topLeftViewport;
-            topLeftViewport.x = 20;
-            topLeftViewport.y = 20;
-            topLeftViewport.w = 180;
-            topLeftViewport.h = 180;
-            SDL_RenderSetViewport(gRenderer, &topLeftViewport);
-            SDL_RenderCopy(gRenderer, gTexture, NULL, NULL);
+        if (evt.type == SDL_KEYDOWN) {            
             
             switch (evt.key.keysym.sym) {
                 case SDLK_UP:
-                    //if (r.y>10 && r.y<190){
-                        r.y -= 5;                    
-                        break;//}
+                    if (r.y>10){
+                        r.y -= 5;}
+                    else {r.y=10    
+                        break;}
                 case SDLK_DOWN:
-                    //if(r.y>10 && r.y<190){
-                        r.y += 5;                    
-                        break;//}
+                    if(r.y<190){
+                        r.y += 5;}
+                    else {r.y=190;
+                        break;}
                 case SDLK_LEFT:
                     //if(r.x>10 && r.x<190){
                         r.x -= 5;
