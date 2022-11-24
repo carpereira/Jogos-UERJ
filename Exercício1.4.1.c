@@ -48,22 +48,26 @@ int main (int argc, char* args[])
             switch (evt.key.keysym.sym) {
                 case SDLK_UP:
                     if (r.y>10){
-                        r.y -= 5;}
+                        r.y -= 5;
+                        break;}
                     else {r.y=10;    
                         break;}
                 case SDLK_DOWN:
                     if(r.y<190){
-                        r.y += 5;}
+                        r.y += 5;
+                        break;}
                     else {r.y=190;
                         break;}
                 case SDLK_LEFT:
                     if(r.x>10){
-                        r.x -= 5;}
+                        r.x -= 5;
+                        break;}
                     else {r.x>10;
                         break;}
                 case SDLK_RIGHT:
                     if(r.x<190){
-                        r.x += 5;}
+                        r.x += 5;
+                    break;}
                     else {r.x=190;
                         break;}
                     
