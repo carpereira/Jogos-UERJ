@@ -11,25 +11,19 @@ int main (int argc, char* args[])
                          200, 200, SDL_WINDOW_SHOWN
                       );
     SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
-    
-    SDL_Renderer* gRenderer = NULL;
-    SDL_Texture* gTexture = NULL;
 
     /* EXECUÇÃO */
     SDL_Rect r = { 100,100, 10,10 };    
     
     SDL_Event evt;
     while (1) {        
-        
         SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
         SDL_RenderClear(ren);
         SDL_SetRenderDrawColor(ren, 0x00,0x00,0xFF,0x00);
         SDL_RenderFillRect(ren, &r);
         SDL_RenderPresent(ren);        
         
-        
     SDL_WaitEvent(&evt);        
-        
         if (evt.type == SDL_MOUSEBUTTONDOWN){
             SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
             SDL_RenderClear(ren);
@@ -40,7 +34,6 @@ int main (int argc, char* args[])
         }
         
         if (evt.type == SDL_KEYDOWN) {            
-            
             switch (evt.key.keysym.sym) {
                 case SDLK_UP:
                     if (r.y>0){
@@ -65,8 +58,7 @@ int main (int argc, char* args[])
                         r.x += 5;
                     break;}
                     else {r.x=190;
-                        break;}
-                    
+                        break;}                    
             }
         }
     }
