@@ -32,7 +32,7 @@ int main (int argc, char* args[])
             SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
             SDL_RenderClear(ren);
             //SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00);
-            SDL_SetTextureColorMod( mTexture, red, green, blue);
+            SDL_SetTextureColorMod( ren, 255, 255, 255);
             
             SDL_RenderFillRect(ren, &r);
             SDL_RenderPresent(ren);
