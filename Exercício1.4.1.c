@@ -32,7 +32,7 @@ int main (int argc, char* args[])
             SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
             SDL_RenderClear(ren);
             //SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00);
-            gModulatedTexture.setColor(r,g,b);
+            gModulatedTexture.setColor(255,255,255);
             gModulatedTexture.render(0,0);
             //SDL_SetTextureColorMod( ren, 255, 255, 255);
             
