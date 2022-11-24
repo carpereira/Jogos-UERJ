@@ -23,7 +23,7 @@ int main (int argc, char* args[])
         SDL_RenderFillRect(ren, &r);
         SDL_RenderPresent(ren);        
         
-        if (evt.type == SDL_QUIT)
+        //if (evt.type == SDL_QUIT)
         
         if (evt.type == SDL_MOUSEBUTTONDOWN){
             SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
