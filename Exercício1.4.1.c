@@ -21,8 +21,9 @@ int main (int argc, char* args[])
         SDL_RenderClear(ren);
         SDL_SetRenderDrawColor(ren, 0x00,0x00,0xFF,0x00);
         SDL_RenderFillRect(ren, &r);
-        SDL_RenderPresent(ren);        
+        SDL_RenderPresent(ren);
         
+        SDL_WaitEvent(&evt);        
         //if (evt.type == SDL_QUIT)
         
         if (evt.type == SDL_MOUSEBUTTONDOWN){
