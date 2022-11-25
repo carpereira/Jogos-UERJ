@@ -11,6 +11,8 @@ int main (int argc, char* args[])
                          200, 200, SDL_WINDOW_SHOWN
                       );
     SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
+    
+    SDL_Texture* tex;
 
     /* EXECUÇÃO */
     SDL_Rect r = { 100,100, 10,10 };    
@@ -31,10 +33,10 @@ int main (int argc, char* args[])
         if (evt.type == SDL_MOUSEBUTTONDOWN){
             SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
             SDL_RenderClear(ren);
-            //SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00);
-            gModulatedTexture.setColor(255,255,255);
-            gModulatedTexture.render(0,0);
-            //SDL_SetTextureColorMod( ren, 255, 255, 255);
+            SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00);
+            //gModulatedTexture.setColor(255,255,255);
+            //gModulatedTexture.render(0,0);
+            SDL_SetTextureColorMod( tex, 255, 255, 255);
             
             SDL_RenderFillRect(ren, &r);
             SDL_RenderPresent(ren);
