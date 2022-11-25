@@ -36,7 +36,7 @@ int main (int argc, char* args[])
             //SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00);
             //gModulatedTexture.setColor(255,255,255);
             //gModulatedTexture.render(0,0);
-            SDL_SetTextureColorMod( tex, 255, 255, 255);
+            SDL_SetTextureColorMod( tex, 255, 0, 255);
             
             SDL_RenderFillRect(ren, &r);
             SDL_RenderPresent(ren);
@@ -75,6 +75,7 @@ int main (int argc, char* args[])
         
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
+    SDL_DestroyTexture(tex);
     SDL_DestroyWindow(win);
     SDL_Quit();
 }
