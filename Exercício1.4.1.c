@@ -40,7 +40,7 @@ int main (int argc, char* args[])
             
             SDL_RenderFillRect(ren, &r);
             SDL_RenderPresent(ren);
-            SDL_Delay(200);
+            SDL_Delay(500);
         }
         
         if (evt.type == SDL_KEYDOWN) {            
