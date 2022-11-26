@@ -15,8 +15,8 @@ int main (int argc, char* args[])
 
     /* EXECUÇÃO */
     SDL_Rect r = { 100,100, 10,10 }; 
-    SDL_Rect s = { 50,50, 30,20 };
-    SDL_Rect t = { 150,100, 50,10 };
+    SDL_Rect s = { 50,50, 30,40 };
+    SDL_Rect t = { 150,100, 50,20 };
     
     SDL_Event evt;
     while (1) {        
