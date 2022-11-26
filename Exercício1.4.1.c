@@ -1,5 +1,5 @@
 #include <SDL2/SDL.h>
-#include <stdbool.h>
+
 
 int main (int argc, char* args[])
 {
@@ -12,7 +12,6 @@ int main (int argc, char* args[])
                       );
     SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
     
-    //SDL_Texture* tex = SDL_CreateTexture();
 
     /* EXECUÇÃO */
     SDL_Rect r = { 100,100, 10,10 };    
@@ -34,9 +33,6 @@ int main (int argc, char* args[])
             SDL_SetRenderDrawColor(ren, 255,255,255,0);
             SDL_RenderClear(ren);
             SDL_SetRenderDrawColor(ren, 255,0,0,0);
-            //gModulatedTexture.setColor(255,255,255);
-            //gModulatedTexture.render(0,0);
-            //SDL_SetTextureColorMod( tex, 0, 255, 0);
             
             SDL_RenderFillRect(ren, &r);
             SDL_RenderPresent(ren);
@@ -75,7 +71,6 @@ int main (int argc, char* args[])
         
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
-    //SDL_DestroyTexture(tex);
     SDL_DestroyWindow(win);
     SDL_Quit();
 }
