@@ -40,7 +40,10 @@ int main (int argc, char* args[])
             
             SDL_SetRenderDrawColor(ren, 255,0,0,0);
             
-            SDL_RenderFillRect(ren, &r);}
+            SDL_RenderFillRect(ren, &r);
+            SDL_RenderPresent(ren);
+            SDL_Delay(500);//}
+        }
             
          if (evt.type == SDL_MOUSEBUTTONDOWN){
             SDL_SetRenderDrawColor(ren, 255,255,255,0);
