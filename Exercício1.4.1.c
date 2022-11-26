@@ -29,20 +29,20 @@ int main (int argc, char* args[])
             break;
         }
         
-        int b;
-        for(b=255; b>0; b-50){
+        //int b;
+        //for(b=255; b>0; b-50){
         
         if (evt.type == SDL_MOUSEBUTTONDOWN){
             SDL_SetRenderDrawColor(ren, 255,255,255,0);
             SDL_RenderClear(ren);
             
-            SDL_SetRenderDrawColor(ren,255,b,0,0);
+            //SDL_SetRenderDrawColor(ren,255,b,0,0);
             
-            //SDL_SetRenderDrawColor(ren, 255,0,0,0);
+            SDL_SetRenderDrawColor(ren, 255,0,0,0);
             
             SDL_RenderFillRect(ren, &r);
             SDL_RenderPresent(ren);
-            SDL_Delay(500);}
+            SDL_Delay(500);//}
         }
         
         if (evt.type == SDL_KEYDOWN) {            
