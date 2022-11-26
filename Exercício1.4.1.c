@@ -31,7 +31,7 @@ int main (int argc, char* args[])
         
         int b;
         int g;
-        for(b=255; b>0; b-50) && for(g=0; g<255; g+50){
+        /*for(b=255; b>0; b-50) &&*/ for(g=0; g<255; g+50){
         
         if (evt.type == SDL_MOUSEBUTTONDOWN){
             SDL_SetRenderDrawColor(ren, 255,255,255,0);
