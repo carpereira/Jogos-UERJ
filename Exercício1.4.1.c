@@ -30,6 +30,7 @@ int main (int argc, char* args[])
         }
         
         int b;
+        int g;
         for(b=255; b>0; b-50 && g=0; g<255; g+50){
         
         if (evt.type == SDL_MOUSEBUTTONDOWN){
