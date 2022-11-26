@@ -33,18 +33,8 @@ int main (int argc, char* args[])
             break;
         }
         
-        if (evt.type == SDL_MOUSEBUTTONDOWN){
-            SDL_SetRenderDrawColor(ren, 255,255,255,0);              
-            SDL_RenderClear(ren);            
-            SDL_SetRenderDrawColor(ren, 255,0,255,0);            
-            SDL_RenderFillRect(ren, &r);            
-            SDL_RenderPresent(ren);
-            SDL_Delay(500);
-        }
-        
-        
-                 
-           if (evt.type == SDL_MOUSEMOTION){
+                     
+        if (evt.type == SDL_MOUSEMOTION){
             SDL_SetRenderDrawColor(ren, 255,255,255,0);              
             SDL_RenderClear(ren);            
             SDL_SetRenderDrawColor(ren, 255,0,0,0);            
