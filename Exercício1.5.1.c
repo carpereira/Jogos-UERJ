@@ -47,7 +47,7 @@ int main (int argc, char* args[])
             SDL_SetRenderDrawColor(ren, 255,0,0,0);            
             SDL_RenderFillRect(ren, &s);            
             SDL_RenderPresent(ren);
-            SDL_Delay(500);
+            //SDL_Delay(500);
         }
                 
         if (evt.type == SDL_KEYDOWN) {            
