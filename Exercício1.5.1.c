@@ -18,7 +18,7 @@ int main (int argc, char* args[])
     SDL_Rect s = { 50,50, 30,40 };
     SDL_Rect t = { 150,100, 50,20 };
     
-    SDL_Event evt;
+    //SDL_Event evt;
     while (1) {        
         SDL_SetRenderDrawColor(ren, 255,255,255,0);
         SDL_RenderClear(ren);
@@ -27,6 +27,8 @@ int main (int argc, char* args[])
         SDL_RenderFillRect(ren, &s);
         SDL_RenderFillRect(ren, &t);
         SDL_RenderPresent(ren);
+        
+        SDL_Event evt;
         
         SDL_WaitEvent(&evt);        
         if (evt.type == SDL_QUIT){
