@@ -35,8 +35,7 @@ int main (int argc, char* args[])
         int isevt = SDL_WaitEventTimeout(&evt,500);
         if(isevt){
             if(evt.type == SDL_MOUSEBUTTONDOWN){
-                xrel.s;
-                yrel.s;                   
+                                  
         }
         
         SDL_WaitEvent(&evt);        
@@ -46,8 +45,8 @@ int main (int argc, char* args[])
         
                      
         if (evt.type == SDL_MOUSEMOTION){
-            int x = event.motion.x;
-            int y = event.motion.y;
+            int x = evt.motion.x;
+            int y = evt.motion.y;
             x>s.x && x<s.w && y>s.y && y<s.y;
         }
                 
