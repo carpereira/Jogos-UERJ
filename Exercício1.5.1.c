@@ -46,12 +46,9 @@ int main (int argc, char* args[])
         
                      
         if (evt.type == SDL_MOUSEMOTION){
-            SDL_SetRenderDrawColor(ren, 255,255,255,0);              
-            SDL_RenderClear(ren);            
-            SDL_SetRenderDrawColor(ren, 255,0,0,0);            
-            SDL_RenderFillRect(ren, &s);            
-            SDL_RenderPresent(ren);
-            //SDL_Delay(500);
+            int x = event.motion.x;
+            int y = event.motion.y;
+            x>s.x && x<s.w && y>s.y && y<s.y;
         }
                 
         if (evt.type == SDL_KEYDOWN) {            
