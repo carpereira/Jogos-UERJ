@@ -34,7 +34,9 @@ int main (int argc, char* args[])
         
         int isevt = SDL_WaitEventTimeout(&evt,500);
         if(isevt){
-            if(evt.type == SDL_MOUSEBUTTONDOWN);
+            if(evt.type == SDL_MOUSEBUTTONDOWN){
+                s.relx;
+                s.rely;                   
         }
         
         SDL_WaitEvent(&evt);        
