@@ -32,11 +32,11 @@ int main (int argc, char* args[])
         
         SDL_Event evt;
         
-        int isevt = SDL_WaitEventTimeout(&evt,500);
+        int isevt = SDL_WaitEventTimeout(&evt,900);
         if(isevt){
             if(evt.type == SDL_MOUSEBUTTONDOWN){
-                r.x +=5;
-                r.y +=5;
+                r.x +=2;
+                r.y +=2;
             }                         
         }
         
