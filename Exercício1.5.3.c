@@ -15,7 +15,7 @@ SDL_Renderer* ren = SDL_CreateRenderer(win, -1,0);
 
 SDL_Rect r={40,20,10,10};
   
-  sDL_Event evt;
+  SDL_Event evt;
       
   while (r.y<280){
     SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
