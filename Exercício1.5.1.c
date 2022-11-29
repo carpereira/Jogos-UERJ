@@ -52,7 +52,7 @@ int main (int argc, char* args[])
         if (evt.type == SDL_MOUSEMOTION){
             int s.x;
             int s.y;
-            evt.motion.x, evt.motion.y;          
+            s.x=evt.motion.x, s.y=evt.motion.y;          
         }
                 
         if (evt.type == SDL_KEYDOWN) {            
