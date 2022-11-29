@@ -41,6 +41,7 @@ int main (int argc, char* args[])
             else{
                 r.x +=5;
                 r.y +=5;
+            }
         }
         
         SDL_WaitEvent(&evt);        
