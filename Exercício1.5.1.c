@@ -35,8 +35,8 @@ int main (int argc, char* args[])
         int isevt = SDL_WaitEventTimeout(&evt,100);
         if(isevt){
             if(evt.type == SDL_MOUSEBUTTONDOWN){
-                r.x +=2;
-                r.y +=2;
+                SDL_SetRenderDrawColor(ren, 0,255,255,0);
+                SDL_RenderFillRect(ren, &r);
             }
             else{
                 r.x +=5;
