@@ -46,8 +46,7 @@ int main (int argc, char* args[])
               
         if (evt.type == SDL_QUIT){
             break;
-        }
-        
+        }        
                      
         if (evt.type == SDL_MOUSEMOTION){
             s.x=evt.motion.x, s.y=evt.motion.y;          
