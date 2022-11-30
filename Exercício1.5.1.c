@@ -34,13 +34,13 @@ int main (int argc, char* args[])
         
         int isevt = SDL_WaitEventTimeout(&evt,700);
         if(isevt){
-            if(evt.type == SDL_MOUSEBUTTONDOWN){
+            if(evt.type == SDL_KEYDOWN){
                 SDL_SetRenderDrawColor(ren, 255,0,0,0);
                 SDL_RenderFillRect(ren, &r);
             }
             else{
-                r.x +=5;
-                r.y +=5;
+                r.x +=2;
+                r.y +=2;
             }
         }        
               
