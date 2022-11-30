@@ -29,7 +29,7 @@ int main (int argc, char* args[])
         SDL_SetRenderDrawColor(ren, 255,0,0,0);
         SDL_RenderFillRect(ren, &t);
         SDL_RenderPresent(ren);
-        SDL_Delay(200);
+        
         
         SDL_Event evt;
         
@@ -41,6 +41,7 @@ int main (int argc, char* args[])
                 SDL_SetRenderDrawColor(ren, 255,0,0,0);
                 SDL_RenderFillRect(ren, &r);
                 SDL_RenderPresent(ren);
+                SDL_Delay(200);
             }
         }
             else{
