@@ -22,9 +22,9 @@ SDL_RenderClear(ren);
 //SDL2_GFXPRIMITIVES_SCOPE int rectColor(ren,40,20,100,100,0x255);
 //SDL2_GFXPRIMITIVES_SCOPE int boxRGBA(ren,100,50,200,200,0x255);
 
-SDL2_GFXPRIMITIVES_SCOPE int rectangleColor(SDL_Renderer * ren, 40 x1, 50 y1, 100 x2, 100 y2, 255 color);
-SDL2_GFXPRIMITIVES_SCOPE int rectangleRGBA(SDL_Renderer * ren, 40 x1, 50 y1,
-100 x2, 100 y2, 0 r, 255 g, 0 b, 0 a);
+SDL2_GFXPRIMITIVES_SCOPE int rectangleColor(SDL_Renderer * ren, 40, 50, 100, 100, 255);
+SDL2_GFXPRIMITIVES_SCOPE int rectangleRGBA(SDL_Renderer * ren, 40, 50,
+100, 100, 0, 255, 0, 0);
 SDL_RenderPresent(ren);
 SDL_Delay(500);
 
