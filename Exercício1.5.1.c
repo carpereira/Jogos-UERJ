@@ -38,11 +38,12 @@ int main (int argc, char* args[])
                 SDL_SetRenderDrawColor(ren, 255,0,0,0);
                 SDL_RenderFillRect(ren, &r);
             }
+        }
             else{
                 r.x +=2;
                 r.y +=2;
             }
-        }        
+                
               
         if (evt.type == SDL_QUIT){
             break;
