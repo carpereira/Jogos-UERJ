@@ -36,8 +36,7 @@ int main (int argc, char* args[])
         if(isevt){
             if(evt.type == SDL_KEYDOWN){
                 SDL_SetRenderDrawColor(ren, 255,0,0,0);
-                SDL_RenderFillRect(ren, &r);
-                SDL_RenderPresent(ren);
+                SDL_RenderFillRect(ren, &r);                
             }
         }
             else{
