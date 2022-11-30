@@ -32,7 +32,7 @@ int main (int argc, char* args[])
         
         SDL_Event evt;
         
-        int isevt = SDL_WaitEventTimeout(&evt,700);
+        int isevt = SDL_WaitEventTimeout(&evt,100);
         if(isevt){
             if(evt.type == SDL_KEYDOWN){
                 SDL_SetRenderDrawColor(ren, 255,0,0,0);
@@ -42,8 +42,7 @@ int main (int argc, char* args[])
             else{
                 r.x +=2;
                 r.y +=2;
-            }
-                
+            }                
               
         if (evt.type == SDL_QUIT){
             break;
