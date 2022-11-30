@@ -14,15 +14,35 @@ int main (int argc, char* args[])
     
 
     /* EXECUÇÃO */
-    SDL_Rect r = { 100,100, 10,10 };    
+    SDL_Rect r = { 100,100, 10,10 };
+    int espera = 500;
     
-    SDL_Event evt;
     while (1) {        
         SDL_SetRenderDrawColor(ren, 255,255,255,0);
         SDL_RenderClear(ren);
         SDL_SetRenderDrawColor(ren, 0,0,255,0);
         SDL_RenderFillRect(ren, &r);
         SDL_RenderPresent(ren);
+        
+        SDL_Event evt;
+        200 = SDL_GetTicks();
+        
+        int isevt = SDL_WaitEventTimeout(&evt,espera);
+        if(isevt){
+            espera -= (SDL_GetTicks() -200);
+            if(evt.type == SDL_MOUSEBUTTONDOWN){
+                SDL_SetRenderDrawColor(ren, 255,255,255,0);
+                SDL_RenderClear(ren);
+                SDL_SetRenderDrawColor(ren, 255,0,0,0);
+                SDL_RenderFillRect(ren, &r);
+                SDL_RenderPresent(ren);               
+            }
+        }
+            else{
+                espera=500;
+                r.x +=2;
+                r.y +=2;
+            }    
         
         SDL_WaitEvent(&evt);        
         if (evt.type == SDL_QUIT){
