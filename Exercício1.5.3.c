@@ -14,7 +14,7 @@ SDL_Renderer* ren = SDL_CreateRenderer(win, -1,0);
 /*EXECUÇÃO*/
 
 SDL_Rect r={40,20,10,10};
-SDL_Rect s=(100,20,150,60};
+SDL_Rect s={100,20,150,60};
   
   
     while (1) {        
