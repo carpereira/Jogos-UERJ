@@ -37,7 +37,7 @@ int main (int argc, char* args[])
             SDL_RenderPresent(ren);
             r.x=evt.motion.x, r.y=evt.motion.y;
             //SDL_Delay(200);
-            break;
+            //break;
         }        
                   
         if (evt.type == SDL_MOUSEBUTTONDOWN){
@@ -48,7 +48,7 @@ int main (int argc, char* args[])
             SDL_RenderPresent(ren);
             r.x=evt.motion.x, r.y=evt.motion.y;
             //SDL_Delay(200);
-            break;
+            //break;
         }
                  
            /*if (evt.type == SDL_MOUSEBUTTONDOWN){
