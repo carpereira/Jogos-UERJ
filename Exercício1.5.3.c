@@ -24,12 +24,8 @@ SDL_Rect s={100,20,150,60};
         SDL_RenderFillRect(ren, &r);       
         SDL_SetRenderDrawColor(ren, 255,0,0,0);
         SDL_RenderFillRect(ren, &s);  
-        SDL_RenderPresent(ren);
-        
-      
-  //SDL_Event evt;
+        SDL_RenderPresent(ren);  
   
-  //while(SDL_PollEvent(&evt)){
     switch(1)
     {
       case 1:
