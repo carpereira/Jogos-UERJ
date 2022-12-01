@@ -29,11 +29,15 @@ int main (int argc, char* args[])
             break;
         }
         
-        if (evt.type == SDL_MOUSEBUTTONDOWN){
+        if (evt.type == SDL_MOUSEBUTTONDOWN && evt.type == SDL_MOUSEMOTION){
+            //if (evt.type == SDL_MOUSEMOTION){
+            //s.x=evt.motion.x, s.y=evt.motion.y;          
+        //}
             SDL_SetRenderDrawColor(ren, 255,255,255,0);              
             SDL_RenderClear(ren);            
             SDL_SetRenderDrawColor(ren, 255,0,255,0);            
-            SDL_RenderFillRect(ren, &r);            
+            SDL_RenderFillRect(ren, &r);
+            r.x=evt.motion.x, r.y=evt.motion.y;
             SDL_RenderPresent(ren);
             SDL_Delay(500);
         }
