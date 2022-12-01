@@ -16,7 +16,7 @@ SDL_Renderer* ren = SDL_CreateRenderer(win, -1,0);
 SDL_Rect r={40,20,10,10};
 SDL_Rect s={100,20,150,60};
   
-  
+  SDL_Event evt;
     while (1) {        
         SDL_SetRenderDrawColor(ren, 255,255,255,0);
         SDL_RenderClear(ren);
@@ -27,7 +27,7 @@ SDL_Rect s={100,20,150,60};
         SDL_RenderPresent(ren);
         
       
-  SDL_Event evt;
+  //SDL_Event evt;
   
   //while(SDL_PollEvent(&evt)){
     switch(1)
