@@ -29,8 +29,8 @@ SDL_Rect s={100,20,150,60};
       
   SDL_Event evt;
   
-  while(SDL_PollEvent(&evt)){
-    switch(evt.type)
+  //while(SDL_PollEvent(&evt)){
+    switch()
     {
       case(r.y<280):
       SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
