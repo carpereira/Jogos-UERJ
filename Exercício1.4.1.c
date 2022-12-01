@@ -29,7 +29,7 @@ int main (int argc, char* args[])
             break;
         }
         
-        if (evt.type == SDL_MOUSEMOTION){
+        if (evt.type == SDL_MOUSEBUTTONDOWN){
             r.x=evt.motion.x, r.y=evt.motion.y;          
         }
         
