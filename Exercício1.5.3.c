@@ -72,7 +72,7 @@ SDL_Rect s={100,20,150,60};
       SDL_Delay(100);
       r.x -=1;
       break;}
-  }
+  
     }          
               
         if (evt.type == SDL_QUIT){
