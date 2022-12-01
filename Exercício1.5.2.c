@@ -25,17 +25,29 @@ int main (int argc, char* args[])
         SDL_RenderPresent(ren);
         
         SDL_Event evt;
-        200 = SDL_GetTicks();
+        Uint32 antes = SDL_GetTicks();
         
         int isevt = SDL_WaitEventTimeout(&evt,espera);
         if(isevt){
-            espera -= (SDL_GetTicks() -200);
-            if(evt.type == SDL_MOUSEBUTTONDOWN){
-                SDL_SetRenderDrawColor(ren, 255,255,255,0);
-                SDL_RenderClear(ren);
-                SDL_SetRenderDrawColor(ren, 255,0,0,0);
-                SDL_RenderFillRect(ren, &r);
-                SDL_RenderPresent(ren);               
+            espera -= (SDL_GetTicks() - antes);
+            if (espera<0){
+                espera = 0;
+            }
+            if(evt.type == SDL_KEYDOWN){
+                switch (evt.key.keysym.sym) {
+                    case SDLK_UP:
+                        r.y -= 5;
+                        break;
+                    case SDLK_DOWN:
+                        r.y += 5;
+                        break;
+                    case SDLK_LEFT:
+                        r.y -= 5;
+                        break;
+                    case SDLK_RIGHT:
+                        r.y += 5;
+                        break;
+                }           
             }
         }
             else{
@@ -47,8 +59,7 @@ int main (int argc, char* args[])
         SDL_WaitEvent(&evt);        
         if (evt.type == SDL_QUIT){
             break;
-        }
-        
+        }        
         
         }
         
