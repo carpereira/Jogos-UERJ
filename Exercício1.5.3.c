@@ -4,7 +4,7 @@ int main(int argc, char* args[])
 {
 /*INICIALIZAÇÃO*/
 SDL_Init(SDL_INIT_EVERYTHING);
-SDL_Window* win = SDL_CreateWindow("Animação Simples!",
+SDL_Window* win = SDL_CreateWindow("Animação Orientada a Eventos!",
                       SDL_WINDOWPOS_UNDEFINED,
                       SDL_WINDOWPOS_UNDEFINED,
                       300, 300, SDL_WINDOW_SHOWN
