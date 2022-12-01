@@ -4,9 +4,9 @@ int main(int argc, char* args[])
 {
 /*INICIALIZAÇÃO*/
 SDL_Init(SDL_INIT_EVERYTHING);
-SDL_Window* win = SDL_CreateWindow("Animação Simples - orientada a eventos!",
+SDL_Window* win = SDL_CreateWindow("Animação Simples!",
                       SDL_WINDOWPOS_UNDEFINED,
-                      SDL_WINDOWPOS_UNDEFINED
+                      SDL_WINDOWPOS_UNDEFINED,
                       300, 300, SDL_WINDOW_SHOWN
                       );
 SDL_Renderer* ren = SDL_CreateRenderer(win, -1,0);
@@ -14,8 +14,6 @@ SDL_Renderer* ren = SDL_CreateRenderer(win, -1,0);
 /*EXECUÇÃO*/
 
 SDL_Rect r={40,20,10,10};
-  
-  SDL_Event evt;
       
   while (r.y<280){
     SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
