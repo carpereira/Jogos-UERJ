@@ -78,7 +78,7 @@ SDL_Rect s=(100,20,150,60};
             s.x=evt.motion.x, s.y=evt.motion.y;          
         }   
   
-  
+    }
   
 
 /*FINALIZAÇÃO*/
