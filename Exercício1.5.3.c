@@ -18,7 +18,7 @@ SDL_Rect r={40,20,10,10};
   SDL_Event evt;
   
   while(SDL_PollEvent(&evt)){
-    swtich(evt.type);
+    switch(evt.type);
     {
       case(r.y<280):
       SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
@@ -38,23 +38,23 @@ SDL_Rect r={40,20,10,10};
       SDL_Delay(100);
       r.x +=1;
       break;
-      case (s.y>20):
+      case (r.y>20):
       SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
       SDL_RenderClear(ren);
       SDL_SetRenderDrawColor(ren, 0x00,0xFF,0xFF,0x00);
-      SDL_RenderFillRect(ren,&s);      
+      SDL_RenderFillRect(ren,&r);      
       SDL_RenderPresent(ren);
       SDL_Delay(100);
-      s.y -=1;
+      r.y -=1;
       break;
-      case (s.x>20):
+      case (r.x>20):
       SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
       SDL_RenderClear(ren);
       SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00);
-      SDL_RenderFillRect(ren,&s);      
+      SDL_RenderFillRect(ren,&r);      
       SDL_RenderPresent(ren);
       SDL_Delay(100);
-      s.x -=1;
+      r.x -=1;
   }
     }          
               
@@ -64,8 +64,7 @@ SDL_Rect r={40,20,10,10};
                      
         if (evt.type == SDL_MOUSEMOTION){
             s.x=evt.motion.x, s.y=evt.motion.y;          
-        }
-                
+        }   
   
   
   
