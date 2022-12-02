@@ -44,7 +44,7 @@ int main (int argc, char* args[])
             SDL_RenderFillRect(ren, &r);
             SDL_RenderPresent(ren);            
             //r.x, r.y;
-            //SDL_Delay(300);
+            SDL_Delay(300);
             
         }
      
@@ -60,7 +60,7 @@ int main (int argc, char* args[])
             SDL_RenderFillRect(ren, &r);            
             SDL_RenderPresent(ren);            
             //r.x, r.y;
-            //SDL_Delay(300);
+            SDL_Delay(300);
             
         }
                  
