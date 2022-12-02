@@ -52,7 +52,7 @@ int main (int argc, char* args[])
       SDL_Delay(100);
       r.x=evt.motion.x, r.y=evt.motion.y;
       break;}
-        
+        }
         
         /*if (evt.type == SDL_MOUSEBUTTONDOWN){
             //SDL_SetRenderDrawColor(ren, 255,255,255,0);
