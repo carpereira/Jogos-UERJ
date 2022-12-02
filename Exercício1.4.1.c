@@ -40,9 +40,10 @@ int main (int argc, char* args[])
             SDL_SetRenderDrawColor(ren, 255,255,255,0);
             SDL_RenderClear(ren);
             SDL_SetRenderDrawColor(ren, 255,0,0,0);
+            SDL_Rect r = { x,y, 20,20 };
             SDL_RenderFillRect(ren, &r);
             SDL_RenderPresent(ren);            
-            r.x, r.y;
+            //r.x, r.y;
             //SDL_Delay(300);
             
         }
@@ -54,10 +55,11 @@ int main (int argc, char* args[])
         if (evt.type == SDL_MOUSEBUTTONUP){
             SDL_SetRenderDrawColor(ren, 255,255,255,0);              
             SDL_RenderClear(ren);            
-            SDL_SetRenderDrawColor(ren, 0,0,255,0);            
+            SDL_SetRenderDrawColor(ren, 0,0,255,0);
+            SDL_Rect r = { x,y, 20,20 };
             SDL_RenderFillRect(ren, &r);            
             SDL_RenderPresent(ren);            
-            r.x, r.y;
+            //r.x, r.y;
             //SDL_Delay(300);
             
         }
