@@ -40,6 +40,7 @@ int main (int argc, char* args[])
             SDL_RenderFillRect(ren, &r);
             SDL_RenderPresent(ren);
             r.x=evt.motion.x, r.y=evt.motion.y;
+            r.x, r.y;
             //SDL_Delay(300);
             //break;
         }
@@ -51,6 +52,7 @@ int main (int argc, char* args[])
             SDL_SetRenderDrawColor(ren, 0,0,255,0);            
             SDL_RenderFillRect(ren, &r);            
             SDL_RenderPresent(ren);
+            r.x=evt.motion.x, r.y=evt.motion.y;
             r.x, r.y;
             //SDL_Delay(300);
             //break;
