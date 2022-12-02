@@ -54,9 +54,8 @@ int main (int argc, char* args[])
                 espera=500;
                 r.x +=2;
                 r.y +=2;
-            }    
-        
-        SDL_WaitEvent(&evt);        
+            }       
+                
         if (evt.type == SDL_QUIT){
             break;
         }        
