@@ -31,7 +31,7 @@ int main (int argc, char* args[])
         if (evt.type == SDL_QUIT){
             break;
         }
-        
+}
             
         if (evt.type == SDL_MOUSEBUTTONDOWN){
             SDL_SetRenderDrawColor(ren, 255,255,255,0);
@@ -164,7 +164,7 @@ int main (int argc, char* args[])
                         break;}                    
             }
         }
-    //}
+    }
         
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
