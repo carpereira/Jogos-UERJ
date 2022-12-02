@@ -15,7 +15,7 @@ int main (int argc, char* args[])
 
     /* EXECUÇÃO */
     SDL_Rect r = { 100,100, 20,20 };
-    //SDL_Rect s = { 100,100, 10,10 };
+    SDL_Rect s = { 100,100, 10,10 };
     
     
     SDL_Event evt;
