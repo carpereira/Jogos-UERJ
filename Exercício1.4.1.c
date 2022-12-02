@@ -48,7 +48,7 @@ int main (int argc, char* args[])
         SDL_SetRenderDrawColor(ren, 255,255,255,0);
         SDL_RenderClear(ren);
         SDL_SetRenderDrawColor(ren, 0,255,0,0);
-        SDL_RenderFillRect(ren, &r);
+        SDL_RenderFillRect(ren, &s);
         SDL_RenderPresent(ren);
         s.x=evt.motion.x, s.y=evt.motion.y;
         }
