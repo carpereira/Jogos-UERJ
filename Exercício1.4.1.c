@@ -36,7 +36,7 @@ int main (int argc, char* args[])
             SDL_RenderFillRect(ren, &r);
             SDL_RenderPresent(ren);
             r.x=evt.motion.x, r.y=evt.motion.y;
-            //SDL_Delay(200);
+            SDL_Delay(300);
             //break;
         }        
                   
@@ -47,7 +47,7 @@ int main (int argc, char* args[])
             SDL_RenderFillRect(ren, &r);            
             SDL_RenderPresent(ren);
             r.x=evt.motion.x, r.y=evt.motion.y;
-            //SDL_Delay(200);
+            SDL_Delay(300);
             //break;
         }
                  
