@@ -39,7 +39,7 @@ int main (int argc, char* args[])
             SDL_SetRenderDrawColor(ren, 255,0,0,0);
             SDL_RenderFillRect(ren, &r);
             SDL_RenderPresent(ren);
-            r.x=evt.xrel, r.y=evt.yrel;
+            r.x=evt.rel.x, r.y=evt.rel.y;
             //SDL_Delay(300);
             //break;
         }
@@ -51,7 +51,7 @@ int main (int argc, char* args[])
             SDL_SetRenderDrawColor(ren, 0,0,255,0);            
             SDL_RenderFillRect(ren, &r);            
             SDL_RenderPresent(ren);
-            r.x=evt.xrel, r.y=evt.yrel;
+            r.x=evt.rel.x, r.y=evt.rel.y;
             //SDL_Delay(300);
             //break;
         }
