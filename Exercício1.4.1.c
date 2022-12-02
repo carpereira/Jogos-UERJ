@@ -40,7 +40,7 @@ int main (int argc, char* args[])
             //break;
         }        
                   
-        if (evt.type == SDL_MOUSEBUTTONDOWN){
+        else (evt.type == SDL_MOUSEBUTTONDOWN){
             SDL_SetRenderDrawColor(ren, 255,255,255,0);              
             SDL_RenderClear(ren);            
             SDL_SetRenderDrawColor(ren, 0,0,255,0);            
