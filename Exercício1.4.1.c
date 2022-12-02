@@ -42,7 +42,7 @@ int main (int argc, char* args[])
             r.x=evt.motion.x, r.y=evt.motion.y;
             r.x, r.y;
             //SDL_Delay(300);
-            //break;
+            break;
         }
      
                   
@@ -55,7 +55,7 @@ int main (int argc, char* args[])
             r.x=evt.motion.x, r.y=evt.motion.y;
             r.x, r.y;
             //SDL_Delay(300);
-            //break;
+            break;
         }
                  
            /*if (evt.type == SDL_MOUSEBUTTONDOWN){
