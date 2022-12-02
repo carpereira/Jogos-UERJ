@@ -51,7 +51,7 @@ int main (int argc, char* args[])
             SDL_SetRenderDrawColor(ren, 0,0,255,0);            
             SDL_RenderFillRect(ren, &r);            
             SDL_RenderPresent(ren);
-            r.x=x, r.y=y;
+            r.x, r.y;
             //SDL_Delay(300);
             //break;
         }
