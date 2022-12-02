@@ -26,7 +26,15 @@ SDL_Rect s={280,280,150,60};
         SDL_RenderFillRect(ren, &s);  
         SDL_RenderPresent(ren);  
   
-    switch(1)
+      if (evt.type == SDL_QUIT){
+            break;
+        }        
+                     
+       if (evt.type == SDL_MOUSEMOTION){
+            s.x=evt.motion.x, s.y=evt.motion.y;          
+        }   
+      
+      switch(1)
     {
       case 1:
         if (r.y<280){
@@ -71,13 +79,7 @@ SDL_Rect s={280,280,150,60};
   
     }          
               
-        if (evt.type == SDL_QUIT){
-            break;
-        }        
-                     
-        if (evt.type == SDL_MOUSEMOTION){
-            s.x=evt.motion.x, s.y=evt.motion.y;          
-        }   
+        
   
     }
   
