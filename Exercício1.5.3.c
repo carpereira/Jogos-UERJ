@@ -42,8 +42,9 @@ SDL_Rect s={280,280,10,10};
             SDL_RenderPresent(ren);}
         } else{      
                 r.y +=1;
-                }
-         /*if (isevt) { 
+                break;    
+        }
+         if (isevt) { 
            if (r.x<280){
              SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
              SDL_RenderClear(ren);
@@ -52,8 +53,9 @@ SDL_Rect s={280,280,10,10};
              SDL_RenderPresent(ren);}
         } else{      
               r.x +=1;
+              break;
               }
-      if (isevt) {
+      /*if (isevt) {
            if (s.y>20){
               SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
               SDL_RenderClear(ren);
