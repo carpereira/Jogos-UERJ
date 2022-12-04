@@ -27,14 +27,15 @@ SDL_Rect s={280,280,10,10};
         SDL_RenderPresent(ren);
       
       SDL_Event evt;
+      
+      if (evt.type == SDL_QUIT){            
+            break;
+        } 
+      
       int isevt = SDL_WaitEventTimeout(&evt, 100);
         if (isevt) {
-          if (evt.type == SDL_QUIT){            
-            break;
-        }        
-                     
-        if (evt.type == SDL_MOUSEMOTION){
-          s.x=evt.motion.x, s.y=evt.motion.y;          
+          if (evt.type == SDL_MOUSEMOTION){
+            s.x=evt.motion.x, s.y=evt.motion.y;          
         }   
       
           switch(1)
