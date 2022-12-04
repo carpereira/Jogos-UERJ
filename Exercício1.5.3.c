@@ -41,8 +41,7 @@ SDL_Rect s={280,280,10,10};
             SDL_RenderFillRect(ren,&r);      
             SDL_RenderPresent(ren);}
         } else{      
-                r.y +=1;
-                break;    
+                r.y +=1;                    
         }
          if (isevt) { 
            if (r.x<280){
@@ -52,8 +51,7 @@ SDL_Rect s={280,280,10,10};
              SDL_RenderFillRect(ren,&r);      
              SDL_RenderPresent(ren);}
         } else{      
-              r.x +=1;
-              break;
+              r.x +=1;              
               }
       /*if (isevt) {
            if (s.y>20){
