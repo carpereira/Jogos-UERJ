@@ -52,10 +52,10 @@ int main (int argc, char* args[])
             r.x=evt.motion.x, r.y=evt.motion.y;      
             SDL_SetRenderDrawColor(ren, 255,255,255,0);              
             SDL_RenderClear(ren); 
-            SDL_Rect r = { r.x,r.y, 20,20 };
-            //SDL_SetRenderDrawColor(ren, 0,255,0,0);
+            //SDL_Rect r = { r.x,r.y, 20,20 };
+            SDL_SetRenderDrawColor(ren, 0,255,0,0);
             //SDL_Rect r = { r.x,r.y,20,20 };
-            //SDL_RenderFillRect(ren, &r);            
+            SDL_RenderFillRect(ren, &r);            
             SDL_RenderPresent(ren);            
             //r.x, r.y;
             //SDL_Delay(300);
