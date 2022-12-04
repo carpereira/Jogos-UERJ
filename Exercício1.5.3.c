@@ -59,7 +59,7 @@ SDL_Rect s={280,280,150,60};
       r.x +=1;
       break;}
       case 3:
-        if (r.y>20){
+        if (s.y>20){
       SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
       SDL_RenderClear(ren);
       SDL_SetRenderDrawColor(ren, 0x00,0xFF,0xFF,0x00);
@@ -69,7 +69,7 @@ SDL_Rect s={280,280,150,60};
       s.y -=1;
       break;}
       case 4:
-        if (r.x>20){
+        if (s.x>20){
       SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
       SDL_RenderClear(ren);
       SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00);
