@@ -39,7 +39,8 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                         r.y += 1;
                         break;}
-                    case (r.x<280){
+                    case 2:
+                        if (r.x<280){
                         SDL_SetREnderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetREnderDrawColor(ren, 0,255,0,0);
@@ -47,7 +48,8 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                         r.x += 1;
                         break;}
-                    case (s.y>20){
+                    case 3:
+                        if (s.y>20){
                         SDL_SetREnderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetREnderDrawColor(ren, 0,0,255,0);
@@ -55,7 +57,8 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                         s.x -= 1;
                         break;}
-                    case (s.x>20){
+                    case 4:
+                        if (s.x>20){
                         SDL_SetREnderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetREnderDrawColor(ren, 255,0,255,0);
