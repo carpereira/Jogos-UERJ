@@ -16,9 +16,9 @@ int main (int argc, char* args[])
     SDL_Rect s = {280,280,10,10};
     
     while (1) {
-        SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
+        SDL_SetRenderDrawColor(ren, 255,255,255,0);
         SDL_RenderClear(ren);
-        SDL_SetRenderDrawColor(ren, 0x00,0x00,0xFF,0x00);
+        SDL_SetRenderDrawColor(ren, 0,0,255,0);
         SDL_RenderFillRect(ren, &r);
         SDL_RenderPresent(ren);
 
@@ -30,7 +30,7 @@ int main (int argc, char* args[])
         
         int isevt = SDL_WaitEventTimeout(&evt, 500);
         if (isevt) {
-            if (evt.type == SDL_KEYDOWN) {
+            if (evt.type == SDL_MOUSEBUTTONDOWN) {
                 switch (evt.key.keysym.sym) {
                     case 1:
                         if(r.y<280){
