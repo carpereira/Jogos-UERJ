@@ -30,9 +30,9 @@ int main (int argc, char* args[])
         
         int isevt = SDL_WaitEventTimeout(&evt, 500);
         if (isevt) {
-            //if (evt.type == SDL_MOUSEBUTTONDOWN) {
-                //switch (1) {
-                    //case 1:
+            if (evt.type == SDL_MOUSEBUTTONDOWN) {
+                switch (1) {
+                    case 1:
                         if(r.y<280){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
@@ -41,7 +41,7 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                         r.y += 1;}
                         //break;}
-                    //case 2:
+                    case 2:
                         if (r.x<280){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
@@ -49,8 +49,8 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);
                         r.x += 1;}
-                        //break;}
-                    //case 3:
+                        break;}
+                    case 3:
                         if (s.y>20){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
@@ -58,8 +58,8 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
                         s.x -= 1;}
-                        //break;}
-                    //case 4:
+                        break;}
+                    case 4:
                         if (s.x>20){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
@@ -67,7 +67,7 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
                         s.x -= 1;}
-                        //break;}
+                        break;}
                 
             //}
         //} //else {
