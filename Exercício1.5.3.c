@@ -30,38 +30,39 @@ int main (int argc, char* args[])
         if (isevt) {
             if (evt.type == SDL_KEYDOWN) {
                 switch (evt.key.keysym.sym) {
-                    case r.y<280:
+                    case 1:
+                        if(r.y<280){
                         SDL_SetREnderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetREnderDrawColor(ren, 255,0,0,0);
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);
                         r.y += 1;
-                        break;
-                    case r.x<280:
+                        break;}
+                    case (r.x<280){
                         SDL_SetREnderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetREnderDrawColor(ren, 0,255,0,0);
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);
                         r.x += 1;
-                        break;
-                    case s.y>20:
+                        break;}
+                    case (s.y>20){
                         SDL_SetREnderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetREnderDrawColor(ren, 0,0,255,0);
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
                         s.x -= 1;
-                        break;
-                    case s.x>20:
+                        break;}
+                    case (s.x>20){
                         SDL_SetREnderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetREnderDrawColor(ren, 255,0,255,0);
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
                         s.x -= 1;
-                        break;
+                        break;}
                 }
             }
         } else {
