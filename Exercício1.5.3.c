@@ -31,7 +31,7 @@ int main (int argc, char* args[])
         int isevt = SDL_WaitEventTimeout(&evt, 500);
         if (isevt) {
             if (evt.type == SDL_MOUSEBUTTONDOWN) {
-                switch (evt.key.keysym.sym) {
+                switch () {
                     case 1:
                         if(r.y<280){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
