@@ -39,7 +39,9 @@ SDL_Rect s={280,280,10,10};
             SDL_RenderClear(ren);
             SDL_SetRenderDrawColor(ren, 0x00,0xFF,0x00,0x00);
             SDL_RenderFillRect(ren,&r);      
-            SDL_RenderPresent(ren);
+            SDL_RenderPresent(ren);}
+        }
+      else{
             r.y +=1;}
         }                                
         
@@ -48,9 +50,11 @@ SDL_Rect s={280,280,10,10};
              SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
              SDL_RenderClear(ren);
              SDL_SetRenderDrawColor(ren, 0x00,0x00,0xFF,0x00);
-             SDL_RenderFillRect(ren,&r);
-             r.x +=1;
+             SDL_RenderFillRect(ren,&r);             
              SDL_RenderPresent(ren);}
+         }
+        else{
+          r.x +=1;}
         }  
                             
               
