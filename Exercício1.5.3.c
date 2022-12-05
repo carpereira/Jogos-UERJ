@@ -39,8 +39,8 @@ int main (int argc, char* args[])
                         SDL_SetRenderDrawColor(ren, 255,0,0,0);
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);
-                        r.y += 1;
-                        break;}
+                        r.y += 1;}
+                        //break;}
                     //case 2:
                         if (r.x<280){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
@@ -48,8 +48,8 @@ int main (int argc, char* args[])
                         SDL_SetRenderDrawColor(ren, 0,255,0,0);
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);
-                        r.x += 1;
-                        break;}
+                        r.x += 1;}
+                        //break;}
                     //case 3:
                         if (s.y>20){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
@@ -57,8 +57,8 @@ int main (int argc, char* args[])
                         SDL_SetRenderDrawColor(ren, 0,0,255,0);
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
-                        s.x -= 1;
-                        break;}
+                        s.x -= 1;}
+                        //break;}
                     //case 4:
                         if (s.x>20){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
@@ -66,8 +66,8 @@ int main (int argc, char* args[])
                         SDL_SetRenderDrawColor(ren, 255,0,255,0);
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
-                        s.x -= 1;
-                        break;}
+                        s.x -= 1;}
+                        //break;}
                 
             }
         //} //else {
@@ -81,4 +81,4 @@ int main (int argc, char* args[])
     SDL_DestroyWindow(win);
     SDL_Quit();
 }
-}
+
