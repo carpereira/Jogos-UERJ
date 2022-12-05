@@ -7,7 +7,7 @@ int main (int argc, char* args[])
     SDL_Window* win = SDL_CreateWindow("Animando e Movendo um Retângulo",
                          SDL_WINDOWPOS_UNDEFINED,
                          SDL_WINDOWPOS_UNDEFINED,
-                         200, 100, SDL_WINDOW_SHOWN
+                         300, 300, SDL_WINDOW_SHOWN
                       );
     SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
 
@@ -30,17 +30,37 @@ int main (int argc, char* args[])
         if (isevt) {
             if (evt.type == SDL_KEYDOWN) {
                 switch (evt.key.keysym.sym) {
-                    case SDLK_UP:
-                        r.y -= 5;
+                    case r.y<280:
+                        SDL_SetREnderDrawColor(ren, 255,255,255,0);
+                        SDL_RenderClear(ren);
+                        SDL_SetREnderDrawColor(ren, 255,0,0,0);
+                        SDL_RenderFillRect(ren,&r);
+                        SDL_RenderPresent(ren);
+                        r.y += 1;
                         break;
-                    case SDLK_DOWN:
-                        r.y += 5;
+                    case r.x<280:
+                        SDL_SetREnderDrawColor(ren, 255,255,255,0);
+                        SDL_RenderClear(ren);
+                        SDL_SetREnderDrawColor(ren, 0,255,0,0);
+                        SDL_RenderFillRect(ren,&r);
+                        SDL_RenderPresent(ren);
+                        r.x += 1;
                         break;
-                    case SDLK_LEFT:
-                        r.x -= 5;
+                    case s.y>20:
+                        SDL_SetREnderDrawColor(ren, 255,255,255,0);
+                        SDL_RenderClear(ren);
+                        SDL_SetREnderDrawColor(ren, 0,0,255,0);
+                        SDL_RenderFillRect(ren,&s);
+                        SDL_RenderPresent(ren);
+                        s.x -= 1;
                         break;
-                    case SDLK_RIGHT:
-                        r.x += 5;
+                    case s.x>20:
+                        SDL_SetREnderDrawColor(ren, 255,255,255,0);
+                        SDL_RenderClear(ren);
+                        SDL_SetREnderDrawColor(ren, 255,0,255,0);
+                        SDL_RenderFillRect(ren,&s);
+                        SDL_RenderPresent(ren);
+                        s.x -= 1;
                         break;
                 }
             }
