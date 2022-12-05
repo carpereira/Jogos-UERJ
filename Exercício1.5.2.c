@@ -25,12 +25,14 @@ int main (int argc, char* args[])
         SDL_RenderPresent(ren);
         
         SDL_Event evt;
-        Uint32 antes = SDL_GetTicks();
+        //Uint32 antes = SDL_GetTicks();
+        Uint32 depois = SDL_GetTicks();
         
         //int isevt = SDL_WaitEventTimeout(&evt,espera);
-        int isevt = SDL_AUX_WaitEventTimeout(&evt,espera);
+        int isevt = AUX_WaitEventTimeout(&evt,espera);
         if(isevt){
-            espera -= (SDL_GetTicks() - antes);
+            //espera -= (SDL_GetTicks() - antes);
+            espera -= (SDL_GetTicks() - depois);
             if (espera<0){
                 espera = 0;
             }
