@@ -34,36 +34,36 @@ int main (int argc, char* args[])
                 switch (evt.key.keysym.sym) {
                     case 1:
                         if(r.y<280){
-                        SDL_SetREnderDrawColor(ren, 255,255,255,0);
+                        SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
-                        SDL_SetREnderDrawColor(ren, 255,0,0,0);
+                        SDL_SetRenderDrawColor(ren, 255,0,0,0);
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);
                         r.y += 1;
                         break;}
                     case 2:
                         if (r.x<280){
-                        SDL_SetREnderDrawColor(ren, 255,255,255,0);
+                        SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
-                        SDL_SetREnderDrawColor(ren, 0,255,0,0);
+                        SDL_SetRenderDrawColor(ren, 0,255,0,0);
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);
                         r.x += 1;
                         break;}
                     case 3:
                         if (s.y>20){
-                        SDL_SetREnderDrawColor(ren, 255,255,255,0);
+                        SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
-                        SDL_SetREnderDrawColor(ren, 0,0,255,0);
+                        SDL_SetRenderDrawColor(ren, 0,0,255,0);
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
                         s.x -= 1;
                         break;}
                     case 4:
                         if (s.x>20){
-                        SDL_SetREnderDrawColor(ren, 255,255,255,0);
+                        SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
-                        SDL_SetREnderDrawColor(ren, 255,0,255,0);
+                        SDL_SetRenderDrawColor(ren, 255,0,255,0);
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
                         s.x -= 1;
