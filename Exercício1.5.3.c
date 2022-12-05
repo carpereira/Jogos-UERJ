@@ -68,7 +68,7 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                         s.x -= 1;
                         break;}
-                }
+                
             }
         //} //else {
             //r.x += 2;
