@@ -21,6 +21,11 @@ int main (int argc, char* args[])
         SDL_RenderPresent(ren);
 
         SDL_Event evt;
+        
+        if (evt.type == SDL_QUIT){
+            break;
+        } 
+        
         int isevt = SDL_WaitEventTimeout(&evt, 500);
         if (isevt) {
             if (evt.type == SDL_KEYDOWN) {
