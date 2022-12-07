@@ -29,7 +29,7 @@ int main (int argc, char* args[])
         } 
         
         int isevt = SDL_WaitEventTimeout(&evt,300);
-        //if (isevt) {
+        if (isevt) {
             //while(1){
             //if (evt.type == SDL_COMMON) {
               //  switch (1) {
@@ -72,7 +72,7 @@ int main (int argc, char* args[])
                         break;}*/
                 
             }
-        //} //else {
+        } //else {
             //r.x += 2;
             //r.y += 2;
         //}
