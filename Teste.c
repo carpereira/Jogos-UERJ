@@ -32,7 +32,7 @@ int main (int argc, char* args[])
         if (isevt) {
             //while(1){
             if (evt.type == SDL_KEYDOWN) {
-                switch (1) {
+                switch (evt.key.keysym.sym) {
                     case 1:
                         if(r.y<280){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
