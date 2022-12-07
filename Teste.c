@@ -28,10 +28,10 @@ int main (int argc, char* args[])
             break;
         } 
         
-        int isevt = SDL_WaitEventTimeout(&evt);
+        int isevt = SDL_WaitEventTimeout(&evt,500);
         if (isevt) {
             //while(1){
-            if (1) {
+            if (evt.type == SDL_KEYDOWN) {
                 switch (1) {
                     case 1:
                         if(r.y<280){
