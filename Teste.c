@@ -43,7 +43,7 @@ int main (int argc, char* args[])
                         r.y += 2;}
                         //break;}
                     //case 2:
-        int isevt = SDL_WaitEventTimeout(&evt,300);
+       if (isevt) {
                         if (r.x<280);{
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
@@ -75,7 +75,7 @@ int main (int argc, char* args[])
         } //else {
             //r.x += 2;
             //r.y += 2;
-        //}
+        }
     //}
 
     /* FINALIZACAO */
