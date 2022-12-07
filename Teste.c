@@ -31,7 +31,7 @@ int main (int argc, char* args[])
         int isevt = SDL_WaitEventTimeout(&evt, 1000);
         if (isevt) {
             //while(1){
-            //if (evt.type == SDL_MOUSEBUTTONDOWN) {
+            if (evt.type == SDL_MOUSEBUTTONDOWN) {
                 switch (1) {
                     case 1:
                         if(r.y<280){
