@@ -29,7 +29,7 @@ int main (int argc, char* args[])
         } 
         
         int isevt = SDL_WaitEventTimeout(&evt,300);
-        //if (isevt) {
+        if (isevt) {
             //while(1){
             //if (evt.type == SDL_COMMON) {
               //  switch (1) {
@@ -42,8 +42,9 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                         r.y += 2;}
                         //break;}
+        }
                     //case 2:
-       //if (isevt) {
+       if (isevt) {
                         if (r.x<280);{
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
@@ -51,6 +52,7 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);
                         r.x += 2;}
+       }
                         //break;}
                     /*case 3:
                         if (r.y>20){
