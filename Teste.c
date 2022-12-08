@@ -24,12 +24,14 @@ int main (int argc, char* args[])
 
         SDL_Event evt;
         
+        int isevt = SDL_WaitEventTimeout(&evt,300);
+        
         if (evt.type == SDL_QUIT){
             break;
         } 
         
-        int isevt = SDL_WaitEventTimeout(&evt,300);
-        if (isevt) {
+        //int isevt = SDL_WaitEventTimeout(&evt,300);
+        else if (isevt) {
             //while(1){
             //if (evt.type == SDL_COMMON) {
               //  switch (1) {
@@ -44,7 +46,7 @@ int main (int argc, char* args[])
                         //break;}
         }
                     //case 2:
-       if (isevt) {
+       else if (isevt) {
                         if (r.x<280);{
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
