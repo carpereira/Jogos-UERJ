@@ -46,7 +46,7 @@ int main (int argc, char* args[])
                         break;}
         
                     case 2:
-       else if (isevt) {
+        if (isevt) {
                         if (r.x<280);{
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
@@ -80,7 +80,7 @@ int main (int argc, char* args[])
             //r.x += 2;
             //r.y += 2;
         }
-    //}
+    }
 
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
