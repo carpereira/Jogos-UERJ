@@ -53,8 +53,7 @@ int main (int argc, char* args[])
                         SDL_SetRenderDrawColor(ren, 0,255,0,0);
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);
-                        r.x += 2;
-       
+                        r.x += 2;       
                         break;}
                     /*case 3:
                         if (r.y>20){
@@ -79,7 +78,7 @@ int main (int argc, char* args[])
         } //else {
             //r.x += 2;
             //r.y += 2;
-        }
+        
     }
 
     /* FINALIZACAO */
