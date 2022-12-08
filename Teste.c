@@ -74,7 +74,7 @@ int main (int argc, char* args[])
                         r.x -= 2;
                         break;}
                 
-           //}
+           }
         } //else {
             //r.x += 2;
             //r.y += 2;
