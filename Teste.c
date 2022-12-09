@@ -66,24 +66,24 @@ int main (int argc, char* args[])
             if (evt.type == SDL_KEYDOWN) {
                 switch (2) {
                     case 1:
-                        if(s.y>20){
+                        if(s.x>20){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 255,0,0,0);
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
-                        s.y -= 2;
+                        s.x -= 2;
                         break;}
        
                     case 2:
        //if (isevt) {
-                        if (s.x>20);{
+                        if (s.y>20);{
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,255,0,0);
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
-                        s.x -= 2;       
+                        s.y -= 2;       
                         break;}
                 //}
             //}
