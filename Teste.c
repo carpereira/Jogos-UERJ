@@ -24,8 +24,7 @@ int main (int argc, char* args[])
     SDL_Event evt;
     while(SDL_PollEvent(&evt)){
         switch (evt.type){
-            case SDL_QUIT:
-                quit = SDL_TRUE;
+            case SDL_QUIT:                
                 break;
             case SDL_KEYDOWN:
                 if(r.y<280){
