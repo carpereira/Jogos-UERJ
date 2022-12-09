@@ -98,7 +98,7 @@ int main (int argc, char* args[])
                                 SDL_RenderPresent(ren);
                                 r.y -= 2;
                                 break;}
-                        }
+                       //}
                     case 4:
                         if (r.x>20);{
                             SDL_SetRenderDrawColor(ren, 255,255,255,0);
