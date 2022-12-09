@@ -64,7 +64,7 @@ int main (int argc, char* args[])
                             
                         
              if (isevt) {
-                 SDL_Rect s = {280,280,10,10};
+                 //SDL_Rect s = {280,280,10,10};
             if (evt.type == SDL_KEYDOWN) {
                 
                 switch (2) {
