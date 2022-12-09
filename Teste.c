@@ -21,8 +21,8 @@ int main (int argc, char* args[])
     SDL_RenderPresent(ren);      
 
     SDL_Event evt;
-    while(1)){
-        int isevt = SDL_WaitEventTimeout(&evt,500):
+    while(1){
+        int isevt = SDL_WaitEventTimeout(&evt,500);
         if(isevt){
         switch (evt.type){
             case SDL_QUIT:                
@@ -66,7 +66,7 @@ int main (int argc, char* args[])
                     SDL_RenderPresent(ren);
                     r.x -= 2;
                     break;}
-                
+        }
            
                }
     }
