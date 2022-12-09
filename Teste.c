@@ -13,7 +13,6 @@ int main (int argc, char* args[])
 
     /* EXECUÇÃO */
     SDL_Rect r = { 20,20, 10,10 };
-    //SDL_Rect s = {280,280,10,10};
     
     SDL_SetRenderDrawColor(ren, 255,255,255,0);
     SDL_RenderClear(ren);
@@ -22,7 +21,9 @@ int main (int argc, char* args[])
     SDL_RenderPresent(ren);      
 
     SDL_Event evt;
-    while(SDL_PollEvent(&evt)){
+    while(1)){
+        int isevt = SDL_WaitEventTimeout(&evt,500):
+        if(isevt){
         switch (evt.type){
             case SDL_QUIT:                
                 break;
