@@ -13,7 +13,7 @@ int main (int argc, char* args[])
 
     /* EXECUÇÃO */
     SDL_Rect r = { 20,20, 10,10 };
-    SDL_Rect s = {280,280,10,10};
+    //SDL_Rect s = {280,280,10,10};
     
     SDL_SetRenderDrawColor(ren, 255,255,255,0);
     SDL_RenderClear(ren);
@@ -64,6 +64,7 @@ int main (int argc, char* args[])
                         
             
             if (evt.type == SDL_KEYDOWN) {
+                SDL_Rect s = {280,280,10,10};
                 switch (2) {
                     case 1:
                         if(s.x>20){
