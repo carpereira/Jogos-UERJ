@@ -25,8 +25,9 @@ int main (int argc, char* args[])
     if (evt.type == SDL_QUIT){
         break;
     }
-        int isevt = SDL_WaitEventTimeout(&evt,500);
-        if(isevt){
+    
+    int isevt = SDL_WaitEventTimeout(&evt,500);
+    if(isevt){
         switch (1){
             case SDL_KEYDOWN:
                 if(r.y<280){
