@@ -86,7 +86,7 @@ int main (int argc, char* args[])
                         s.x -= 2;       
                         break;}
                 }
-            }
+            //}
                     /*case 3:
                         if (r.y==280 && r.x==280);{
                             if(r.y>20);{
