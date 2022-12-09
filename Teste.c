@@ -61,7 +61,31 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                         r.x += 2;       
                         break;}
-                    case 3:
+                        
+            
+            if (evt.type == SDL_KEYDOWN) {
+                switch (1) {
+                    case 1:
+                        if(s.y>20){
+                        SDL_SetRenderDrawColor(ren, 255,255,255,0);
+                        SDL_RenderClear(ren);
+                        SDL_SetRenderDrawColor(ren, 255,0,0,0);
+                        SDL_RenderFillRect(ren,&s);
+                        SDL_RenderPresent(ren);
+                        s.y -= 2;
+                        break;}
+       
+                    case 2:
+       //if (isevt) {
+                        if (s.x>20);{
+                        SDL_SetRenderDrawColor(ren, 255,255,255,0);
+                        SDL_RenderClear(ren);
+                        SDL_SetRenderDrawColor(ren, 0,255,0,0);
+                        SDL_RenderFillRect(ren,&s);
+                        SDL_RenderPresent(ren);
+                        s.x += 2;       
+                        break;}
+                    /*case 3:
                         if (r.y==280 && r.x==280);{
                             if(r.y>20);{
                                 SDL_SetRenderDrawColor(ren, 255,255,255,0);
@@ -80,7 +104,7 @@ int main (int argc, char* args[])
                             SDL_RenderFillRect(ren,&r);
                             SDL_RenderPresent(ren);
                             r.x -= 2;
-                            break;}
+                            break;}*/
                 
            }
         } //else {
