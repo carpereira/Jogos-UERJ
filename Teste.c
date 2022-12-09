@@ -64,7 +64,7 @@ int main (int argc, char* args[])
                         
             
             if (evt.type == SDL_KEYDOWN) {
-                switch (1) {
+                switch (2) {
                     case 1:
                         if(s.y>20){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
@@ -83,7 +83,7 @@ int main (int argc, char* args[])
                         SDL_SetRenderDrawColor(ren, 0,255,0,0);
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
-                        s.x += 2;       
+                        s.x -= 2;       
                         break;}
                 }
             }
