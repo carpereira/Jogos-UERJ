@@ -13,7 +13,7 @@ int main (int argc, char* args[])
 
     /* EXECUÇÃO */
     SDL_Rect r = { 20,20, 10,10 };
-    SDL_Rect s = {280,280,10,10};
+    //SDL_Rect s = {280,280,10,10};
     
     SDL_SetRenderDrawColor(ren, 255,255,255,0);
     SDL_RenderClear(ren);
@@ -21,102 +21,56 @@ int main (int argc, char* args[])
     SDL_RenderFillRect(ren, &r);
     SDL_RenderPresent(ren);
     
-    while (1) {        
+    //while (1) {        
 
-        SDL_Event evt;   
+    SDL_Event evt;
+    while(SDL_PollEvent(&event)){
+        switch (event,type){
+            case SDL_QUIT:
+                quit = SDL_TRUE;
+                break;
+            case SDL_KEYDOWN:
+                if(r.y<280){
+                    SDL_SetRenderDrawColor(ren, 255,255,255,0);
+                    SDL_RenderClear(ren);
+                    SDL_SetRenderDrawColor(ren, 255,0,0,0);
+                    SDL_RenderFillRect(ren,&r);
+                    SDL_RenderPresent(ren);
+                    r.y += 2;
+                    break;}
         
-        if (evt.type == SDL_QUIT){
-            break;
-        } 
-        
-        int isevt = SDL_WaitEventTimeout(&evt,300);
-        if (isevt) {            
-            if (evt.type == SDL_KEYDOWN) {
-                switch (1) {
-                    case 1:
-                        if(r.y<280){
-                        SDL_SetRenderDrawColor(ren, 255,255,255,0);
-                        SDL_RenderClear(ren);
-                        SDL_SetRenderDrawColor(ren, 255,0,0,0);
-                        SDL_RenderFillRect(ren,&r);
-                        SDL_RenderPresent(ren);
-                        r.y += 2;
-                        break;}
-        
-                    case 2:
-       //if (isevt) {
-                        if (r.x<280);{
-                        SDL_SetRenderDrawColor(ren, 255,255,255,0);
-                        SDL_RenderClear(ren);
-                        SDL_SetRenderDrawColor(ren, 0,255,0,0);
-                        SDL_RenderFillRect(ren,&r);
-                        SDL_RenderPresent(ren);
-                        r.x += 2;       
-                        break;}
-                        
-                    case 3:
-                        if(r.x==280 && r.y==280);{
-                            SDL_SetRenderDrawColor(ren, 255,255,255,0);
-                            SDL_RenderClear(ren);
-                            SDL_SetRenderDrawColor(ren, 0,0,255,0);
-                            SDL_RenderFillRect(ren, &s);
-                            SDL_RenderPresent(ren);}
-                            
-                        
-             if (isevt) {
-                 //SDL_Rect s = {280,280,10,10};
-            if (evt.type == SDL_KEYDOWN) {
+            case SDL_KEYDOWN:
+                if (r.x<280);{
+                    SDL_SetRenderDrawColor(ren, 255,255,255,0);
+                    SDL_RenderClear(ren);
+                    SDL_SetRenderDrawColor(ren, 0,255,0,0);
+                    SDL_RenderFillRect(ren,&r);
+                    SDL_RenderPresent(ren);
+                    r.x += 2;       
+                    break;}
                 
-                switch (2) {
-                    case 1:
-                        if(s.x>20){
-                        SDL_SetRenderDrawColor(ren, 255,255,255,0);
-                        SDL_RenderClear(ren);
-                        SDL_SetRenderDrawColor(ren, 255,0,0,0);
-                        SDL_RenderFillRect(ren,&s);
-                        SDL_RenderPresent(ren);
-                        s.x -= 2;
-                        break;}
-       
-                    case 2:
-       //if (isevt) {
-                        if (s.y>20);{
-                        SDL_SetRenderDrawColor(ren, 255,255,255,0);
-                        SDL_RenderClear(ren);
-                        SDL_SetRenderDrawColor(ren, 0,255,0,0);
-                        SDL_RenderFillRect(ren,&s);
-                        SDL_RenderPresent(ren);
-                        s.y -= 2;       
-                        break;}
-                }
-            }
-             }
-                    /*case 3:
-                        //if (r.y==280 && r.x==280);{
-                            if(r.y>20);{
-                                SDL_SetRenderDrawColor(ren, 255,255,255,0);
-                                SDL_RenderClear(ren);
-                                SDL_SetRenderDrawColor(ren, 0,0,255,0);
-                                SDL_RenderFillRect(ren,&r);
-                                SDL_RenderPresent(ren);
-                                r.y -= 2;
-                                break;}
-                       //}
-                    case 4:
-                        if (r.x>20);{
-                            SDL_SetRenderDrawColor(ren, 255,255,255,0);
-                            SDL_RenderClear(ren);
-                            SDL_SetRenderDrawColor(ren, 255,0,255,0);
-                            SDL_RenderFillRect(ren,&r);
-                            SDL_RenderPresent(ren);
-                            r.x -= 2;
-                            break;}*/
+            case SDL_KEYDOWN:
+                if (r.y>20);{
+                    SDL_SetRenderDrawColor(ren, 255,255,255,0);
+                    SDL_RenderClear(ren);
+                    SDL_SetRenderDrawColor(ren, 0,255,0,0);
+                    SDL_RenderFillRect(ren,&r);
+                    SDL_RenderPresent(ren);
+                    r.y -= 2;       
+                    break;}
+                
+            case SDL_KEYDOWN:
+                if (r.x>20);{
+                    SDL_SetRenderDrawColor(ren, 255,255,255,0);
+                    SDL_RenderClear(ren);
+                    SDL_SetRenderDrawColor(ren, 255,0,255,0);
+                    SDL_RenderFillRect(ren,&r);
+                    SDL_RenderPresent(ren);
+                    r.x -= 2;
+                    break;}
                 
            }
-        } //else {
-            //r.x += 2;
-            //r.y += 2;
-        }
+               }
     }
 
     /* FINALIZACAO */
