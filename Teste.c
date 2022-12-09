@@ -23,7 +23,7 @@ int main (int argc, char* args[])
 
     SDL_Event evt;
     while(SDL_PollEvent(&evt)){
-        switch (event.type){
+        switch (evt.type){
             case SDL_QUIT:
                 quit = SDL_TRUE;
                 break;
