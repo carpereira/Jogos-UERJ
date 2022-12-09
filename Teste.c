@@ -37,7 +37,7 @@ int main (int argc, char* args[])
                     r.y += 2;
                     break;}
         
-            case SDL_KEYDOWN:
+            //case SDL_KEYDOWN:
                 if (r.x<280);{
                     SDL_SetRenderDrawColor(ren, 255,255,255,0);
                     SDL_RenderClear(ren);
@@ -47,7 +47,7 @@ int main (int argc, char* args[])
                     r.x += 2;       
                     break;}
                 
-            case SDL_KEYDOWN:
+            //case SDL_KEYDOWN:
                 if (r.y>20);{
                     SDL_SetRenderDrawColor(ren, 255,255,255,0);
                     SDL_RenderClear(ren);
@@ -57,7 +57,7 @@ int main (int argc, char* args[])
                     r.y -= 2;       
                     break;}
                 
-            case SDL_KEYDOWN:
+            //case SDL_KEYDOWN:
                 if (r.x>20);{
                     SDL_SetRenderDrawColor(ren, 255,255,255,0);
                     SDL_RenderClear(ren);
