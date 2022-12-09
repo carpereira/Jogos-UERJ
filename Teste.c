@@ -50,6 +50,7 @@ int main (int argc, char* args[])
                     SDL_RenderPresent(ren);
                     r.x += 2;       
                     break;}
+        }
                 
             switch (2){
             case SDL_KEYDOWN:
@@ -75,7 +76,7 @@ int main (int argc, char* args[])
         }
            
               }
-    }
+    
     }
 
     /* FINALIZACAO */
