@@ -26,7 +26,7 @@ int main (int argc, char* args[])
         if(isevt){
         switch (evt.type){
             case SDL_QUIT:                
-                break;
+                break;}
             case SDL_KEYDOWN:
                 if(r.y<280){
                     SDL_SetRenderDrawColor(ren, 255,255,255,0);
