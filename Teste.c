@@ -22,12 +22,7 @@ int main (int argc, char* args[])
         SDL_RenderPresent(ren);
     
     while (1) {
-        /*SDL_SetRenderDrawColor(ren, 255,255,255,0);
-        SDL_RenderClear(ren);
-        SDL_SetRenderDrawColor(ren, 0,0,255,0);
-        SDL_RenderFillRect(ren, &r);
-        SDL_RenderPresent(ren);*/
-
+        
         SDL_Event evt;
         
         if (evt.type == SDL_QUIT){
@@ -77,9 +72,9 @@ int main (int argc, char* args[])
                         break;}                
             }
         }   
-            else{
-                r.x=150;
-                r.y=150;
+            //else{
+                //r.x=150;
+                //r.y=150;
         }
     }
     }
