@@ -30,6 +30,7 @@ int main (int argc, char* args[])
           
     
     if (evt.type == SDL_QUIT){
+        close = 1;
         break;
     }
     
