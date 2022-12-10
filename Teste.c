@@ -12,7 +12,7 @@ int main (int argc, char* args[])
     SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
 
     /* EXECUÇÃO */
-    SDL_Rect r = { 20,20, 20,20 };
+    SDL_Rect r = { 0,0, 20,20 };
     //SDL_Rect s = {280,280,10,10};
     
         SDL_SetRenderDrawColor(ren, 255,255,255,0);
