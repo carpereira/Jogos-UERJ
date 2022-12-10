@@ -14,25 +14,22 @@ int main (int argc, char* args[])
     
 
     /* EXECUÇÃO */
-    SDL_Rect r = { 100,100, 20,20 };
-    //SDL_Rect s = { 100,100, 20,20 };
-    
-    
+    SDL_Rect r = { 40,20, 10,10 };    
     SDL_Event evt;
-    while (1) {        
+    while (1) {
         SDL_SetRenderDrawColor(ren, 255,255,255,0);
         SDL_RenderClear(ren);
-        SDL_SetRenderDrawColor(ren, 255,0,0,0);
+        SDL_SetRenderDrawColor(ren, 0,0,255,0);
         SDL_RenderFillRect(ren, &r);       
-        SDL_RenderPresent(ren);
+        SDL_RenderPresent(ren);              
         
-        SDL_WaitEvent(&evt);        
+        SDL_WaitEvent(&evt);
+        
         if (evt.type == SDL_QUIT){
             break;
         }
-
             
-        /*if (evt.type == SDL_MOUSEBUTTONDOWN){
+        if (evt.type == SDL_MOUSEBUTTONDOWN){
             r.x=evt.motion.x, r.y=evt.motion.y;   
             SDL_SetRenderDrawColor(ren, 255,255,255,0);
             SDL_RenderClear(ren);
@@ -41,10 +38,8 @@ int main (int argc, char* args[])
             SDL_RenderFillRect(ren, &r);
             SDL_RenderPresent(ren);            
             //r.x, r.y;
-            //SDL_Delay(300);
-            
-        }*/
-     
+            //SDL_Delay(300);            
+        }     
                   
         if (evt.type == SDL_MOUSEBUTTONDOWN){
             SDL_SetRenderDrawColor(ren, 255,255,255,0);              
