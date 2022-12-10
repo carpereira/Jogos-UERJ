@@ -14,6 +14,7 @@ int main (int argc, char* args[])
     /* EXECUÇÃO */
     SDL_Rect r = { 0,0, 20,20 };
     SDL_Rect s = {280,280,20,20};
+    SDL_Rect t = {150,150,20,20};
     
         SDL_SetRenderDrawColor(ren, 255,255,255,0);
         SDL_RenderClear(ren);
@@ -30,8 +31,7 @@ int main (int argc, char* args[])
         } 
         
         int isevt = SDL_WaitEventTimeout(&evt, 1000);
-        if (isevt) {
-            //while(1){
+        if (isevt) {            
             if (evt.type == SDL_KEYDOWN) {
                 switch (1) {
                     case 1:
@@ -69,14 +69,17 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
                         s.x -= 2;
-                        break;}                
+                        break;} 
+                    case 5:                        
+                        SDL_SetRenderDrawColor(ren, 0,0,0,0);
+                        SDL_RenderClear(ren);
+                        SDL_SetRenderDrawColor(ren, 255,255,255,0);
+                        SDL_RenderFillRect(ren,&t);
+                        SDL_RenderPresent(ren);                        
+                        break;
             }
         }   
-            //else{
-                //r.x=150;
-                //r.y=150;
-        //}
-    }
+                }
     }
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
