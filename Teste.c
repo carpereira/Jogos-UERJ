@@ -14,6 +14,7 @@ int main (int argc, char* args[])
     /* EXECUÇÃO */
     SDL_Rect r = { 0,0, 20,20 };
     SDL_Rect s = {280,280,20,20};
+    SDL_Rect t = {0,0,20,20};
     
         SDL_SetRenderDrawColor(ren, 255,255,255,0);
         SDL_RenderClear(ren);
@@ -69,13 +70,23 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
                         s.x -= 2;
-                        break;}                
+                        break;} 
+                    case 5:
+                        if (t.x=0 && t.y=0){
+                        SDL_SetRenderDrawColor(ren, 255,255,255,0);
+                        SDL_RenderClear(ren);
+                        SDL_SetRenderDrawColor(ren, 0,255,255,0);
+                        SDL_RenderFillRect(ren,&t);
+                        SDL_RenderPresent(ren);
+                        s.x = 150;
+                        s.y = 150;
+                        break;} 
             }
         }   
-            else{
-                r.x=150;
-                r.y=150;
-        }
+            //else{
+                //r.x=150;
+                //r.y=150;
+        //}
     }
     }
     /* FINALIZACAO */
