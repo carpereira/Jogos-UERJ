@@ -61,7 +61,7 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                         r.y -= 2;
                         break;}
-                    case 4:
+                    /*case 4:
                         if (r.x>0){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
@@ -69,7 +69,7 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);
                         r.x -= 2;
-                        break;}                
+                        break;}*/                
             }
         }   
             //else{
