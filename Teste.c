@@ -67,7 +67,7 @@ int main (int argc, char* args[])
                         r.y -= 2;
                         break;}
                     case 4:
-                        if (r.x>0){
+                        if (r.x>0) || r.x==280){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,255,255,0);
