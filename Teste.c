@@ -1,88 +1,173 @@
 #include <SDL2/SDL.h>
 
+
 int main (int argc, char* args[])
 {
     /* INICIALIZACAO */
     SDL_Init(SDL_INIT_EVERYTHING);
-    SDL_Window* win = SDL_CreateWindow("Animando e Movendo um Retângulo",
+    SDL_Window* win = SDL_CreateWindow("Movendo um Retângulo",
                          SDL_WINDOWPOS_UNDEFINED,
                          SDL_WINDOWPOS_UNDEFINED,
-                         300, 300, SDL_WINDOW_SHOWN
+                         200, 200, SDL_WINDOW_SHOWN
                       );
     SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
+    
 
     /* EXECUÇÃO */
-    SDL_Rect r = { 0,0, 20,20 };
-    SDL_Rect s = {280,280,20,20};
-    SDL_Rect t = {150,150,20,20};
+    SDL_Rect r = { 100,100, 20,20 };
+    //SDL_Rect s = { 100,100, 20,20 };
     
+    
+    SDL_Event evt;
+    while (1) {        
         SDL_SetRenderDrawColor(ren, 255,255,255,0);
         SDL_RenderClear(ren);
-        SDL_SetRenderDrawColor(ren, 0,0,255,0);
-        SDL_RenderFillRect(ren, &r);
+        SDL_SetRenderDrawColor(ren, 255,0,0,0);
+        SDL_RenderFillRect(ren, &r);       
         SDL_RenderPresent(ren);
-    
-    while (1) {
         
-        SDL_Event evt;
-        
+        SDL_WaitEvent(&evt);        
         if (evt.type == SDL_QUIT){
             break;
-        } 
-        
-        int isevt = SDL_WaitEventTimeout(&evt, 1000);
-        if (isevt) {            
-            if (evt.type == SDL_KEYDOWN) {
-                switch (1) {
-                    case 1:
-                        if(r.y<280){
-                        SDL_SetRenderDrawColor(ren, 255,255,255,0);
-                        SDL_RenderClear(ren);
-                        SDL_SetRenderDrawColor(ren, 255,0,0,0);
-                        SDL_RenderFillRect(ren,&r);
-                        SDL_RenderPresent(ren);
-                        r.y += 2;
-                        break;}
-                    case 2:
-                        if (r.x<280){
-                        SDL_SetRenderDrawColor(ren, 255,255,255,0);
-                        SDL_RenderClear(ren);
-                        SDL_SetRenderDrawColor(ren, 0,255,0,0);
-                        SDL_RenderFillRect(ren,&r);
-                        SDL_RenderPresent(ren);
-                        r.x += 2;
-                        break;}
-                    case 3:
-                        if (s.y>0){
-                        SDL_SetRenderDrawColor(ren, 255,255,255,0);
-                        SDL_RenderClear(ren);
-                        SDL_SetRenderDrawColor(ren, 0,0,255,0);
-                        SDL_RenderFillRect(ren,&s);
-                        SDL_RenderPresent(ren);
-                        s.y -= 2;
-                        break;}
-                    case 4:
-                        if (s.x>0){
-                        SDL_SetRenderDrawColor(ren, 255,255,255,0);
-                        SDL_RenderClear(ren);
-                        SDL_SetRenderDrawColor(ren, 0,255,255,0);
-                        SDL_RenderFillRect(ren,&s);
-                        SDL_RenderPresent(ren);
-                        s.x -= 2;
-                        break;} 
-                    case 5:                        
-                        SDL_SetRenderDrawColor(ren, 255,255,255,0);
-                        SDL_RenderClear(ren);
-                        SDL_SetRenderDrawColor(ren, 0,0,0,0);
-                        SDL_RenderFillRect(ren,&t);
-                        SDL_RenderPresent(ren);                        
-                        break;
-            }
+        }
+
+            
+        /*if (evt.type == SDL_MOUSEBUTTONDOWN){
+            r.x=evt.motion.x, r.y=evt.motion.y;   
+            SDL_SetRenderDrawColor(ren, 255,255,255,0);
+            SDL_RenderClear(ren);
+            SDL_SetRenderDrawColor(ren, 255,0,0,0);
+            //SDL_Rect r = { r.x,r.y, 20,20 };
+            SDL_RenderFillRect(ren, &r);
+            SDL_RenderPresent(ren);            
+            //r.x, r.y;
+            //SDL_Delay(300);
+            
+        }*/
+     
+                  
+        if (evt.type == SDL_MOUSEBUTTONDOWN){
+            SDL_SetRenderDrawColor(ren, 255,255,255,0);              
+            SDL_RenderClear(ren);            
+            SDL_SetRenderDrawColor(ren, 0,255,255,0);            
+            SDL_RenderFillRect(ren, &r);            
+            SDL_RenderPresent(ren);
         }   
-                }
+        
+               
+           /*if (evt.type == SDL_MOUSEBUTTONDOWN){
+            SDL_SetRenderDrawColor(ren, 255,255,255,0);              
+            SDL_RenderClear(ren);            
+            SDL_SetRenderDrawColor(ren, 0,255,255,0);            
+            SDL_RenderFillRect(ren, &r);            
+            SDL_RenderPresent(ren);
+            r.x=evt.motion.x, r.y=evt.motion.y;
+            SDL_Delay(200);
+        }
+        
+         if (evt.type == SDL_MOUSEBUTTONDOWN){
+            SDL_SetRenderDrawColor(ren, 255,255,255,0);              
+            SDL_RenderClear(ren);            
+            SDL_SetRenderDrawColor(ren, 255,255,0,0);            
+            SDL_RenderFillRect(ren, &r);            
+            SDL_RenderPresent(ren);
+            r.x=evt.motion.x, r.y=evt.motion.y;
+            SDL_Delay(200);
+        }
+        
+        if (evt.type == SDL_MOUSEBUTTONDOWN){
+            SDL_SetRenderDrawColor(ren, 255,255,255,0);              
+            SDL_RenderClear(ren);            
+            SDL_SetRenderDrawColor(ren, 255,0,0,0);            
+            SDL_RenderFillRect(ren, &r);            
+            SDL_RenderPresent(ren);
+            r.x=evt.motion.x, r.y=evt.motion.y;
+            SDL_Delay(200);
+        }
+            
+         if (evt.type == SDL_MOUSEBUTTONDOWN){
+            SDL_SetRenderDrawColor(ren, 255,255,255,0);              
+            SDL_RenderClear(ren);            
+            SDL_SetRenderDrawColor(ren, 0,255,0,0);            
+            SDL_RenderFillRect(ren, &r);            
+            SDL_RenderPresent(ren);
+            r.x=evt.motion.x, r.y=evt.motion.y;
+            SDL_Delay(200);
+        }
+        
+        if (evt.type == SDL_MOUSEBUTTONDOWN){
+            SDL_SetRenderDrawColor(ren, 255,255,255,0);              
+            SDL_RenderClear(ren);            
+            SDL_SetRenderDrawColor(ren, 200,0,100,0);            
+            SDL_RenderFillRect(ren, &r);            
+            SDL_RenderPresent(ren);
+            r.x=evt.motion.x, r.y=evt.motion.y;
+            SDL_Delay(200);
+        }
+        
+        if (evt.type == SDL_MOUSEBUTTONDOWN){
+            SDL_SetRenderDrawColor(ren, 255,255,255,0);              
+            SDL_RenderClear(ren);            
+            SDL_SetRenderDrawColor(ren, 0,100,255,0);            
+            SDL_RenderFillRect(ren, &r);            
+            SDL_RenderPresent(ren);
+            r.x=evt.motion.x, r.y=evt.motion.y;
+            SDL_Delay(200);
+        }
+        
+        if (evt.type == SDL_MOUSEBUTTONDOWN){
+            SDL_SetRenderDrawColor(ren, 255,255,255,0);              
+            SDL_RenderClear(ren);            
+            SDL_SetRenderDrawColor(ren, 100,100,100,0);            
+            SDL_RenderFillRect(ren, &r);            
+            SDL_RenderPresent(ren);
+            r.x=evt.motion.x, r.y=evt.motion.y;
+            SDL_Delay(200);
+        }
+        
+        if (evt.type == SDL_MOUSEBUTTONDOWN){
+            SDL_SetRenderDrawColor(ren, 255,255,255,0);              
+            SDL_RenderClear(ren);            
+            SDL_SetRenderDrawColor(ren, 100,0,100,0);            
+            SDL_RenderFillRect(ren, &r);            
+            SDL_RenderPresent(ren);
+            r.x=evt.motion.x, r.y=evt.motion.y;
+            SDL_Delay(200);
+        }*/
+        
+        if (evt.type == SDL_KEYDOWN) {            
+            switch (evt.key.keysym.sym) {
+                case SDLK_UP:
+                    if (r.y>0){
+                        r.y -= 5;
+                        break;}
+                    else {r.y=0;    
+                        break;}
+                case SDLK_DOWN:
+                    if(r.y<190){
+                        r.y += 5;
+                        break;}
+                    else {r.y=190;
+                        break;}
+                case SDLK_LEFT:
+                    if(r.x>0){
+                        r.x -= 5;
+                        break;}
+                    else {r.x>0;
+                        break;}
+                case SDLK_RIGHT:
+                    if(r.x<190){
+                        r.x += 5;
+                    break;}
+                    else {r.x=190;
+                        break;}                    
+            }
+        }
     }
+        
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
     SDL_DestroyWindow(win);
     SDL_Quit();
 }
+     
