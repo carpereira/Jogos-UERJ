@@ -75,7 +75,7 @@ int main (int argc, char* args[])
             //else{
                 //r.x=150;
                 //r.y=150;
-        }
+        //}
     }
     }
     /* FINALIZACAO */
