@@ -70,7 +70,7 @@ int main (int argc, char* args[])
                         if (r.x>20){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
-                        SDL_SetRenderDrawColor(ren, 255,0,255,0);
+                        SDL_SetRenderDrawColor(ren, 0,255,255,0);
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);
                         r.x -= 2;
