@@ -20,7 +20,8 @@ int main (int argc, char* args[])
     SDL_RenderFillRect(ren, &r);
     SDL_RenderPresent(ren);
     
-    while(1){
+    int close=0;
+    while(!close){
     
         
 
