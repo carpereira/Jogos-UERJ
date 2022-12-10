@@ -72,10 +72,10 @@ int main (int argc, char* args[])
                         break;}                
             }
         }   
-            //else{
-                //r.x=150;
-                //r.y=150;
-        //}
+            else{
+                r.x=150;
+                r.y=150;
+        }
     }
     }
     /* FINALIZACAO */
