@@ -79,9 +79,9 @@ int main (int argc, char* args[])
                     SDL_RenderPresent(ren);
                     r.x -= 2;
                     break;}
-        }
+        
            
-              }
+              
     
     }
 
