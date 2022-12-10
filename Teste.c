@@ -13,7 +13,7 @@ int main (int argc, char* args[])
 
     /* EXECUÇÃO */
     SDL_Rect r = { 0,0, 20,20 };
-    SDL_Rect s = {280,280,10,10};
+    SDL_Rect s = {280,280,20,20};
     
         SDL_SetRenderDrawColor(ren, 255,255,255,0);
         SDL_RenderClear(ren);
