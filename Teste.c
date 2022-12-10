@@ -81,8 +81,8 @@ int main (int argc, char* args[])
                 r.x=150;
                 r.y=150;
         }
-    //}
-
+    }
+    }
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
     SDL_DestroyWindow(win);
