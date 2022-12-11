@@ -149,7 +149,7 @@ int main (int argc, char* args[])
             }
         }
     }
-}    
+   
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
     SDL_DestroyWindow(win);
