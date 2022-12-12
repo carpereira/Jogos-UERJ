@@ -124,7 +124,7 @@ case 5:
             SDL_RenderFillRect(ren, &r);            
             SDL_RenderPresent(ren);            
         //} */                
-                      }                   
+                      //}                   
             }
         }
     }
