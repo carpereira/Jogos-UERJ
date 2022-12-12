@@ -24,7 +24,7 @@ int main (int argc, char* args[])
     SDL_Event evt;
    // while (1) {
                
-        while (SDL_WaitEvent(&evt)){      
+        while (SDL_PollEvent(&evt)){      
         
         if (evt.type == SDL_QUIT){
             break;
@@ -33,25 +33,26 @@ int main (int argc, char* args[])
         //int isevt = SDL_WaitEevntTimeout(&evt, 1000);
         //if (isevt){
             if (evt.type == SDL_MOUSEBUTTONDOWN){
-                switch(1){
-                    case 1:
+                //switch(1){
+                    //case 1:
                         r.x=evt.motion.x, r.y=evt.motion.y;   
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);            
                         SDL_SetRenderDrawColor(ren, 255,0,0,0);            
                         SDL_RenderFillRect(ren, &r);
                         SDL_RenderPresent(ren);            
-        //}     
+        }     
                   
-                case 2:
-            //r.x=evt.motion.x, r.y=evt.motion.y;
+               //case 2:
+            if (evt.type == SDL_MOUSEBUTTONDOWN){
+            r.x=evt.motion.x, r.y=evt.motion.y;
             SDL_Rect s = {evt.motion.x, evt.motion.y, 10,10 };     
             SDL_SetRenderDrawColor(ren, 255,255,255,0);            
             SDL_SetRenderDrawColor(ren, 0,255,0,0);            
             SDL_RenderFillRect(ren, &s);            
             SDL_RenderPresent(ren);            
-        //}           
+        }           
                
-        case 3:
+        /*case 3:
             r.x=evt.motion.x, r.y=evt.motion.y;
             SDL_SetRenderDrawColor(ren, 255,255,255,0);
             //SDL_RenderPresent(ren); 
@@ -118,7 +119,7 @@ case 5:
             SDL_SetRenderDrawColor(ren, 100,0,100,0);            
             SDL_RenderFillRect(ren, &r);            
             SDL_RenderPresent(ren);            
-        //}                 
+        //} */                
                                  
             }
         }
