@@ -22,7 +22,7 @@ int main (int argc, char* args[])
     SDL_RenderPresent(ren);    
     
     SDL_Event evt;
-   /while (1) {
+   while (1) {
                
         //while (SDL_PollEvent(&evt)){ 
        SDL_WaitEvent(&evt);
@@ -34,7 +34,7 @@ int main (int argc, char* args[])
         //int isevt = SDL_WaitEevntTimeout(&evt, 1000);
         //if (isevt){
             if (evt.type == SDL_MOUSEBUTTONDOWN){
-                while(SDL_WaitEvent(&evt){
+                //while(SDL_WaitEvent(&evt){
                 switch(1){
                     /*case 1:
                         r.x=evt.motion.x, r.y=evt.motion.y;   
