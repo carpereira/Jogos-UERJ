@@ -45,7 +45,7 @@ int main (int argc, char* args[])
                         break;
        // }     
                   
-               case 1:            
+               case 2:            
             r.x=evt.motion.x, r.y=evt.motion.y;                 
             SDL_SetRenderDrawColor(ren, 255,255,255,0);            
             SDL_SetRenderDrawColor(ren, 0,255,0,0);            
