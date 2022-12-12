@@ -43,7 +43,7 @@ int main (int argc, char* args[])
         }     
                   
                //case 2:
-            else {//(evt.type == SDL_MOUSEBUTTONDOWN){
+            else if {//(evt.type == SDL_MOUSEBUTTONDOWN){
             r.x=evt.motion.x, r.y=evt.motion.y;
             SDL_Rect s = {evt.motion.x, evt.motion.y, 10,10 };     
             SDL_SetRenderDrawColor(ren, 255,255,255,0);            
