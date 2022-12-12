@@ -120,7 +120,7 @@ case 5:
             SDL_RenderPresent(ren);            
         //}                 
                                  
-            }
+            //}
         }
     }
    
