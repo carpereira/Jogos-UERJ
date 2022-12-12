@@ -22,9 +22,9 @@ int main (int argc, char* args[])
     SDL_RenderPresent(ren);    
     
     SDL_Event evt;
-   // while (1) {
+   /while (1) {
                
-        while (SDL_PollEvent(&evt)){      
+        //while (SDL_PollEvent(&evt)){      
         
         if (evt.type == SDL_QUIT){
             break;
