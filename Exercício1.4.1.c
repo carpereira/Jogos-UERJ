@@ -25,8 +25,8 @@ int main (int argc, char* args[])
    while (1) {
                
         //while (SDL_PollEvent(&evt)){ 
-       //SDL_WaitEvent(&evt);
-       SDL_PollEvent(&evt);
+       SDL_WaitEvent(&evt);
+       //SDL_PollEvent(&evt);
         
         if (evt.type == SDL_QUIT){
             break;
