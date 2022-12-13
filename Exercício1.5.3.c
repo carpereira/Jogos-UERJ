@@ -35,42 +35,46 @@ int main (int argc, char* args[])
             if (evt.type != SDL_QUIT) {
             //if (evt.type == SDL_KEYDOWN) {                
                 switch (1) {
-                    case 1:
-                        if(r.y<280){
+                    //case 1:
+                        //if(r.y<280){
+                    case (r.y<280):
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 255,0,0,0);
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);
                         r.y += 2;
-                        break;}
-                    case 2:
-                        if (r.x<280){
+                        break;//}
+                    //case 2:
+                        //if (r.x<280){
+                    case (r.x<280):
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,255,0,0);
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);
                         r.x += 2;
-                        break;}
-                    case 3:
-                        if (s.y>0){
+                        break;//}
+                    //case 3:
+                        //if (s.y>0){
+                    case (s.y<0):
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,0,255,0);
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
                         s.y -= 2;
-                        break;}
-                    case 4:
-                        if (s.x>0){
+                        break;//}
+                    //case 4:
+                        //if (s.x>0){
+                    case (s.x<0):
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,255,255,0);
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
                         s.x -= 2;
-                        break;} 
+                        break;//} 
                     case 5:                        
                         SDL_SetRenderDrawColor(ren, 0,0,0,0);
                         SDL_RenderClear(ren);
