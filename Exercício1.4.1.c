@@ -32,8 +32,8 @@ int main (int argc, char* args[])
             break;
         }
             
-        //int isevt = SDL_WaitEevntTimeout(&evt, 1000);
-        //if (isevt){
+        int isevt = SDL_WaitEventTimeout(&evt, 1000);
+        if (isevt){
        SDL_WaitEvent(&evt);
             if (evt.type == SDL_MOUSEBUTTONDOWN){                
                         r.x=evt.motion.x, r.y=evt.motion.y;   
@@ -107,7 +107,7 @@ int main (int argc, char* args[])
             SDL_RenderFillRect(ren, &r);            
             SDL_RenderPresent(ren);            
         //} */                
-                      //}                   
+                      }                   
             //}
         //}
     }
