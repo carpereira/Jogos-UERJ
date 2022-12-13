@@ -30,11 +30,12 @@ int main (int argc, char* args[])
             break;
         } 
         
-        int isevt = SDL_WaitEventTimeout(&evt, 500);
-        if (isevt) {            
+        //int isevt = SDL_WaitEventTimeout(&evt, 500);
+        int isevt = SDL_WaitEvent(&evt);
+        if (sevt) {            
             //if (evt.type == SDL_KEYDOWN) { 
-                switch (if (!= SDL_QUIT)) {
-                //switch (1) {
+                //switch (if (!= SDL_QUIT)) {
+                switch (1) {
                     case 1:
                         if(r.y<280){                    
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
