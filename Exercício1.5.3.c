@@ -33,7 +33,7 @@ int main (int argc, char* args[])
         int isevt = SDL_WaitEventTimeout(&evt, 500);
         if (isevt) {            
             //if (evt.type == SDL_KEYDOWN) { 
-                switch (evt.type != SDL_QUIT) {
+                switch (!= SDL_QUIT) {
                 //switch (1) {
                     case 1:
                         if(r.y<280){                    
