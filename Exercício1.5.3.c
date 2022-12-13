@@ -30,8 +30,8 @@ int main (int argc, char* args[])
             break;
         } 
         
-        int isevt = SDL_WaitEventTimeout(&evt, 1000);
-        if (isevt) {            
+        //int isevt = SDL_WaitEventTimeout(&evt, 1000);
+        //if (isevt) {            
             if (evt.type == SDL_KEYDOWN) {
                 switch (1) {
                     case 1:
