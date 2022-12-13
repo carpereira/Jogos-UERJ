@@ -37,7 +37,7 @@ int main (int argc, char* args[])
                 //switch (if (!= SDL_QUIT)) {
                 switch (1) {
                     case 1:
-                        if(r.y<280){                    
+                        while (r.y<280){                    
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 255,0,0,0);
