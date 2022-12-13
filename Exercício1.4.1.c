@@ -35,25 +35,20 @@ int main (int argc, char* args[])
         //int isevt = SDL_WaitEevntTimeout(&evt, 1000);
         //if (isevt){
        SDL_PollEvent(&evt);
-            if (evt.type == SDL_MOUSEBUTTONDOWN){
-                //while(SDL_WaitEvent(&evt){
-                //switch(1){
-                    //case 1:
+            if (evt.type == SDL_MOUSEBUTTONDOWN){                
                         r.x=evt.motion.x, r.y=evt.motion.y;   
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);            
                         SDL_SetRenderDrawColor(ren, 255,0,0,0);            
                         SDL_RenderFillRect(ren, &r);
                         SDL_RenderPresent(ren);                         
-       }                       
-               //case 2:
+       }               
             if (evt.type == SDL_MOUSEBUTTONDOWN){
             r.x=evt.motion.x, r.y=evt.motion.y;                 
             SDL_SetRenderDrawColor(ren, 255,255,255,0);            
             SDL_SetRenderDrawColor(ren, 0,255,0,0);            
             SDL_RenderFillRect(ren, &r);            
             SDL_RenderPresent(ren);             
-        }               
-        //case 3:       
+        }              
             if (evt.type == SDL_MOUSEBUTTONDOWN){
             r.x=evt.motion.x, r.y=evt.motion.y;
             SDL_SetRenderDrawColor(ren, 255,255,255,0);            
