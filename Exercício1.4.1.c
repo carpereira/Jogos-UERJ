@@ -22,7 +22,7 @@ int main (int argc, char* args[])
     SDL_RenderPresent(ren);    
     
     SDL_Event evt;
-   while (1) {
+   //while (1) {
                
         //while (SDL_PollEvent(&evt)){ 
        SDL_WaitEvent(&evt);
@@ -110,7 +110,7 @@ int main (int argc, char* args[])
                       //}                   
             //}
         //}
-    }
+    //}
    
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
