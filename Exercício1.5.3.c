@@ -81,7 +81,7 @@ int main (int argc, char* args[])
                         if (evt.type == SDL_QUIT){
                             break;
                             } 
-            //}
+            }
         //}   
                 }
     }
