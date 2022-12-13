@@ -26,9 +26,9 @@ int main (int argc, char* args[])
         
         SDL_Event evt;
         
-        //if (evt.type == SDL_QUIT){
-            //break;
-        //} 
+        if (evt.type == SDL_QUIT){
+            break;
+        } 
         
         int isevt = SDL_WaitEventTimeout(&evt, 1000);
         if (isevt) {            
@@ -76,11 +76,7 @@ int main (int argc, char* args[])
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderFillRect(ren,&t);
                         SDL_RenderPresent(ren);                        
-                        break;
-                    case 6:
-                        if (evt.type == SDL_QUIT){
-                            break;
-                            } 
+                        break;                    
             }
         }   
                 }
