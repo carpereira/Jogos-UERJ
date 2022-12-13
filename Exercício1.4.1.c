@@ -34,7 +34,7 @@ int main (int argc, char* args[])
             
         //int isevt = SDL_WaitEevntTimeout(&evt, 1000);
         //if (isevt){
-       SDL_PollEvent(&evt);
+       SDL_WaitEvent(&evt);
             if (evt.type == SDL_MOUSEBUTTONDOWN){                
                         r.x=evt.motion.x, r.y=evt.motion.y;   
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);            
