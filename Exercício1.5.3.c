@@ -33,11 +33,11 @@ int main (int argc, char* args[])
         //int isevt = SDL_WaitEventTimeout(&evt, 500);
         int isevt = SDL_WaitEvent(&evt);
         if (isevt) {            
-            //if (evt.type == SDL_KEYDOWN) { 
+            if (evt.type == SDL_KEYDOWN) { 
                 //switch (if (!= SDL_QUIT)) {
                 switch (1) {
                     case 1:
-                        while (r.y<280){                    
+                        if (r.y<280){                    
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 255,0,0,0);
@@ -81,7 +81,7 @@ int main (int argc, char* args[])
                         break;                    
             }
         }   
-               // }
+                }
     }
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
