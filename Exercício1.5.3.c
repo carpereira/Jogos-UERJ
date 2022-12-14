@@ -39,7 +39,7 @@ int main (int argc, char* args[])
         //int isevt = SDL_WaitEvent(&evt);
         //int isevt = SDL_Event(&evt);
         //if (isevt) {
-        if (&evt){
+        if (1){
             //if (evt.type == SDL_MOUSEBUTTONDOWN) {                
                 switch (1) {
                     case 1:
