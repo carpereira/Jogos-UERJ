@@ -38,8 +38,7 @@ int main (int argc, char* args[])
         int isevt = SDL_WaitEventTimeout(&evt, 500);
         //int isevt = SDL_WaitEvent(&evt);
         if (isevt) {            
-            if (evt.type == SDL_MOUSEBUTTONDOWN) { 
-                //switch (if (!= SDL_QUIT)) {
+            //if (evt.type == SDL_MOUSEBUTTONDOWN) {                
                 switch (1) {
                     case 1:
                         if (r.y<280){                    
@@ -87,7 +86,7 @@ int main (int argc, char* args[])
             }
         }   
         
-                }
+                //}
     }
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
