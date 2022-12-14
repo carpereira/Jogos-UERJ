@@ -26,21 +26,23 @@ int main (int argc, char* args[])
         SDL_RenderPresent(ren);
     
     
-    SDL_Event evt;   
+    //SDL_Event evt;   
     
     
-    while (!quit) {  
+    while (true) {  
         
-        while(SDL_PollEvent(&evt) !=0)
-        {
+        //while(SDL_PollEvent(&evt) !=0)
+        //{
                 
-        //SDL_Event evt;
+        SDL_Event evt;
+        
+        if (SDL_PollEvent(&evt)){
         
         //SDL_WaitEvent(&evt);
         
         if (evt.type == SDL_QUIT){
-            quit = true;
-            //break;
+            //quit = true;
+            break;
         } 
         
         int isevt = SDL_WaitEventTimeout(&evt, 1000);
