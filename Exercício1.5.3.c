@@ -10,6 +10,8 @@ int main (int argc, char* args[])
                          300, 300, SDL_WINDOW_SHOWN
                       );
     SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
+    
+    bool quit = false;
 
     /* EXECUÇÃO */
     SDL_Rect r = { 0,0, 20,20 };
@@ -26,16 +28,18 @@ int main (int argc, char* args[])
     SDL_Event evt;   
     
     
-    while (1) {  
+    while (!quit) {  
         
-        
+        while(SDL_PollEvent(&evt) !=0)
+        {
                 
         //SDL_Event evt;
         
-        SDL_WaitEvent(&evt);
+        //SDL_WaitEvent(&evt);
         
         if (evt.type == SDL_QUIT){
-            break;
+            quit = true;
+            //break;
         } 
         
         int isevt = SDL_WaitEventTimeout(&evt, 1000);
@@ -43,7 +47,7 @@ int main (int argc, char* args[])
         //int isevt = SDL_Event(&evt);
         if (isevt) {
         //if (1){
-            //if (evt.type == SDL_MOUSEBUTTONDOWN) {                
+            if (evt.type == SDL_MOUSEBUTTONDOWN) {                
                 switch (1) {
                     case 1:
                         while (r.y<280){                    
@@ -90,8 +94,8 @@ int main (int argc, char* args[])
                         break;                    
             }
         }   
-        
-                //}
+        }
+                }
     }
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
