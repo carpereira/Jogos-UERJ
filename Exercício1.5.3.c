@@ -36,8 +36,8 @@ int main (int argc, char* args[])
         } 
         
         //int isevt = SDL_WaitEventTimeout(&evt, 500);
-        //int isevt = SDL_WaitEvent(&evt);
-        //if (isevt) {            
+        int isevt = SDL_WaitEvent(&evt);
+        if (isevt) {            
             if (evt.type == SDL_KEYDOWN) { 
                 //switch (if (!= SDL_QUIT)) {
                 switch (1) {
@@ -87,7 +87,7 @@ int main (int argc, char* args[])
             }
         }   
         
-                //}
+                }
     }
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
