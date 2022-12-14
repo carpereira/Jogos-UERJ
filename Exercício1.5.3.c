@@ -81,6 +81,22 @@ int main (int argc, char* args[])
                         break;                    
             }
         }   
+        if (evt.type == SDL_KEYDOWN) {
+            switch (evt.key.keysym.sym) {
+                case SDLK_UP:
+                    r.y -= 5;
+                    break;
+                case SDLK_DOWN:
+                    r.y += 5;
+                    break;
+                case SDLK_LEFT:
+                    r.x -= 5;
+                    break;
+                case SDLK_RIGHT:
+                    r.x += 5;
+                    break;
+            }
+        }
                 //}
     }
     /* FINALIZACAO */
