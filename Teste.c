@@ -76,7 +76,7 @@ int main (int argc, char* args[])
                 SDL_RenderPresent(ren);                
                break;//}
         }
-        
+        /*
         //if(evt.type == SDL_MOUSEBUTTONDOWN){
             //switch(1){
         //switch(evt.type == SDL_MOUSEBUTTONDOWN){
@@ -103,7 +103,7 @@ int main (int argc, char* args[])
                 SDL_RenderFillRect(ren, &r);            
                 SDL_RenderPresent(ren);
                 break;//}
-        }
+        }*/
       /*  
         switch(evt.type){
                 case 1:
