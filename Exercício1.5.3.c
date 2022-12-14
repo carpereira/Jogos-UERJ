@@ -29,13 +29,15 @@ int main (int argc, char* args[])
         
         //SDL_Event evt;
         
+        SDL_WaitEvent(&evt);
+        
         if (evt.type == SDL_QUIT){
             break;
         } 
         
-        int isevt = SDL_WaitEventTimeout(&evt, 500);
+        //int isevt = SDL_WaitEventTimeout(&evt, 500);
         //int isevt = SDL_WaitEvent(&evt);
-        if (isevt) {            
+        //if (isevt) {            
             if (evt.type == SDL_MOUSEBUTTONDOWN) { 
                 //switch (if (!= SDL_QUIT)) {
                 switch (1) {
@@ -85,7 +87,7 @@ int main (int argc, char* args[])
             }
         }   
         
-                }
+                //}
     }
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
