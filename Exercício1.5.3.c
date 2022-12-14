@@ -23,8 +23,7 @@ int main (int argc, char* args[])
         SDL_RenderPresent(ren);
     
     
-    SDL_Event evt;
-    
+    SDL_Event evt;   
     
     
     while (1) {        
@@ -37,11 +36,11 @@ int main (int argc, char* args[])
             break;
         } 
         
-        //int isevt = SDL_WaitEventTimeout(&evt, 500);
-        //int isevt = SDL_WaitEvent(&evt);
+        int isevt = SDL_WaitEventTimeout(&evt, 500);
+        int isevt = SDL_WaitEvent(&evt);
         //int isevt = SDL_Event(&evt);
-        //if (isevt) {
-        if (1){
+        if (isevt) {
+        //if (1){
             //if (evt.type == SDL_MOUSEBUTTONDOWN) {                
                 switch (1) {
                     case 1:
