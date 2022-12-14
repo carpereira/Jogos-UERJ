@@ -42,9 +42,7 @@ int main (int argc, char* args[])
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 255,0,0,0);
                         SDL_RenderFillRect(ren,&r);
-                        SDL_RenderPresent(ren);
-                        }
-                        else{
+                        SDL_RenderPresent(ren);                        
                         r.y += 2;
                         break;}
                     case 2:
@@ -53,9 +51,7 @@ int main (int argc, char* args[])
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,255,0,0);
                         SDL_RenderFillRect(ren,&r);
-                        SDL_RenderPresent(ren);
-                        }
-                        else{
+                        SDL_RenderPresent(ren);                       
                         r.x += 2;
                         break;}
                     case 3:
@@ -64,9 +60,7 @@ int main (int argc, char* args[])
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,0,255,0);
                         SDL_RenderFillRect(ren,&s);
-                        SDL_RenderPresent(ren);
-                        }
-                        else{
+                        SDL_RenderPresent(ren);                        
                         s.y -= 2;
                         break;}
                     case 4:
@@ -75,9 +69,7 @@ int main (int argc, char* args[])
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,255,255,0);
                         SDL_RenderFillRect(ren,&s);
-                        SDL_RenderPresent(ren);
-                        }
-                        else{
+                        SDL_RenderPresent(ren);                        
                         s.x -= 2;
                         break;} 
                     case 5:                        
