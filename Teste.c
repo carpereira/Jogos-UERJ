@@ -31,7 +31,7 @@ int main (int argc, char* args[])
             break;
         }
                 
-        switch(evt.type){
+        switch(){
             case SDL_MOUSEBUTTONDOWN:                        
                 r.x=evt.motion.x, r.y=evt.motion.y;   
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);            
@@ -41,7 +41,7 @@ int main (int argc, char* args[])
                 break;
         }     
                
-        switch(evt.type){
+        switch(){
             case SDL_MOUSEBUTTONDOWN:                           
                 r.x=evt.motion.x, r.y=evt.motion.y;
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);            
@@ -51,7 +51,7 @@ int main (int argc, char* args[])
                 break;
         }  
                 
-        switch(evt.type){
+        switch(){
             case SDL_MOUSEBUTTONDOWN:                          
                 r.x=evt.motion.x, r.y=evt.motion.y;
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);            
