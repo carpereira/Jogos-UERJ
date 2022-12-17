@@ -21,9 +21,11 @@ int main (int argc, char* args[])
     SDL_RenderFillRect(ren, &r);       
     SDL_RenderPresent(ren);    
     
+    SDL_Event evt;
+    
     while (1) {
         
-        SDL_Event evt;
+        //SDL_Event evt;
                
         SDL_WaitEvent(&evt);        
         
