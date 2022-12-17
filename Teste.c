@@ -15,8 +15,8 @@ int main (int argc, char* args[])
 
     /* EXECUÇÃO */
     SDL_Rect r = { 100,100, 10,10 };
-     SDL_SetRenderDrawColor(ren, 0,0,0,0);
-        //SDL_RenderClear(ren);
+     //SDL_SetRenderDrawColor(ren, 0,0,0,0);
+        SDL_RenderClear(ren);
        
     
     SDL_Event evt;
