@@ -94,7 +94,7 @@ int main (int argc, char* args[])
                 SDL_RenderFillRect(ren, &r);            
                 SDL_RenderPresent(ren);
                 break;//}
-        }*/
+        }
       /*  
         switch(evt.type){
                 case 1:
