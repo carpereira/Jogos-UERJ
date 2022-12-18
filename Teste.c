@@ -47,7 +47,7 @@ int main (int argc, char* args[])
                 SDL_RenderFillRect(ren, &r);
                 SDL_RenderPresent(ren); 
             //continue;
-            exit(0);
+            
         }    
                
         if  (evt.type == SDL_MOUSEBUTTONDOWN){        
@@ -57,7 +57,7 @@ int main (int argc, char* args[])
                 SDL_RenderFillRect(ren, &r);            
                 SDL_RenderPresent(ren);
             //continue;
-            exit(0);
+            
         }
                 
         if  (evt.type == SDL_MOUSEBUTTONDOWN){        
@@ -67,7 +67,7 @@ int main (int argc, char* args[])
                 SDL_RenderFillRect(ren, &r);            
                 SDL_RenderPresent(ren); 
             //continue;
-            exit(0);
+           
         }
         
         if (evt.type == SDL_QUIT){
