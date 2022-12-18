@@ -37,7 +37,7 @@ int main (int argc, char* args[])
         
         //SDL_Event evt;
                
-        SDL_WaitEvent(&evt);        
+        SDL_PollEvent(&evt);        
         
                        
         if (evt.type == SDL_MOUSEBUTTONDOWN){                        
