@@ -68,10 +68,10 @@ int main (int argc, char* args[])
             break;
         }
         
-        //if(evt.type == SDL_MOUSEBUTTONDOWN){
-            //switch(1){
+        if(evt.type == SDL_MOUSEBUTTONDOWN){
+            switch(1){
         //switch(evt.type == SDL_MOUSEBUTTONDOWN){
-        if (switch(evt.type)){
+        //if (switch(evt.type)){
             case SDL_MOUSEBUTTONDOWN:
             //case 1:               
                 r.x=evt.motion.x, r.y=evt.motion.y;
@@ -82,10 +82,10 @@ int main (int argc, char* args[])
                 break;//}
             }
         
-        //if(evt.type == SDL_MOUSEBUTTONDOWN){
-            //switch(1){
+        if(evt.type == SDL_MOUSEBUTTONDOWN){
+            switch(1){
         //switch(evt.type == SDL_MOUSEBUTTONDOWN){
-        if (switch(evt.type)){
+        //if (switch(evt.type)){
             case SDL_MOUSEBUTTONDOWN:
             //case 1:               
                 r.x=evt.motion.x, r.y=evt.motion.y;
@@ -96,7 +96,9 @@ int main (int argc, char* args[])
                 break;//}
         }
         
-        if (switch(evt.type)){
+        if(evt.type == SDL_MOUSEBUTTONDOWN){
+            switch(1){
+            //if (switch(evt.type)){
                 case SDL_MOUSEBUTTONDOWN:
                 //case 1:
                 //if (evt.type == SDL_MOUSEBUTTONDOWN){                
@@ -108,7 +110,9 @@ int main (int argc, char* args[])
                   break;//}
         }
         
-        if (switch(evt.type)){
+        if(evt.type == SDL_MOUSEBUTTONDOWN){
+            switch(1){
+            //if (switch(evt.type)){
                 case SDL_MOUSEBUTTONDOWN:
             //case 1:
                 //if (evt.type == SDL_MOUSEBUTTONDOWN){                
@@ -120,7 +124,9 @@ int main (int argc, char* args[])
                 break;//}
         }
         
-        if (switch(evt.type)){
+        if(evt.type == SDL_MOUSEBUTTONDOWN){
+            switch(1){
+            //if (switch(evt.type)){
                 case SDL_MOUSEBUTTONDOWN:
             //case 1:
                 //if (evt.type == SDL_MOUSEBUTTONDOWN){                
@@ -132,7 +138,9 @@ int main (int argc, char* args[])
                 break;//}
             }
         
-        if (switch(evt.type)){
+        if(evt.type == SDL_MOUSEBUTTONDOWN){
+            switch(1){
+            //if (switch(evt.type)){
                 case SDL_MOUSEBUTTONDOWN:
             //case 1:
                 //if (evt.type == SDL_MOUSEBUTTONDOWN){                
@@ -144,7 +152,9 @@ int main (int argc, char* args[])
                 break;//}
         }
         
-        if (switch(evt.type)){
+            if(evt.type == SDL_MOUSEBUTTONDOWN){
+            switch(1){
+        //if (switch(evt.type)){
                 case SDL_MOUSEBUTTONDOWN:
             //case 1:
                 //if (evt.type == SDL_MOUSEBUTTONDOWN){                
@@ -156,7 +166,8 @@ int main (int argc, char* args[])
                 break;//}
         }
         
-        if (evt.type == SDL_KEYDOWN) {            
+      
+                if (evt.type == SDL_KEYDOWN) {            
             switch (evt.key.keysym.sym) {
                 case SDLK_UP:
                     if (r.y>0){
