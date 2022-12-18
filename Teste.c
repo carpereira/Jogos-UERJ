@@ -97,7 +97,7 @@ int main (int argc, char* args[])
         }
         
         switch(evt.type){
-                case case SDL_MOUSEBUTTONDOWN:
+                case SDL_MOUSEBUTTONDOWN:
                 //case 1:
                 //if (evt.type == SDL_MOUSEBUTTONDOWN){                
                 (r.x=evt.motion.x, r.y=evt.motion.y);
