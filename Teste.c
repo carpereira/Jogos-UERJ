@@ -11,8 +11,8 @@ int main (int argc, char* args[])
                          200, 200, SDL_WINDOW_SHOWN
                       );
     SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
-     SDL_SetRenderDrawColor(ren, 255,255,255,0);
-        SDL_RenderClear(ren);
+     //SDL_SetRenderDrawColor(ren, 255,255,255,0);
+        //SDL_RenderClear(ren);
     
 
     /* EXECUÇÃO */
