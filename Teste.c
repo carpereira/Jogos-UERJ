@@ -1,5 +1,5 @@
 #include <SDL2/SDL.h>
-
+#define max=3
 
 int main (int argc, char* args[])
 {
@@ -39,6 +39,11 @@ int main (int argc, char* args[])
                
         SDL_PollEvent(&evt);        
         
+        switch(0)
+        {
+                int i;
+                for(i=0; i<max;i++){
+                    case(0):
                        
         if (evt.type == SDL_MOUSEBUTTONDOWN){                        
                 r.x=evt.motion.x, r.y=evt.motion.y;   
@@ -49,7 +54,7 @@ int main (int argc, char* args[])
             //continue;
             
         }    
-               
+           case(1):    
         if  (evt.type == SDL_MOUSEBUTTONDOWN){        
                 r.x=evt.motion.x, r.y=evt.motion.y;
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);            
@@ -59,7 +64,7 @@ int main (int argc, char* args[])
             //continue;
             
         }
-                
+          case(2):      
         if  (evt.type == SDL_MOUSEBUTTONDOWN){        
                 r.x=evt.motion.x, r.y=evt.motion.y;
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);            
@@ -171,7 +176,8 @@ int main (int argc, char* args[])
                 SDL_RenderPresent(ren);
                 break;}
         }*/
-        
+                }
+        }
       
                 if (evt.type == SDL_KEYDOWN) {            
             switch (evt.key.keysym.sym) {
