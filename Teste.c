@@ -181,7 +181,7 @@ int main (int argc, char* args[])
                 break;}
         }*/
                 
-        }
+        
       
                 if (evt.type == SDL_KEYDOWN) {            
             switch (evt.key.keysym.sym) {
