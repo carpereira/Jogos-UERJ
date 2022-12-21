@@ -54,6 +54,11 @@ int main (int argc, char* args[])
                 break; 
         }
         }
+    }
+    
+    SDLEvent evt;
+     while(1){   
+        
         /*switch(evt.type)
         {
           case(SDL_MOUSEBUTTONDOWN):      
@@ -170,13 +175,12 @@ int main (int argc, char* args[])
                 
         
       
-                if (evt.type == SDL_KEYDOWN) {
-                    
+                if (evt.type == SDL_KEYDOWN) {                    
                     SDL_SetRenderDrawColor(ren, 255,255,255,0);
-        SDL_RenderClear(ren);
-        SDL_SetRenderDrawColor(ren, 0,0,255,0);
-        SDL_RenderFillRect(ren, &r);       
-        SDL_RenderPresent(ren);
+                    SDL_RenderClear(ren);
+                    SDL_SetRenderDrawColor(ren, 0,0,255,0);
+                    SDL_RenderFillRect(ren, &r);       
+                    SDL_RenderPresent(ren);
                     
             switch (evt.key.keysym.sym) {
                 case SDLK_UP:
@@ -198,6 +202,7 @@ int main (int argc, char* args[])
             }
         }
     }
+}
    
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
