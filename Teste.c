@@ -43,7 +43,7 @@ int main (int argc, char* args[])
         {
                 //int i;
                 //for(i=1; i<=max;i++){
-                    case(evt.type == SDL_MOUSEBUTTONDOWN):
+                    case(SDL_MOUSEBUTTONDOWN):
                        
         //if (evt.type == SDL_MOUSEBUTTONDOWN){                        
                 r.x=evt.motion.x, r.y=evt.motion.y;   
@@ -56,7 +56,7 @@ int main (int argc, char* args[])
         }    
         switch(evt.type)
         {
-           case(evt.type == SDL_MOUSEBUTTONDOWN):    
+           case(SDL_MOUSEBUTTONDOWN):    
         //if  (evt.type == SDL_MOUSEBUTTONDOWN){        
                 r.x=evt.motion.x, r.y=evt.motion.y;
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);            
@@ -68,7 +68,7 @@ int main (int argc, char* args[])
         }
         switch(evt.type)
         {
-          case(evt.type == SDL_MOUSEBUTTONDOWN):      
+          case(SDL_MOUSEBUTTONDOWN):      
         //if  (evt.type == SDL_MOUSEBUTTONDOWN){        
                 r.x=evt.motion.x, r.y=evt.motion.y;
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);            
