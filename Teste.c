@@ -185,26 +185,26 @@ int main (int argc, char* args[])
                     if (r.y>0){
                         r.y -= 5;
                         break;}
-                    else {r.y=0;    
-                        break;}
+                    //else {r.y=0;    
+                        //break;}
                 case SDLK_DOWN:
                     if(r.y<190){
                         r.y += 5;
                         break;}
-                    else {r.y=190;
-                        break;}
+                    //else {r.y=190;
+                        //break;}
                 case SDLK_LEFT:
                     if(r.x>0){
                         r.x -= 5;
                         break;}
-                    else {r.x>0;
-                        break;}
+                    //else {r.x>0;
+                        //break;}
                 case SDLK_RIGHT:
                     if(r.x<190){
                         r.x += 5;
                     break;}
-                    else {r.x=190;
-                        break;}                    
+                    //else {r.x=190;
+                        //break;}                    
             }
         }
     }
