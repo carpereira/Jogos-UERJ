@@ -56,7 +56,7 @@ int main (int argc, char* args[])
         }
     }
     
-    SDLEvent evt;
+    SDL_Event evt;
      while(1){   
         
         /*switch(evt.type)
