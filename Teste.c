@@ -56,7 +56,6 @@ int main (int argc, char* args[])
         }
     }
    
-     while(1){   
         
         /*switch(evt.type)
         {
@@ -201,7 +200,7 @@ int main (int argc, char* args[])
             }
         }
     }
-}
+
    
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
