@@ -1,5 +1,5 @@
 #include <SDL2/SDL.h>
-#define max=3
+#define max 3
 
 int main (int argc, char* args[])
 {
