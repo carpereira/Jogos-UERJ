@@ -11,8 +11,7 @@ int main (int argc, char* args[])
                          200, 200, SDL_WINDOW_SHOWN
                       );
     SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
-     //SDL_SetRenderDrawColor(ren, 255,255,255,0);
-        //SDL_RenderClear(ren);    
+         
 
     /* EXECUÇÃO */
     SDL_Rect r = { 100,100, 10,10 };    
@@ -33,17 +32,16 @@ int main (int argc, char* args[])
         //{
                 
                     //case(SDL_MOUSEBUTTONDOWN):
-        //SDL_SetRenderDrawColor(ren, 255,255,255,0);
-        //SDL_RenderClear(ren);
+        
                        
         if (evt.type == SDL_MOUSEBUTTONDOWN){                        
                 r.x=evt.motion.x, r.y=evt.motion.y;   
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);
-            SDL_RenderClear(ren);
+                SDL_RenderClear(ren);
                 SDL_SetRenderDrawColor(ren, 255,0,0,0);            
                 SDL_RenderFillRect(ren, &r);
                 SDL_RenderPresent(ren); 
-                //break;        
+                break;        
         }    
        //switch(evt.type)
         //{
@@ -55,7 +53,7 @@ int main (int argc, char* args[])
                 SDL_SetRenderDrawColor(ren, 0,255,0,0);            
                 SDL_RenderFillRect(ren, &r);            
                 SDL_RenderPresent(ren);
-                //break;        
+                break;        
         }
         /*switch(evt.type)
         {
