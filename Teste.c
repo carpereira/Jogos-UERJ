@@ -39,7 +39,7 @@ int main (int argc, char* args[])
                
         SDL_PollEvent(&evt);        
         
-        switch(1)
+        switch(evt.type)
         {
                 //int i;
                 //for(i=1; i<=max;i++){
@@ -54,7 +54,7 @@ int main (int argc, char* args[])
                 break;
         
         }    
-        switch(1)
+        switch(evt.type)
         {
            case(evt.type == SDL_MOUSEBUTTONDOWN):    
         //if  (evt.type == SDL_MOUSEBUTTONDOWN){        
@@ -66,7 +66,7 @@ int main (int argc, char* args[])
                 break;
         
         }
-        switch(2)
+        switch(evt.type)
         {
           case(evt.type == SDL_MOUSEBUTTONDOWN):      
         //if  (evt.type == SDL_MOUSEBUTTONDOWN){        
