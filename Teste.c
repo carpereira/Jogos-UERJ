@@ -20,11 +20,11 @@ int main (int argc, char* args[])
     
     while (1) {
         
-        SDL_SetRenderDrawColor(ren, 255,255,255,0);
-        SDL_RenderClear(ren);
-        SDL_SetRenderDrawColor(ren, 0,0,255,0);
-        SDL_RenderFillRect(ren, &r);       
-        SDL_RenderPresent(ren);         
+        //SDL_SetRenderDrawColor(ren, 255,255,255,0);
+        //SDL_RenderClear(ren);
+        //SDL_SetRenderDrawColor(ren, 0,0,255,0);
+        //SDL_RenderFillRect(ren, &r);       
+        //SDL_RenderPresent(ren);         
                       
         SDL_WaitEvent(&evt);        
         
@@ -41,7 +41,7 @@ int main (int argc, char* args[])
                 SDL_SetRenderDrawColor(ren, 255,0,0,0);            
                 SDL_RenderFillRect(ren, &r);
                 SDL_RenderPresent(ren); 
-                break;        
+                //break;        
         }    
        //switch(evt.type)
         //{
@@ -53,7 +53,7 @@ int main (int argc, char* args[])
                 SDL_SetRenderDrawColor(ren, 0,255,0,0);            
                 SDL_RenderFillRect(ren, &r);            
                 SDL_RenderPresent(ren);
-                break;        
+                //break;        
         }
         /*switch(evt.type)
         {
@@ -171,7 +171,14 @@ int main (int argc, char* args[])
                 
         
       
-                if (evt.type == SDL_KEYDOWN) {            
+                if (evt.type == SDL_KEYDOWN) {
+                    
+                    SDL_SetRenderDrawColor(ren, 255,255,255,0);
+        SDL_RenderClear(ren);
+        SDL_SetRenderDrawColor(ren, 0,0,255,0);
+        SDL_RenderFillRect(ren, &r);       
+        SDL_RenderPresent(ren);
+                    
             switch (evt.key.keysym.sym) {
                 case SDLK_UP:
                     if (r.y>0){
