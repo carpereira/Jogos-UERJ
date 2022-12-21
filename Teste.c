@@ -19,7 +19,7 @@ int main (int argc, char* args[])
     SDL_Event evt;
     
     while (1) {                      
-        SDL_PollEvent(&evt);    
+        SDL_PushEvent(&evt);    
         if (evt.type == SDL_MOUSEBUTTONDOWN){                        
                 r.x=evt.motion.x, r.y=evt.motion.y;   
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);
