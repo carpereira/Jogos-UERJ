@@ -16,15 +16,8 @@ int main (int argc, char* args[])
     
 
     /* EXECUÇÃO */
-    SDL_Rect r = { 100,100, 10,10 };
-    
-    //SDL_SetRenderDrawColor(ren, 255,255,255,0);
-    //SDL_RenderClear(ren);
-    //SDL_SetRenderDrawColor(ren, 0,0,255,0);
-    //SDL_RenderFillRect(ren, &r);       
-    //SDL_RenderPresent(ren);
-       
-    
+    SDL_Rect r = { 100,100, 10,10 };    
+     
     SDL_Event evt;
     
     while (1) {
@@ -33,10 +26,8 @@ int main (int argc, char* args[])
         SDL_RenderClear(ren);
         SDL_SetRenderDrawColor(ren, 0,0,255,0);
         SDL_RenderFillRect(ren, &r);       
-        SDL_RenderPresent(ren); 
-        
-        //SDL_Event evt;
-               
+        SDL_RenderPresent(ren);         
+                      
         SDL_WaitEvent(&evt);        
         
         /*switch(evt.type)
@@ -185,26 +176,18 @@ int main (int argc, char* args[])
                     if (r.y>0){
                         r.y -= 5;
                         break;}
-                    //else {r.y=0;    
-                        //break;}
                 case SDLK_DOWN:
                     if(r.y<190){
                         r.y += 5;
                         break;}
-                    //else {r.y=190;
-                        //break;}
                 case SDLK_LEFT:
                     if(r.x>0){
                         r.x -= 5;
                         break;}
-                    //else {r.x>0;
-                        //break;}
                 case SDLK_RIGHT:
                     if(r.x<190){
                         r.x += 5;
-                    break;}
-                    //else {r.x=190;
-                        //break;}                    
+                    break;}                    
             }
         }
     }
