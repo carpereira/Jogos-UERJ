@@ -39,7 +39,7 @@ int main (int argc, char* args[])
                
         SDL_PollEvent(&evt);        
         
-        switch(0)
+        switch(1)
         {
                 int i;
                 for(i=0; i<max;i++){
