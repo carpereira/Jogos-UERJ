@@ -23,7 +23,7 @@ int main (int argc, char* args[])
         if (evt.type == SDL_MOUSEBUTTONDOWN){                        
                 r.x=evt.motion.x, r.y=evt.motion.y;   
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);
-                //SDL_RenderClear(ren);
+                SDL_RenderClear(ren);
                 SDL_SetRenderDrawColor(ren, 255,0,0,0);            
                 SDL_RenderFillRect(ren, &r);
                 SDL_RenderPresent(ren); 
@@ -36,7 +36,7 @@ int main (int argc, char* args[])
         if  (evt.type == SDL_MOUSEBUTTONDOWN){        
                 r.x=evt.motion.x, r.y=evt.motion.y;
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);
-            //SDL_RenderClear(ren);
+                SDL_RenderClear(ren);
                 SDL_SetRenderDrawColor(ren, 0,255,0,0);            
                 SDL_RenderFillRect(ren, &r);            
                 SDL_RenderPresent(ren);
