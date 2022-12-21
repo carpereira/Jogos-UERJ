@@ -64,7 +64,7 @@ int main (int argc, char* args[])
                 SDL_SetRenderDrawColor(ren, 0,255,255,0);            
                 SDL_RenderFillRect(ren, &r);            
                 SDL_RenderPresent(ren); 
-                break;        
+                //break;        
         }
         
         if (evt.type == SDL_QUIT){
