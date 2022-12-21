@@ -1,5 +1,5 @@
 #include <SDL2/SDL.h>
-#define max 3
+//#define max 3
 
 int main (int argc, char* args[])
 {
@@ -41,9 +41,9 @@ int main (int argc, char* args[])
         
         switch(1)
         {
-                int i;
-                for(i=1; i<=max;i++){
-                    case(0):
+                //int i;
+                //for(i=1; i<=max;i++){
+                    case(1):
                        
         if (evt.type == SDL_MOUSEBUTTONDOWN){                        
                 r.x=evt.motion.x, r.y=evt.motion.y;   
@@ -51,9 +51,11 @@ int main (int argc, char* args[])
                 SDL_SetRenderDrawColor(ren, 255,0,0,0);            
                 SDL_RenderFillRect(ren, &r);
                 SDL_RenderPresent(ren); 
-            //continue;
-            
+                break;
+        }
         }    
+        switch(1)
+        {
            case(1):    
         if  (evt.type == SDL_MOUSEBUTTONDOWN){        
                 r.x=evt.motion.x, r.y=evt.motion.y;
@@ -61,9 +63,11 @@ int main (int argc, char* args[])
                 SDL_SetRenderDrawColor(ren, 0,255,0,0);            
                 SDL_RenderFillRect(ren, &r);            
                 SDL_RenderPresent(ren);
-            //continue;
-            
+                break;
         }
+        }
+        switch(2)
+        {
           case(2):      
         if  (evt.type == SDL_MOUSEBUTTONDOWN){        
                 r.x=evt.motion.x, r.y=evt.motion.y;
@@ -71,8 +75,8 @@ int main (int argc, char* args[])
                 SDL_SetRenderDrawColor(ren, 0,255,255,0);            
                 SDL_RenderFillRect(ren, &r);            
                 SDL_RenderPresent(ren); 
-            //continue;
-           
+            break;
+        }
         }
         
         if (evt.type == SDL_QUIT){
@@ -176,7 +180,7 @@ int main (int argc, char* args[])
                 SDL_RenderPresent(ren);
                 break;}
         }*/
-                }
+                
         }
       
                 if (evt.type == SDL_KEYDOWN) {            
