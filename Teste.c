@@ -1,5 +1,5 @@
 #include <SDL2/SDL.h>
-//#define max 3
+
 
 int main (int argc, char* args[])
 {
@@ -39,9 +39,9 @@ int main (int argc, char* args[])
                
         SDL_WaitEvent(&evt);        
         
-        switch(evt.type)
+        /*switch(evt.type)
         {
-               
+                
                     case(SDL_MOUSEBUTTONDOWN):
                        
         //if (evt.type == SDL_MOUSEBUTTONDOWN){                        
@@ -50,8 +50,7 @@ int main (int argc, char* args[])
                 SDL_SetRenderDrawColor(ren, 255,0,0,0);            
                 SDL_RenderFillRect(ren, &r);
                 SDL_RenderPresent(ren); 
-                //break;
-        
+                break;        
         }    
        switch(evt.type)
         {
@@ -62,8 +61,7 @@ int main (int argc, char* args[])
                 SDL_SetRenderDrawColor(ren, 0,255,0,0);            
                 SDL_RenderFillRect(ren, &r);            
                 SDL_RenderPresent(ren);
-                //break;
-        
+                break;        
         }
         switch(evt.type)
         {
@@ -74,9 +72,8 @@ int main (int argc, char* args[])
                 SDL_SetRenderDrawColor(ren, 0,255,255,0);            
                 SDL_RenderFillRect(ren, &r);            
                 SDL_RenderPresent(ren); 
-            //break;
-        
-        }
+                break;        
+        }*/
         
         if (evt.type == SDL_QUIT){
             break;
