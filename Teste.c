@@ -54,7 +54,7 @@ int main (int argc, char* args[])
                 SDL_RenderPresent(ren); 
                 //break;        
         }
-    }
+    
         
         if (evt.type == SDL_QUIT){
             break;
