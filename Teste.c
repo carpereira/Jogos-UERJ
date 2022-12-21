@@ -42,7 +42,7 @@ int main (int argc, char* args[])
         switch(1)
         {
                 int i;
-                for(i=0; i<max;i++){
+                for(i=1; i<=max;i++){
                     case(0):
                        
         if (evt.type == SDL_MOUSEBUTTONDOWN){                        
