@@ -54,7 +54,7 @@ int main (int argc, char* args[])
                 break;
         
         }    
-       /* switch(evt.type)
+       switch(evt.type)
         {
            case(SDL_MOUSEBUTTONDOWN):    
         //if  (evt.type == SDL_MOUSEBUTTONDOWN){        
@@ -66,7 +66,7 @@ int main (int argc, char* args[])
                 break;
         
         }
-        switch(evt.type)
+        /*switch(evt.type)
         {
           case(SDL_MOUSEBUTTONDOWN):      
         //if  (evt.type == SDL_MOUSEBUTTONDOWN){        
