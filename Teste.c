@@ -35,6 +35,7 @@ int main (int argc, char* args[])
             break;
         }         
      
+        SDL_Event evt;
         int isevt = SDL_WaitEventTimeout(&evt,500);
         if (isevt){
         while(quit=false){
