@@ -35,7 +35,7 @@ int main (int argc, char* args[])
             break;
         }         
      
-        //while(quit=false){
+        while(quit=false){
             int i;
             for(i=1;i<=max;i++){
                 switch (i) {
