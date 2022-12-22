@@ -1,5 +1,6 @@
 #include <SDL2/SDL.h>
 #include <stdbool.h>
+#define max 3
 
 int main (int argc, char* args[])
 {
@@ -38,7 +39,9 @@ int main (int argc, char* args[])
         //int isevt = SDL_WaitEvent(&evt);
         //int isevt = SDL_Event(&evt);*/
         if(quit=false){
-                switch (1) {
+            int i;
+            for(i=1;i<=max;i++){
+                switch (i) {
                     case 1:
                         while (r.y<280){                    
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
@@ -81,7 +84,8 @@ int main (int argc, char* args[])
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderFillRect(ren,&t);
                         SDL_RenderPresent(ren);                        
-                        break;                    
+                        break; 
+                }
             }
         }   
     }     
