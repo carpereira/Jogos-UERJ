@@ -34,12 +34,9 @@ int main (int argc, char* args[])
         if (evt.type == SDL_QUIT){
             quit = true;
             break;
-        } 
-        
-        /*int isevt = SDL_WaitEventTimeout(&evt, 1000);
-        //int isevt = SDL_WaitEvent(&evt);
-        //int isevt = SDL_Event(&evt);*/
-        if(quit=false){
+        }         
+     
+        while(quit=false){
             int i;
             for(i=1;i<=max;i++){
                 switch (i) {
