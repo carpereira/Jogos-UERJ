@@ -38,7 +38,7 @@ int main (int argc, char* args[])
         //while(quit=false){
             int i;
             for(i=1;i<=max;i++){
-                switch (1) {
+                switch (i) {
                     case 1:
                         while (r.y<280){                    
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
