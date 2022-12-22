@@ -1,5 +1,5 @@
 #include <SDL2/SDL.h>
-//#include <stdbool.h>
+#include <stdbool.h>
 
 int main (int argc, char* args[])
 {
@@ -12,7 +12,7 @@ int main (int argc, char* args[])
                       );
     SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
     
-    //bool quit = false;
+    bool quit = false;
 
     /* EXECUÇÃO */
     SDL_Rect r = { 0,0, 20,20 };
@@ -28,24 +28,16 @@ int main (int argc, char* args[])
     SDL_Event evt;   
     
     while (1) {  
-        
-        //while(SDL_PollEvent(&evt) !=0)
-        //{
                 
-        //SDL_Event evt;
-        
-        //if (SDL_PollEvent(&evt)){
-        
-        //SDL_WaitEvent(&evt);
-        
         if (evt.type == SDL_QUIT){
-            //quit = true;
+            quit = true;
             break;
         } 
         
         /*int isevt = SDL_WaitEventTimeout(&evt, 1000);
         //int isevt = SDL_WaitEvent(&evt);
-        //int isevt = SDL_Event(&evt);*/                
+        //int isevt = SDL_Event(&evt);*/
+        if(quit=false){
                 switch (1) {
                     case 1:
                         while (r.y<280){                    
@@ -92,8 +84,7 @@ int main (int argc, char* args[])
                         break;                    
             }
         }   
-        
-                
+    }     
     
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
