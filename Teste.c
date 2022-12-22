@@ -35,9 +35,9 @@ int main (int argc, char* args[])
             break;
         }         
      
-        while(quit=false){
-            //int i;
-            //for(i=1;i<=max;i++){
+        //while(quit=false){
+            int i;
+            for(i=1;i<=max;i++){
                 switch (1) {
                     case 1:
                         while (r.y<280){                    
