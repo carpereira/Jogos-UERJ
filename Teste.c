@@ -1,6 +1,6 @@
 #include <SDL2/SDL.h>
 #include <stdbool.h>
-#define max 3
+#define max 5
 
 int main (int argc, char* args[])
 {
@@ -30,6 +30,7 @@ int main (int argc, char* args[])
     
     while (1) {  
                 
+        SDL_WaitEvent(&evt);
         if (evt.type == SDL_QUIT){
             quit = true;
             break;
