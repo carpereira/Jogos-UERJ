@@ -35,6 +35,8 @@ int main (int argc, char* args[])
             break;
         }         
      
+        int isevt = SDL_WaitEventTimeout(&evt,500);
+        if (isevt){
         while(quit=false){
             int i;
             for(i=1;i<=max;i++){
@@ -82,6 +84,7 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&t);
                         SDL_RenderPresent(ren);                        
                         break; 
+                }
                 }
             }
         }   
