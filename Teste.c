@@ -35,10 +35,10 @@ int main (int argc, char* args[])
             break;
         }         
      
-        //SDL_Event evt;
-        //int isevt = SDL_WaitEventTimeout(&evt,0);
-        //if (isevt){
-        while (quit=false){
+        SDL_Event evt;
+        int isevt = SDL_WaitEventTimeout(&evt,0);
+        if (isevt){
+        //while (quit=false){
             int i;
             for(i=1;i<=max;i++){
                 switch (i) {
