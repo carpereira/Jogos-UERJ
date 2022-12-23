@@ -27,13 +27,13 @@ int main (int argc, char* args[])
     SDL_RenderFillRect(ren, &r);
     SDL_RenderPresent(ren);
     
-    while (1) {  
+    //while (1) {  
                 
-        SDL_WaitEvent(&evt);
-        if (evt.type == SDL_QUIT){
-            quit = true;
-            break;
-        }         
+        //SDL_WaitEvent(&evt);
+        //if (evt.type == SDL_QUIT){
+          //quit = true;
+            //break;
+        //}         
      
         //SDL_WaitEvent (&evt);
         //int isevt = SDL_WaitEventTimeout(&evt,500);
@@ -88,7 +88,7 @@ int main (int argc, char* args[])
                         break;
                 //}
              //}
-               }
+               //}
             }
         }   
     }     
