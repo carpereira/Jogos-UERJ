@@ -35,7 +35,7 @@ int main (int argc, char* args[])
             break;
         }         
      
-        SDL_WaitEvent (&evt);
+        SDL_WaitEvent evt;
         int isevt = SDL_WaitEventTimeout(&evt,500);
         if (isevt){
             if (evt.type == SDL_KEYDOWN){
@@ -78,14 +78,14 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);                        
                         s.x -= 2;
-                        break;} */
+                        break;} 
                     case 5:                        
                         SDL_SetRenderDrawColor(ren, 0,0,0,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderFillRect(ren,&t);
                         SDL_RenderPresent(ren);                        
-                        break;
+                        break;*/
                 }
              }
                }
