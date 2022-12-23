@@ -36,9 +36,9 @@ int main (int argc, char* args[])
         }         
      
         SDL_Event evt;
-        int isevt = SDL_WaitEventTimeout(&evt,0);
-        if (isevt){
-        //if (quit=false){
+        //int isevt = SDL_WaitEventTimeout(&evt,0);
+        //if (isevt){
+        if (quit=false){
             int i;
             for(i=1;i<=max;i++){
                 switch (i) {
