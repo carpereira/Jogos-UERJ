@@ -86,7 +86,7 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&t);
                         SDL_RenderPresent(ren);                        
                         break;
-                }
+                //}
                 }
                 }
             }
