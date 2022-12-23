@@ -29,11 +29,11 @@ int main (int argc, char* args[])
     
     while (1) {  
                 
-        //SDL_WaitEvent(&evt);
-        //if (evt.type == SDL_QUIT){
-          //quit = true;
-            //break;
-        //}         
+        SDL_WaitEvent(&evt);
+        if (evt.type == SDL_QUIT){
+          quit = true;
+            break;
+        }         
      
         SDL_WaitEvent (&evt);
         int isevt = SDL_WaitEventTimeout(&evt,500);
