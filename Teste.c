@@ -36,14 +36,14 @@ int main (int argc, char* args[])
         }         
      
         SDL_Event evt;
-        int isevt = SDL_WaitEventTimeout(&evt,500);
+        int isevt = SDL_WaitEventTimeout(&evt,0);
         if (isevt){
-        if (quit=false){
+        //if (quit=false){
             int i;
             for(i=1;i<=max;i++){
                 switch (i) {
                     case 1:
-                        if (r.y<280){                    
+                        while (r.y<280){                    
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 255,0,0,0);
@@ -52,7 +52,7 @@ int main (int argc, char* args[])
                         r.y += 2;
                         break;}
                     case 2:
-                        if (r.x<280){                    
+                        while (r.x<280){                    
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,255,0,0);
@@ -61,7 +61,7 @@ int main (int argc, char* args[])
                         r.x += 2;
                         break;}
                     case 3:
-                        if (s.y>0){                    
+                        while (s.y>0){                    
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,0,255,0);
@@ -70,7 +70,7 @@ int main (int argc, char* args[])
                         s.y -= 2;
                         break;}
                     case 4:
-                        if (s.x>0){                    
+                        while (s.x>0){                    
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,255,255,0);
