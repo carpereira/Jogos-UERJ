@@ -35,10 +35,10 @@ int main (int argc, char* args[])
             //break;
         //}         
      
-        //SDL_WaitEvent (&evt);
-        //int isevt = SDL_WaitEventTimeout(&evt,500);
-        //if (isevt){
-            //if (evt.type == SDL_KEYDOWN){
+        SDL_WaitEvent (&evt);
+        int isevt = SDL_WaitEventTimeout(&evt,500);
+        if (isevt){
+            if (evt.type == SDL_KEYDOWN){
         while (quit=false){
             int i;
             for(i=1;i<=max;i++){
