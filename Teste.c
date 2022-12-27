@@ -90,7 +90,7 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);                        
                         break;
                 //}
-                //}
+                }
              }
                }
             }
