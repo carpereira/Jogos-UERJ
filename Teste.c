@@ -26,12 +26,10 @@ int main (int argc, char* args[])
     SDL_SetRenderDrawColor(ren, 0,0,255,0);
     SDL_RenderFillRect(ren, &r);
     SDL_RenderPresent(ren);
-    
-    //while (1) {  
+   
     while(!quit){  
     
         SDL_WaitEvent(&evt);        
-        //while (SDL_PollEvent(&evt) !=0){
             
         if (evt.type == SDL_QUIT){
           quit = true;
@@ -40,7 +38,7 @@ int main (int argc, char* args[])
      
         SDL_Event evt;
         //SDL_WaitEvent(&evt);
-        int isevt = SDL_WaitEventTimeout(&evt,1000);
+        int isevt = SDL_WaitEventTimeout(&evt,10000);
         if (isevt){
             if (evt.type == SDL_KEYDOWN){
         //while (quit=false){
