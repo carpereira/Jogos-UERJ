@@ -39,9 +39,9 @@ int main (int argc, char* args[])
         }         
      
         SDL_Event evt;
-        int isevt = SDL_WaitEventTimeout(&evt,500);
-        if (isevt){
-            //if (evt.type == SDL_KEYDOWN){
+        //int isevt = SDL_WaitEventTimeout(&evt,500);
+        //if (isevt){
+            if (evt.type == SDL_KEYDOWN){
         //while (quit=false){
             int i;
             for(i=1;i<=max;i++){
