@@ -30,7 +30,7 @@ int main (int argc, char* args[])
     //while (1) {  
     while(!quit){  
     
-        SDL_WaitEvent(&evt);        
+        //SDL_WaitEvent(&evt);        
         //while (SDL_PollEvent(&evt) !=0){
             
         if (evt.type == SDL_QUIT){
