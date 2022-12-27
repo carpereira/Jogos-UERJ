@@ -30,8 +30,8 @@ int main (int argc, char* args[])
     //while (1) {  
     while(!quit){  
     
-        //SDL_WaitEvent(&evt);        
-        while (SDL_PollEvent(&evt) !=0){
+        SDL_WaitEvent(&evt);        
+        //while (SDL_PollEvent(&evt) !=0){
             
         if (evt.type == SDL_QUIT){
           quit = true;
@@ -90,7 +90,7 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);                        
                         break;
                 //}
-                }
+                //}
              }
                }
             }
