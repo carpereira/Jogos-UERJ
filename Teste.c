@@ -53,7 +53,7 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);                        
                         r.y += 2;}
-                        break;//}
+                        break;
                     case 2:
                         while (r.x<280){                    
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
@@ -62,7 +62,7 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);                       
                         r.x += 2;}
-                        break;//}
+                        break;
                     case 3:
                         while (s.y>0){                    
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
@@ -71,7 +71,7 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);                        
                         s.y -= 2;}
-                        break;//}
+                        break;
                     case 4:
                         while (s.x>0){                    
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
@@ -80,16 +80,14 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);                        
                         s.x -= 2;}
-                        break;//} 
+                        break; 
                     case 5:                        
                         SDL_SetRenderDrawColor(ren, 0,0,0,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderFillRect(ren,&t);
                         SDL_RenderPresent(ren);                        
-                        break;
-                //}
-                //}
+                        break;                
              }
                }
             }
