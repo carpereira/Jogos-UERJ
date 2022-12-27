@@ -31,7 +31,7 @@ int main (int argc, char* args[])
     while(!quit){  
     
         //SDL_WaitEvent(&evt);        
-        while (SDL_PollEvent(&evt) !=0){
+        while (SDL_PollEvent(&evt) !=false){
             
         if (evt.type == SDL_QUIT){
           quit = true;
