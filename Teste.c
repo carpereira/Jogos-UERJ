@@ -39,11 +39,11 @@ int main (int argc, char* args[])
         }         
      
         SDL_Event evt;
-        //int isevt = SDL_WaitEventTimeout(&evt,5000);
+        //int isevt = SDL_WaitEventTimeout(&evt,50);
         //if (isevt){
             //if (evt.type == SDL_KEYDOWN){
         //while (quit=false){
-        if(evt.type !=SDL_QUIT){
+        if(evt.type != SDL_QUIT){
             int i;
             for(i=1;i<=max;i++){
                 switch (i) {
