@@ -37,11 +37,12 @@ int main (int argc, char* args[])
         }         
      
         SDL_Event evt;
+        if (evt.type == SDL_MOUSEBUTTONDOWN){ 
         int i;
         for(i=1;i<=max;i++){
         int isevt = SDL_WaitEventTimeout(&evt,5000);
         if (isevt){            
-            if (evt.type == SDL_MOUSEBUTTONDOWN){     
+            //if (evt.type == SDL_MOUSEBUTTONDOWN){     
             //int i;
             //for(i=1;i<=max;i++){
                 switch (i) {
