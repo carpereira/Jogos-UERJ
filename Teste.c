@@ -38,9 +38,10 @@ int main (int argc, char* args[])
             break;
         }         
      
-        SDL_Event evt;
-        int isevt = SDL_WaitEventTimeout(&evt,5000);
-        if (isevt){
+        //SDL_Event evt;
+        SDL_WaitEvent(&evt);
+        //int isevt = SDL_WaitEventTimeout(&evt,5000);
+        //if (isevt){
             //if (evt.type == SDL_KEYDOWN){
         //while (quit=false){
         if(evt.type != SDL_QUIT){
