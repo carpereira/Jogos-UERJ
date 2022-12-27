@@ -30,7 +30,7 @@ int main (int argc, char* args[])
     //while (1) {  
     while(!quit){  
     
-        //SDL_WaitEvent(&evt);        
+        SDL_WaitEvent(&evt);        
         //while (SDL_PollEvent(&evt) !=0){
             
         if (evt.type == SDL_QUIT){
@@ -41,7 +41,7 @@ int main (int argc, char* args[])
         SDL_Event evt;
         int isevt = SDL_WaitEventTimeout(&evt,1000);
         if (isevt){
-            //if (evt.type == SDL_KEYDOWN){
+            if (evt.type == SDL_KEYDOWN){
         //while (quit=false){
             int i;
             for(i=1;i<=max;i++){
@@ -91,7 +91,7 @@ int main (int argc, char* args[])
                         break;
                 //}
                 //}
-             //}
+             }
                }
             }
         }   
