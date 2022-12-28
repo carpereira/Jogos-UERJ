@@ -36,10 +36,7 @@ int main (int argc, char* args[])
             break;
         }         
      
-        SDL_Event evt;
-        //if (evt.type == SDL_MOUSEBUTTONDOWN){ 
-        //int i;
-        //for(i=1;i<=max;i++){
+        SDL_Event evt;        
         int isevt = SDL_WaitEventTimeout(&evt,500);
         if (isevt){            
             if (evt.type == SDL_MOUSEBUTTONDOWN){     
@@ -54,7 +51,7 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);
                         SDL_Delay(100);
-                        r.y += 1;}
+                        r.y += 5;}
                         break;
                     case 2:
                         while (r.x<280){                    
@@ -64,7 +61,7 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);
                         SDL_Delay(100);
-                        r.x += 1;}
+                        r.x += 5;}
                         break;
                     case 3:
                         while (s.y>0){                    
@@ -74,7 +71,7 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
                         SDL_Delay(100);
-                        s.y -= 1;}
+                        s.y -= 5;}
                         break;
                     case 4:
                         while (s.x>0){                    
@@ -84,7 +81,7 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
                         SDL_Delay(100);
-                        s.x -= 1;}
+                        s.x -= 5;}
                         break; 
                     case 5:                        
                         SDL_SetRenderDrawColor(ren, 0,0,0,0);
