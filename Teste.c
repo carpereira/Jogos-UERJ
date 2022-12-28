@@ -46,10 +46,10 @@ int main (int argc, char* args[])
                         r.y += 5;
                         break;
                     case SDLK_LEFT:
-                        r.y -= 5;
+                        r.x -= 5;
                         break;
                     case SDLK_RIGHT:
-                        r.y += 5;
+                        r.x += 5;
                         break;
                 }           
             }
