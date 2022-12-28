@@ -25,10 +25,9 @@ int main (int argc, char* args[])
         SDL_RenderPresent(ren);
         
         SDL_Event evt;
-        /*Uint32 antes = SDL_GetTicks();        
+        Uint32 antes = SDL_GetTicks();        
         
-        //int AUX_WaitEventTimeout(&evt,espera);
-        
+        //int AUX_WaitEventTimeout(&evt,espera);        
         
         int isevt = SDL_WaitEventTimeout(&evt,espera);
         
@@ -36,7 +35,7 @@ int main (int argc, char* args[])
             espera -= (SDL_GetTicks() - antes);            
             if (espera<0){
                 espera = 0;
-            }*/
+            }
             if(evt.type == SDL_KEYDOWN){
                 switch (evt.key.keysym.sym) {
                     case SDLK_UP:
@@ -52,7 +51,7 @@ int main (int argc, char* args[])
                         r.x += 5;
                         break;
                 }           
-            //}
+            }
         }
             else{
                 espera=500;
