@@ -1,5 +1,6 @@
 #include <SDL2/SDL.h>
 #include <stdbool.h>
+#define max 5
 
 int main (int argc, char* args[])
 {
@@ -17,89 +18,84 @@ int main (int argc, char* args[])
     /* EXECUÇÃO */
     SDL_Rect r = { 0,0, 20,20 };
     SDL_Rect s = {280,280,20,20};
-    SDL_Rect t = {150,150,20,20};
+    SDL_Rect t = {150,150,20,20};            
     
-        SDL_SetRenderDrawColor(ren, 255,255,255,0);
-        SDL_RenderClear(ren);
-        SDL_SetRenderDrawColor(ren, 0,0,255,0);
-        SDL_RenderFillRect(ren, &r);
-        SDL_RenderPresent(ren);
+    SDL_Event evt;
+    SDL_SetRenderDrawColor(ren, 255,255,255,0);
+    SDL_RenderClear(ren);
+    SDL_SetRenderDrawColor(ren, 0,0,255,0);
+    SDL_RenderFillRect(ren, &r);
+    SDL_RenderPresent(ren);
+   
+    while(!quit){  
     
-    
-    //SDL_Event evt;   
-    
-    
-    while (true) {  
-        
-        //while(SDL_PollEvent(&evt) !=0)
-        //{
-                
-        SDL_Event evt;
-        
-        if (SDL_PollEvent(&evt)){
-        
-        //SDL_WaitEvent(&evt);
-        
+        SDL_WaitEvent(&evt);        
+            
         if (evt.type == SDL_QUIT){
-            //quit = true;
+          quit = true;
             break;
-        } 
-        
-        int isevt = SDL_WaitEventTimeout(&evt, 1000);
-        //int isevt = SDL_WaitEvent(&evt);
-        //int isevt = SDL_Event(&evt);
-        if (isevt) {
-        //if (1){
-            if (evt.type == SDL_MOUSEBUTTONDOWN) {                
-                switch (1) {
+        }         
+     
+        SDL_Event evt;        
+        int isevt = SDL_WaitEventTimeout(&evt,500);
+        if (isevt){            
+            if (evt.type == SDL_MOUSEBUTTONDOWN){     
+            int i;
+           for(i=1;i<=max;i++){
+                switch (i) {
                     case 1:
                         while (r.y<280){                    
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 255,0,0,0);
                         SDL_RenderFillRect(ren,&r);
-                        SDL_RenderPresent(ren);                        
-                        r.y += 2;
-                        break;}
+                        SDL_RenderPresent(ren);
+                        SDL_Delay(100);
+                        r.y += 5;}
+                        break;
                     case 2:
                         while (r.x<280){                    
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,255,0,0);
                         SDL_RenderFillRect(ren,&r);
-                        SDL_RenderPresent(ren);                       
-                        r.x += 2;
-                        break;}
+                        SDL_RenderPresent(ren);
+                        SDL_Delay(100);
+                        r.x += 5;}
+                        break;
                     case 3:
                         while (s.y>0){                    
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,0,255,0);
                         SDL_RenderFillRect(ren,&s);
-                        SDL_RenderPresent(ren);                        
-                        s.y -= 2;
-                        break;}
+                        SDL_RenderPresent(ren);
+                        SDL_Delay(100);
+                        s.y -= 5;}
+                        break;
                     case 4:
                         while (s.x>0){                    
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,255,255,0);
                         SDL_RenderFillRect(ren,&s);
-                        SDL_RenderPresent(ren);                        
-                        s.x -= 2;
-                        break;} 
+                        SDL_RenderPresent(ren);
+                        SDL_Delay(100);
+                        s.x -= 5;}
+                        break; 
                     case 5:                        
                         SDL_SetRenderDrawColor(ren, 0,0,0,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderFillRect(ren,&t);
                         SDL_RenderPresent(ren);                        
-                        break;                    
+                        break;                
+            }
+               }
             }
         }   
-        }
-                }
-    }
+    }     
+    
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
     SDL_DestroyWindow(win);
