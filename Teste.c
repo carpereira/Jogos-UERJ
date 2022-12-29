@@ -17,6 +17,7 @@ int main (int argc, char* args[])
     //SDL_Rect r = { 50,50, 10,10 };
     SDL_Rect r = { 0,0, 15,15 };
     int espera = 500;
+    int aux = 0;
     
     while (1) {        
         SDL_SetRenderDrawColor(ren, 255,255,255,0);
@@ -32,8 +33,10 @@ int main (int argc, char* args[])
         //int auxevt = AUX_WaitEventTimeoutCount(SDL_WaitEventTimeout(&evt,espera),espera);
         
         //if(auxevt){
-        if(isevt){
-            espera -= (SDL_GetTicks() - antes);            
+        if(isevt){            
+            //espera -= (SDL_GetTicks() - antes);
+            aux += SDL_GetTicks() - antes);
+            espera -= aux;
             if (espera<0){
                 espera = 0;
             }
