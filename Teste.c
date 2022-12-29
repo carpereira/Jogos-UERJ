@@ -55,7 +55,7 @@ int main (int argc, char* args[])
             }
         }
             else{
-                //espera=500;
+                espera=500;
                 r.x +=2;
                 r.y +=2;
             }       
