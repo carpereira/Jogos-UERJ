@@ -35,7 +35,7 @@ int main (int argc, char* args[])
         //if(auxevt){
         if(isevt){            
             //espera -= (SDL_GetTicks() - antes);
-            aux += SDL_GetTicks() - antes);
+            aux += (SDL_GetTicks() - antes);
             espera -= aux;
             if (espera<0){
                 espera = 0;
