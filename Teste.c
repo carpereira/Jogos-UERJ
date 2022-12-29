@@ -30,7 +30,7 @@ int main (int argc, char* args[])
         //int AUX_WaitEventTimeout(&evt,espera);        
         
         int isevt = SDL_WaitEventTimeout(&evt,espera);
-        int AUX_WaitEventTimeout(isevt,espera);
+        int AUX_WaitEventTimeout(int isevt,int espera);
         
         if(isevt){
             espera -= (SDL_GetTicks() - antes);            
