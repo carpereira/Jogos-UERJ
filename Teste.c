@@ -27,10 +27,11 @@ int main (int argc, char* args[])
         SDL_Event evt;
         Uint32 antes = SDL_GetTicks();        
                
-        //int isevt = SDL_WaitEventTimeout(&evt,espera);
-        int auxevt = AUX_WaitEventTimeoutCount(SDL_WaitEventTimeout(&evt,espera),espera);
+        int isevt = SDL_WaitEventTimeout(&evt,espera);
+        //int auxevt = AUX_WaitEventTimeoutCount(SDL_WaitEventTimeout(&evt,espera),espera);
         
-        if(auxevt){
+        //if(auxevt){
+        if(isevt){
             espera -= (SDL_GetTicks() - antes);            
             if (espera<0){
                 espera = 0;
@@ -53,7 +54,8 @@ int main (int argc, char* args[])
             }
         }
             else{
-                espera=500;
+                espera -= (SDL_GetTicks() - antes);
+                //espera=500;
                 r.x +=2;
                 r.y +=2;
             }       
