@@ -14,7 +14,8 @@ int main (int argc, char* args[])
     
 
     /* EXECUÇÃO */
-    SDL_Rect r = { 50,50, 10,10 };
+    //SDL_Rect r = { 50,50, 10,10 };
+    SDL_Rect r = { 0,0, 15,15 };
     int espera = 500;
     
     while (1) {        
