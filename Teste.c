@@ -15,7 +15,7 @@ int main (int argc, char* args[])
 
     /* EXECUÇÃO */    
     SDL_Rect r = { 0,0, 15,15 };
-    int espera = 50;
+    int espera = 500;
     //int aux = 0;
     
     while (1) {        
@@ -29,13 +29,13 @@ int main (int argc, char* args[])
         Uint32 antes = SDL_GetTicks();        
                
         //int isevt = SDL_WaitEventTimeout(&evt,espera);
-        int auxevt = AUX_WaitEventTimeoutCount(SDL_WaitEventTimeout(&evt,espera),espera);
+        int auxevt = AUX_WaitEventTimeoutCount(&evt,espera);
         
-        if(auxevt){
-        //if(isevt){            
-            espera -= (SDL_GetTicks() - antes);
-            //aux += (SDL_GetTicks() - antes);
-            //espera -= aux;
+        //if(auxevt){
+        if(isevt){            
+            //espera -= (SDL_GetTicks() - antes);
+            aux += (SDL_GetTicks() - antes);
+            espera -= aux;
             //if (espera<0){
                 //espera = 0;
             //}
@@ -58,7 +58,7 @@ int main (int argc, char* args[])
         }
             else{
                 //espera -= (SDL_GetTicks() - antes);
-                espera=50;
+                espera=500;
                 r.x +=2;
                 r.y +=2;
             }       
