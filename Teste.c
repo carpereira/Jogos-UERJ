@@ -16,7 +16,7 @@ int main (int argc, char* args[])
     /* EXECUÇÃO */    
     SDL_Rect r = { 0,0, 15,15 };
     int espera = 500;
-    //int aux = 0;
+    int aux = 0;
     
     while (1) {        
         SDL_SetRenderDrawColor(ren, 255,255,255,0);
