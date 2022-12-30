@@ -15,7 +15,7 @@ int main (int argc, char* args[])
 
     /* EXECUÇÃO */    
     SDL_Rect r = { 0,0, 15,15 };
-    int espera = 500;
+    int espera = 50;
     //int aux = 0;
     
     while (1) {        
@@ -58,7 +58,7 @@ int main (int argc, char* args[])
         }
             else{
                 //espera -= (SDL_GetTicks() - antes);
-                espera=500;
+                espera=50;
                 r.x +=2;
                 r.y +=2;
             }       
