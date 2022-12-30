@@ -13,11 +13,10 @@ int main (int argc, char* args[])
     SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
     
 
-    /* EXECUÇÃO */
-    //SDL_Rect r = { 50,50, 10,10 };
+    /* EXECUÇÃO */    
     SDL_Rect r = { 0,0, 15,15 };
     int espera = 500;
-    int aux = 0;
+    //int aux = 0;
     
     while (1) {        
         SDL_SetRenderDrawColor(ren, 255,255,255,0);
@@ -37,8 +36,8 @@ int main (int argc, char* args[])
             espera -= (SDL_GetTicks() - antes);
             //aux += (SDL_GetTicks() - antes);
             //espera -= aux;
-            if (espera<0){
-                espera = 0;
+            //if (espera<0){
+                //espera = 0;
             }
             if(evt.type == SDL_KEYDOWN){
                 switch (evt.key.keysym.sym) {
