@@ -16,7 +16,7 @@ int main (int argc, char* args[])
     /* EXECUÇÃO */    
     SDL_Rect r = { 0,0, 15,15 };
     int espera = 500;
-    int aux = 0;
+    //int aux = 0;
     
     while (1) {        
         SDL_SetRenderDrawColor(ren, 255,255,255,0);
@@ -28,17 +28,17 @@ int main (int argc, char* args[])
         SDL_Event evt;
         Uint32 antes = SDL_GetTicks();        
                
-        //int isevt = SDL_WaitEventTimeout(&evt,espera);
-        int auxevt = AUX_WaitEventTimeoutCount(&evt,200);
+        int isevt = SDL_WaitEventTimeout(&evt,espera);
+       //int auxevt = AUX_WaitEventTimeoutCount(&evt,200);
         
-        if(auxevt){
-        //if(isevt){            
-            //espera -= (SDL_GetTicks() - antes);
-            aux += (SDL_GetTicks() - antes);
-            espera -= aux;
-            //if (espera<0){
-                //espera = 0;
-            //}
+        //if(auxevt){
+        if(isevt){            
+            espera -= (SDL_GetTicks() - antes);
+            //aux += (SDL_GetTicks() - antes);
+            //espera -= aux;
+            if (espera<0){
+                espera = 0;
+            }
             if(evt.type == SDL_KEYDOWN){
                 switch (evt.key.keysym.sym) {
                     case SDLK_UP:
