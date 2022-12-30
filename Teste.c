@@ -38,7 +38,7 @@ int main (int argc, char* args[])
             //espera -= aux;
             //if (espera<0){
                 //espera = 0;
-            }
+            //}
             if(evt.type == SDL_KEYDOWN){
                 switch (evt.key.keysym.sym) {
                     case SDLK_UP:
