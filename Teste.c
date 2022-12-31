@@ -42,25 +42,20 @@ int main (int argc, char* args[])
                 SDL_RenderClear(ren);
                 SDL_SetRenderDrawColor(ren, 255,0,0,0);
                 SDL_RenderFillRect(ren, &r);
-                //SDL_RenderPresent(ren);
                 
-                //SDL_SetRenderDrawColor(ren, 255,255,255,0);
-                //SDL_RenderClear(ren);
-                //SDL_SetRenderDrawColor(ren, 0,0,255,0);
-                //SDL_RenderFillRect(ren, &r);
                 SDL_SetRenderDrawColor(ren, 0,255,0,0);
                 SDL_RenderFillRect(ren, &s);
+                
                 SDL_SetRenderDrawColor(ren, 255,0,0,0);
                 SDL_RenderFillRect(ren, &t);
-                SDL_RenderPresent(ren);
-                //SDL_Delay(200);
+                SDL_RenderPresent(ren);                
             }
         }
             else{
-                //r.x +=2;
+                if(y>30){
                 r.y -=5;
                 s.y -=5;
-                t.y -=5;
+                t.y -=5;}
             }                
               
         if (evt.type == SDL_QUIT){
