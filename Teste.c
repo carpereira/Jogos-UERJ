@@ -8,15 +8,15 @@ int main (int argc, char* args[])
     SDL_Window* win = SDL_CreateWindow("Linha de chegada com Tres Retângulos",
                          SDL_WINDOWPOS_UNDEFINED,
                          SDL_WINDOWPOS_UNDEFINED,
-                         200, 200, SDL_WINDOW_SHOWN
+                         300, 300, SDL_WINDOW_SHOWN
                       );
     SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
     
 
     /* EXECUÇÃO */
-    SDL_Rect r = { 100,10, 20,20 }; 
-    SDL_Rect s = { 50,50, 30,40 };
-    SDL_Rect t = { 150,100, 50,20 };
+    SDL_Rect r = { 0,180, 20,20 }; 
+    SDL_Rect s = { 100,160, 30,40 };
+    SDL_Rect t = { 200,180, 50,20 };
    
    
     while (1) {        
