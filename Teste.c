@@ -85,7 +85,7 @@ int main (int argc, char* args[])
                     break;}
                     else {t.x=150;
                         break;}                    
-            //}
+            }
         }
     }
         
