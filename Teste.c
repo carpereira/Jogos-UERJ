@@ -52,13 +52,13 @@ int main (int argc, char* args[])
             }
         }
             else{
-                if(r.y>30){
+                if(r.y>35){
                     r.y -=5;
                 }
-                if(s.y>30){
+                if(s.y>35){
                     s.y -=4;
                     }
-                if(t.y>30){
+                if(t.y>35){
                 t.y -=2;}
             }                
               
