@@ -56,7 +56,7 @@ int main (int argc, char* args[])
                     r.y -=5;
                 }
                 if(s.y>30){
-                    s.y -=4
+                    s.y -=4;
                     }
                 if(t.y>30){
                 t.y -=2;}
