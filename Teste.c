@@ -1,4 +1,5 @@
 #include <SDL2/SDL.h>
+#define AUX_WaitEventTimeoutCount
 
 
 int main (int argc, char* args[])
@@ -15,7 +16,7 @@ int main (int argc, char* args[])
 
     /* EXECUÇÃO */    
     SDL_Rect r = { 0,0, 15,15 };
-    int espera = 500;
+    int espera = 50;
     //int aux = 0;
     
     while (1) {        
