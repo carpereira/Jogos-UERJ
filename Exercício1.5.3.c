@@ -18,7 +18,9 @@ int main (int argc, char* args[])
     /* EXECUÇÃO */
     SDL_Rect r = { 0,0, 20,20 };
     SDL_Rect s = {280,280,20,20};
-    SDL_Rect t = {150,150,20,20};            
+    SDL_Rect t = {150,150,20,20};
+    
+    while(1){
     
     SDL_Event evt;
     SDL_SetRenderDrawColor(ren, 255,255,255,0);
@@ -27,7 +29,7 @@ int main (int argc, char* args[])
     SDL_RenderFillRect(ren, &r);
     SDL_RenderPresent(ren);
    
-    while(!quit){  
+    //while(!quit){  
     
         SDL_WaitEvent(&evt);        
             
