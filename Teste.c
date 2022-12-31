@@ -59,6 +59,8 @@ int main (int argc, char* args[])
             else{
                 //r.x +=2;
                 r.y -=5;
+                s.y -=5;
+                t.y -=5;
             }                
               
         if (evt.type == SDL_QUIT){
