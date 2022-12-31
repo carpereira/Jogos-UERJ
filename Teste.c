@@ -47,8 +47,8 @@ int main (int argc, char* args[])
             }
         }
             else{
-                r.x +=2;
-                r.y +=2;
+                //r.x +=2;
+                r.y -=2;
             }                
               
         if (evt.type == SDL_QUIT){
