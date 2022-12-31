@@ -92,7 +92,9 @@ int main (int argc, char* args[])
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderFillRect(ren,&t);
-                        SDL_RenderPresent(ren);                        
+                        SDL_RenderPresent(ren);
+                        t.x=150;
+                        t.y=150;
                         break;                
             }
                }
