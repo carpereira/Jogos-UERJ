@@ -59,7 +59,7 @@ int main (int argc, char* args[])
         }
             else{
                 //espera -= (SDL_GetTicks() - antes);
-                espera=10;
+                espera=1000;
                 r.x +=2;
                 r.y +=2;
             }       
