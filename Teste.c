@@ -65,39 +65,6 @@ int main (int argc, char* args[])
         if (evt.type == SDL_QUIT){
             break;
         }        
-         /*            
-        //if (evt.type == SDL_MOUSEMOTION){
-           // s.x=evt.motion.x, s.y=evt.motion.y;          
-        //}
-                
-        if (evt.type == SDL_KEYDOWN) {            
-            switch (evt.key.keysym.sym) {
-                case SDLK_UP:
-                    if (t.y>0){
-                        t.y -= 5;
-                        break;}
-                    else {t.y=0;    
-                        break;}
-                case SDLK_DOWN:
-                    if(t.y<180){
-                        t.y += 5;
-                        break;}
-                    else {t.y=180;
-                        break;}
-                case SDLK_LEFT:
-                    if(t.x>0){
-                        t.x -= 5;
-                        break;}
-                    else {t.x>0;
-                        break;}
-                case SDLK_RIGHT:
-                    if(t.x<150){
-                        t.x += 5;
-                    break;}
-                    else {t.x=150;
-                        break;}                    
-            }
-        }*/
     }
         
     /* FINALIZACAO */
