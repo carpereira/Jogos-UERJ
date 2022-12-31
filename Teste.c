@@ -34,7 +34,7 @@ int main (int argc, char* args[])
         SDL_RenderPresent(ren);
         
         SDL_Event evt;
-        
+        if (r.y>35 | s.y>35 | t.y>35){
         int isevt = SDL_WaitEventTimeout(&evt,500);
         if(isevt){
             if(evt.type == SDL_MOUSEBUTTONDOWN){
@@ -60,7 +60,19 @@ int main (int argc, char* args[])
                     }
                 if(t.y>35){
                 t.y -=2;}
-            }                
+            }
+        }
+        else{
+            SDL_SetRenderDrawColor(ren, 255,255,255,0);
+            SDL_RenderClear(ren);
+            SDL_SetRenderDrawColor(ren, 0,0,255,0);
+            SDL_RenderFillRect(ren, &r);
+            SDL_SetRenderDrawColor(ren, 0,255,0,0);
+            SDL_RenderFillRect(ren, &s);
+            SDL_SetRenderDrawColor(ren, 255,0,0,0);
+            SDL_RenderFillRect(ren, &t);
+            SDL_RenderPresent(ren);
+            SDL_RenderPresent(ren);
               
         if (evt.type == SDL_QUIT){
             break;
