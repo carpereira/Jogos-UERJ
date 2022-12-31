@@ -5,7 +5,7 @@ int main (int argc, char* args[])
 {
     /* INICIALIZACAO */
     SDL_Init(SDL_INIT_EVERYTHING);
-    SDL_Window* win = SDL_CreateWindow("Aplicação Tres Retângulos",
+    SDL_Window* win = SDL_CreateWindow("Linha de chegada com Tres Retângulos",
                          SDL_WINDOWPOS_UNDEFINED,
                          SDL_WINDOWPOS_UNDEFINED,
                          200, 200, SDL_WINDOW_SHOWN
