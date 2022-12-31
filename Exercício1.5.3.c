@@ -21,17 +21,8 @@ int main (int argc, char* args[])
     SDL_Rect t = {150,150,20,20};
     
     while(1){
-    
-    //SDL_Event evt;
-    //SDL_SetRenderDrawColor(ren, 255,255,255,0);
-    //SDL_RenderClear(ren);
-    //SDL_SetRenderDrawColor(ren, 0,0,255,0);
-    //SDL_RenderFillRect(ren, &r);
-    //SDL_RenderPresent(ren);
         
     SDL_Event evt;    
-   
-    //while(!quit){  
     
         SDL_WaitEvent(&evt);        
             
@@ -39,11 +30,9 @@ int main (int argc, char* args[])
           quit = true;
             break;
         }         
-     
-        //SDL_Event evt;        
+             
         int isevt = SDL_WaitEventTimeout(&evt,500);
-        if (isevt){            
-            //if (evt.type == SDL_MOUSEBUTTONDOWN){     
+        if (isevt){                
             int i;
            for(i=1;i<=max;i++){
                 switch (i) {
@@ -98,8 +87,7 @@ int main (int argc, char* args[])
                         break;                
             }
                }
-            //}
-        }   
+                    }   
     }     
     
     /* FINALIZACAO */
