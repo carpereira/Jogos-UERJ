@@ -88,7 +88,8 @@ int main (int argc, char* args[])
         if(evt.type ==  SDL_MOUSEMOTION){
             if(s.y>35){
                 s.x=evt.motion.x, s.y=evt.motion.y;}
-            else{s.y=35;                
+            else{s.y=35;
+                 break;
             }
         }
         if  (evt.type == SDL_KEYDOWN){
