@@ -62,7 +62,7 @@ int main (int argc, char* args[])
                 t.y -=2;}
             }
         }
-        /*else{
+        else{
             SDL_SetRenderDrawColor(ren, 255,255,255,0);
             SDL_RenderClear(ren);
             SDL_SetRenderDrawColor(ren, 0,0,255,0);
@@ -74,7 +74,7 @@ int main (int argc, char* args[])
             SDL_SetRenderDrawColor(ren, 255,0,0,0);
             SDL_RenderFillRect(ren, &t);
             t.x=240, t.y=280;
-            SDL_RenderPresent(ren);}*/
+            SDL_RenderPresent(ren);}
               
         if (evt.type == SDL_QUIT){
             break;
