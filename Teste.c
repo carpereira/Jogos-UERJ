@@ -98,7 +98,7 @@ int main (int argc, char* args[])
                           break;}
                 case SDLK_DOWN:
                     if(t.y<280){
-                        t.y -=5;
+                        t.y +=5;
                         break;}
                     else {t.y=280;
                           break;}
@@ -110,7 +110,7 @@ int main (int argc, char* args[])
                           break;}
                case SDLK_RIGHT:
                     if(t.x<250){
-                        t.x -=5;
+                        t.x +=5;
                         break;}
                     else {t.x=250;
                           break;}
