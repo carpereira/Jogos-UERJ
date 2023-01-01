@@ -41,13 +41,11 @@ int main (int argc, char* args[])
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);
                 SDL_RenderClear(ren);
                 SDL_SetRenderDrawColor(ren, 0,0,255,0);
-                SDL_RenderFillRect(ren, &r);
-                
-                //SDL_SetRenderDrawColor(ren, 0,255,0,0);
-                //SDL_RenderFillRect(ren, &s);
-                
-                //SDL_SetRenderDrawColor(ren, 255,0,0,0);
-                //SDL_RenderFillRect(ren, &t);
+                SDL_RenderFillRect(ren, &r);                
+                SDL_SetRenderDrawColor(ren, 0,255,0,0);
+                SDL_RenderFillRect(ren, &s);                
+                SDL_SetRenderDrawColor(ren, 255,0,0,0);
+                SDL_RenderFillRect(ren, &t);
                 SDL_RenderPresent(ren);               
             }
         }
@@ -85,7 +83,11 @@ int main (int argc, char* args[])
               
         if (evt.type == SDL_QUIT){
             break;
-        }        
+        }
+        
+        if(evt.type ==  SDL_MOUSEMOTION{
+            s.x=evt.motion.x, s.y=evt.motion.y;
+        }
     }
         
     /* FINALIZACAO */
