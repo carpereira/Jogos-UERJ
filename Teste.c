@@ -67,6 +67,7 @@ int main (int argc, char* args[])
                 else{
                     printf("Vermelho");
             }
+            }
         }
         else{
             SDL_SetRenderDrawColor(ren, 255,255,255,0);
