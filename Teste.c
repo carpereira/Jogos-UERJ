@@ -85,8 +85,9 @@ int main (int argc, char* args[])
             break;
         }
         
+        while(s.y>35 | s.y<280 | s.x>0 | s.x<250){
         if(evt.type ==  SDL_MOUSEMOTION){
-            while(s.y>35 | s.y<280 | s.x>0 | s.x<250){
+            //while(s.y>35 | s.y<280 | s.x>0 | s.x<250){
             s.x=evt.motion.x, s.y=evt.motion.y;}
         }
         if  (evt.type == SDL_KEYDOWN){
