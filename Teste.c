@@ -92,25 +92,25 @@ int main (int argc, char* args[])
             switch (evt.key.keysym.sym){
                 case SDLK_UP:
                     if(t.y>35){
-                        t.y +=5;
+                        t.y -=5;
                         break;}
                     else {t.y=35;
                           break;}
                 case SDLK_DOWN:
                     if(t.y<280){
-                        t.y +=5;
+                        t.y -=5;
                         break;}
                     else {t.y=280;
                           break;}
                case SDLK_LEFT:
                     if(t.x>0){
-                        t.x +=5;
+                        t.x -=5;
                         break;}
                     else {t.x=0; 
                           break;}
                case SDLK_RIGHT:
                     if(t.x<250){
-                        t.x +=5;
+                        t.x -=5;
                         break;}
                     else {t.x=250;
                           break;}
