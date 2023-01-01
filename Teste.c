@@ -115,6 +115,8 @@ int main (int argc, char* args[])
                     else {t.x=250;
                           break;}
     }
+        }
+    }
         
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
