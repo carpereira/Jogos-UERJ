@@ -57,17 +57,17 @@ int main (int argc, char* args[])
                     r.y -=5;}
                     //else{
                         //printf("Azul");
-                }
+                //}
                 if(s.y>35){
                     s.y -=4;}
                     //else{
                         //printf("Verde");
-                    }
+                    //}
                 if(t.y>35){
                 t.y -=2;}
                 //else{
                     //printf("Vermelho");
-            }
+            //}
             }
         }
         else{
