@@ -3,6 +3,7 @@
 
 #include <assert.h>
 #include <SDL2/SDL_ttf.h>
+#include <SDL2/SDL_surface.h>
 
 
 int main (int argc, char* args[])
