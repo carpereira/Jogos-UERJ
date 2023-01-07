@@ -31,7 +31,7 @@ void drawText(const char* fmt, ...) {
 
     SDL_RenderCopy(renderer, textureText, NULL, &dest);
 
-    SDL_DestroyTexture(textureText);
+    //SDL_DestroyTexture(textureText);
 }
 
 int main(int argc, char *argv[]) {
