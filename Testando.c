@@ -27,7 +27,7 @@ void drawText(const char* fmt, ...) {
     SDL_Rect dest = {0};
     SDL_QueryTexture(textureText, NULL, NULL, &dest.w, &dest.h);
 
-    SDL_FreeSurface(text);
+    //SDL_FreeSurface(text);
 
     SDL_RenderCopy(renderer, textureText, NULL, &dest);
 
