@@ -8,9 +8,7 @@
 int main (int argc, char* args[])
 {
     /* INICIALIZACAO */
-    SDL_Init(SDL_INIT_EVERYTHING);
-    
-    //TTF_Int();      
+    SDL_Init(SDL_INIT_EVERYTHING);   
     
     SDL_Window* win = SDL_CreateWindow("Linha de chegada com Tres Retângulos",
                          SDL_WINDOWPOS_UNDEFINED,
@@ -23,7 +21,7 @@ int main (int argc, char* args[])
     TTF_Font* fnt = TTF_OpenFont("tiny.ttf", 20);
     assert(fnt != NULL);
     SDL_Color clr = {0xFF,0x00,0x00,0xFF};
-    SDL_Surface* sfc = TTF_RenderText_Blended(fnt, "ola mundo", clr);
+    SDL_Surface* sfc = TTF_RenderText_Blended(fnt, "Chegou!!!", clr);
     assert(sfc != NULL);
     SDL_Texture* txt = SDL_CreateTextureFromSurface(ren, sfc);
     assert(txt != NULL);
