@@ -1,4 +1,5 @@
 #include <SDL2/SDL_ttf.h>
+#include <assert.h>
 int main (int argc, char* args[]) {
 /* INICIALIZACAO */
 TTF_Init();
