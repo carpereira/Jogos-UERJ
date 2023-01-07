@@ -55,19 +55,13 @@ int main (int argc, char* args[])
             else{
                 if(r.y>35){
                     r.y -=5;}
-                    //else{
-                        //printf("Azul");
-                //}
+                    
                 if(s.y>35){
-                    s.y -=4;}
-                    //else{
-                        //printf("Verde");
-                    //}
+                    s.y -=4;}                  
+                    
                 if(t.y>35){
                 t.y -=2;}
-                //else{
-                    //printf("Vermelho");
-            //}
+                
             }
         }
         else{
