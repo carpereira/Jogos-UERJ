@@ -1,7 +1,7 @@
 #include <SDL2/SDL.h>
 #include <stdlib.h>
 
-//#include <SDL_ttf.h>
+#include <SDL_ttf.h>
 
 
 int main (int argc, char* args[])
@@ -9,7 +9,7 @@ int main (int argc, char* args[])
     /* INICIALIZACAO */
     SDL_Init(SDL_INIT_EVERYTHING);
     
-    TTF_Int();
+    //TTF_Int();
     TTF_Init();
     TTF_Font* fnt = TTF_OpenFont("tiny.ttf", 20);
     assert(fnt != NULL);
