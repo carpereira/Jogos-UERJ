@@ -10,7 +10,15 @@ int main (int argc, char* args[])
     /* INICIALIZACAO */
     SDL_Init(SDL_INIT_EVERYTHING);
     
-    //TTF_Int();
+    //TTF_Int();      
+    
+    SDL_Window* win = SDL_CreateWindow("Linha de chegada com Tres Retângulos",
+                         SDL_WINDOWPOS_UNDEFINED,
+                         SDL_WINDOWPOS_UNDEFINED,
+                         300, 300, SDL_WINDOW_SHOWN
+                      );
+    SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
+    
     TTF_Init();
     TTF_Font* fnt = TTF_OpenFont("tiny.ttf", 20);
     assert(fnt != NULL);
@@ -20,14 +28,6 @@ int main (int argc, char* args[])
     SDL_Texture* txt = SDL_CreateTextureFromSurface(ren, sfc);
     assert(txt != NULL);
     SDL_FreeSurface(sfc);
-    
-    
-    SDL_Window* win = SDL_CreateWindow("Linha de chegada com Tres Retângulos",
-                         SDL_WINDOWPOS_UNDEFINED,
-                         SDL_WINDOWPOS_UNDEFINED,
-                         300, 300, SDL_WINDOW_SHOWN
-                      );
-    SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
     
 
     /* EXECUÇÃO */
@@ -145,7 +145,7 @@ int main (int argc, char* args[])
     SDL_Quit();
     
     SDL_DestroyTexture(txt);
-    TTF_CloseFont(font);
+    TTF_CloseFont(fnt);
     TTF_Quit();
 }
  
