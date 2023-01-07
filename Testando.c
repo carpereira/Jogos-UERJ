@@ -1,5 +1,5 @@
 #include <SDL2/SDL_ttf.h>
-int main () {
+int main (int argc, char* args[]) {
 /* INICIALIZACAO */
 TTF_Init();
 TTF_Font* fnt = TTF_OpenFont("tiny.ttf", 20);
