@@ -1,7 +1,7 @@
 // Testado com MinGW64:
 // gcc -Wall -Wextra -Wpedantic -Wno-unused-parameter test0.c `sdl2-config --cflags --libs` -lSDL2_ttf
-#include <SDL.h>
-#include <SDL_ttf.h>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_ttf.h>
 
 SDL_Window  *window;
 SDL_Surface *surface;
