@@ -26,6 +26,7 @@ int main (int argc, char* args[])
     while (1) {                      
         SDL_WaitEvent(&evt);
         
+        int j;
         for(j=0;j<10;j++);
         if (evt.type == SDL_MOUSEBUTTONDOWN){                        
                 r.x=evt.motion.x, r.y=evt.motion.y;   
