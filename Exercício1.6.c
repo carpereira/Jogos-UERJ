@@ -1,13 +1,13 @@
 #include <SDL2/SDL.h>
 #include <stdlib.h>
-#include <SDL_ttf.h>
+//#include <SDL_ttf.h>
 
 
 int main (int argc, char* args[])
 {
     /* INICIALIZACAO */
     SDL_Init(SDL_INIT_EVERYTHING);
-    TTF_Int();
+    //TTF_Int();
     SDL_Window* win = SDL_CreateWindow("Linha de chegada com Tres Retângulos",
                          SDL_WINDOWPOS_UNDEFINED,
                          SDL_WINDOWPOS_UNDEFINED,
@@ -128,6 +128,6 @@ int main (int argc, char* args[])
     SDL_DestroyRenderer(ren);
     SDL_DestroyWindow(win);
     SDL_Quit();
-    TTF_CloseFont(font);
+    //TTF_CloseFont(font);
 }
  
