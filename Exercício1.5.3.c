@@ -24,12 +24,12 @@ int main (int argc, char* args[])
         
     SDL_Event evt;    
     
-        SDL_WaitEvent(&evt);        
+        /*SDL_WaitEvent(&evt);        
             
         if (evt.type == SDL_QUIT){
           quit = true;
             break;
-        }         
+        }*/         
              
         int isevt = SDL_WaitEventTimeout(&evt,500);
         if (isevt){                
@@ -87,7 +87,11 @@ int main (int argc, char* args[])
                         break;                
             }
                }
-                    }   
+                    } 
+        if (evt.type == SDL_QUIT){
+          quit = true;
+            break;
+        }
     }     
     
     /* FINALIZACAO */
