@@ -1,13 +1,11 @@
 #include <SDL2/SDL.h>
 #include <stdlib.h>
-//#include <SDL_ttf.h>
-
 
 int main (int argc, char* args[])
 {
     /* INICIALIZACAO */
     SDL_Init(SDL_INIT_EVERYTHING);
-    //TTF_Int();
+    
     SDL_Window* win = SDL_CreateWindow("Linha de chegada com Tres Retângulos",
                          SDL_WINDOWPOS_UNDEFINED,
                          SDL_WINDOWPOS_UNDEFINED,
@@ -54,20 +52,14 @@ int main (int argc, char* args[])
         }
             else{
                 if(r.y>35){
-                    r.y -=5;}
-                    //else{
-                        //printf("Azul");
-                //}
+                    r.y -=5;}                                          
+                
                 if(s.y>35){
                     s.y -=4;}
-                    //else{
-                        //printf("Verde");
-                    //}
+                                                              
                 if(t.y>35){
-                t.y -=2;}
-                //else{
-                    //printf("Vermelho");
-            //}
+                t.y -=2;}                
+                                
             }
         }
         else{
@@ -127,7 +119,6 @@ int main (int argc, char* args[])
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
     SDL_DestroyWindow(win);
-    SDL_Quit();
-    //TTF_CloseFont(font);
+    SDL_Quit();    
 }
  
