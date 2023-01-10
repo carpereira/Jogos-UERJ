@@ -87,7 +87,7 @@ int main (int argc, char* args[])
                         t.x=150;
                         t.y=150;
                         break;                
-            }
+            //}
                }
                     } 
         }
