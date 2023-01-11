@@ -27,87 +27,82 @@ int main (int argc, char* args[])
     SDL_RenderPresent(ren);                         
                
     while(!quit){
-        while(SDL_PollEvent(&evt)) // check to see if an event has happened
-    {
-        switch(evt.type)
-        {
-            case SDL_QUIT:
-                quit = true;
-                break;
-            case SDL_MOUSEBUTTONDOWN: // if the event is mouse click
-               
-                    if (r.x=evt.motion.x, r.y=evt.motion.y){           
-                SDL_SetRenderDrawColor(ren,255,255,255,0);           
-                SDL_SetRenderDrawColor(ren, 127,255,212,0);            
-                SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren);                
-        }       
-                     if (r.x=evt.motion.x, r.y=evt.motion.y){        
-                SDL_SetRenderDrawColor(ren, 255,255,255,0);            
-                SDL_SetRenderDrawColor(ren, 173,255,47,0);            
-                SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren);                
-        }
-                 if (r.x=evt.motion.x, r.y=evt.motion.y){            
-                SDL_SetRenderDrawColor(ren, 255,255,255,0);                
-                SDL_SetRenderDrawColor(ren, 255,255,0,0);            
-                SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren);                
-        }                      
-               
-                if (r.x=evt.motion.x, r.y=evt.motion.y){            
-                SDL_SetRenderDrawColor(ren, 255,255,255,0);                
-                SDL_SetRenderDrawColor(ren, 0,255,0,0);            
-                SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren);                
-        }    
-                        
-                
+        while(SDL_PollEvent(&evt)){
+            switch(evt.type){
+                    case SDL_QUIT:
+                    quit = true;
+                    break;
+                    
+                    case SDL_MOUSEBUTTONDOWN:               
+                    if (r.x=evt.motion.x, r.y=evt.motion.y){
+                        SDL_SetRenderDrawColor(ren,255,255,255,0);           
+                        SDL_SetRenderDrawColor(ren, 127,255,212,0);            
+                        SDL_RenderFillRect(ren, &r);                
+                        SDL_RenderPresent(ren);
+                        break;
+                        }       
+                     if (r.x=evt.motion.x, r.y=evt.motion.y){
+                         SDL_SetRenderDrawColor(ren, 255,255,255,0);            
+                         SDL_SetRenderDrawColor(ren, 173,255,47,0);            
+                         SDL_RenderFillRect(ren, &r);                
+                         SDL_RenderPresent(ren);
+                         break;
+                         }
+                     if (r.x=evt.motion.x, r.y=evt.motion.y){            
+                        SDL_SetRenderDrawColor(ren, 255,255,255,0);                
+                        SDL_SetRenderDrawColor(ren, 255,255,0,0);            
+                        SDL_RenderFillRect(ren, &r);                
+                        SDL_RenderPresent(ren);
+                         break;
+                         }               
+                     if (r.x=evt.motion.x, r.y=evt.motion.y){            
+                        SDL_SetRenderDrawColor(ren, 255,255,255,0);                
+                        SDL_SetRenderDrawColor(ren, 0,255,0,0);            
+                        SDL_RenderFillRect(ren, &r);                
+                        SDL_RenderPresent(ren);
+                         break;
+                         }                
                 if (r.x=evt.motion.x, r.y=evt.motion.y){            
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);                
                 SDL_SetRenderDrawColor(ren, 255,0,0,0);            
                 SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren);                
-        }    
-                
-                  
+                SDL_RenderPresent(ren);
+                    break;
+        }                      
                 if (r.x=evt.motion.x, r.y=evt.motion.y){       
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);             
                 SDL_SetRenderDrawColor(ren, 176,224,230,0);            
                 SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren);                
-            }
-        
-                 
+                SDL_RenderPresent(ren);
+                    break;
+            }                 
                 if (r.x=evt.motion.x, r.y=evt.motion.y){            
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);            
                 SDL_SetRenderDrawColor(ren, 216,191,216,0);            
                 SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren);                
-        }
-        
-                        
+                SDL_RenderPresent(ren);
+                    break;
+        }                        
                 if (r.x=evt.motion.x, r.y=evt.motion.y){            
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);                       
                 SDL_SetRenderDrawColor(ren, 255,165,0,0);           
                 SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren);                
-        }
-        
-                      
+                SDL_RenderPresent(ren);
+                    break;
+        }                     
                 if (r.x=evt.motion.x, r.y=evt.motion.y){            
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);            
                 SDL_SetRenderDrawColor(ren, 255,105,180,0);            
                 SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren);                
-        }
-        
-        if(evt.type == SDL_MOUSEBUTTONDOWN){               
+                SDL_RenderPresent(ren);
+                    break;
+        }                   
                 if (r.x=evt.motion.x, r.y=evt.motion.y){            
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);            
                 SDL_SetRenderDrawColor(ren, 245,222,179,0);            
                 SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren);                
+                SDL_RenderPresent(ren); 
+                    break;
             }   
                 
             case SDL_KEYDOWN:            
@@ -137,7 +132,7 @@ int main (int argc, char* args[])
         } 
         }
         }
-        }
+        
     
      /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
