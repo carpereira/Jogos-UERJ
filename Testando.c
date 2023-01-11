@@ -135,9 +135,9 @@ int main (int argc, char* args[])
                     break;}                    
             }
         } 
-            
         }
-    
+        }
+        }
     
      /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
