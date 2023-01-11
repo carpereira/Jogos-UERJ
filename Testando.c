@@ -31,16 +31,15 @@ int main (int argc, char* args[])
                                 
                
     while(!quit){
-    while(SDL_PollEvent(&event)) // check to see if an event has happened
+    while(SDL_PollEvent(&evt)) // check to see if an event has happened
     {
-        switch(event.type)
+        switch(evt.type)
         {
             case SDL_QUIT:
                 running = false;
                 break;
             case SDL_MOUSEBUTTONDOWN: // if the event is mouse click
-                if(event.mouse.x >= 100)  // check if it is in the desired area
-                {
+               
                     if (r.x=evt.motion.x, r.y=evt.motion.y){           
                 SDL_SetRenderDrawColor(ren,255,255,255,0);           
                 SDL_SetRenderDrawColor(ren, 127,255,212,0);            
