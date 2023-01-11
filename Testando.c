@@ -38,7 +38,7 @@ int main (int argc, char* args[])
         switch(evt.type)
         {
             case SDL_QUIT:
-                quit = false;
+                quit = true;
                 break;
             case SDL_MOUSEBUTTONDOWN: // if the event is mouse click
                
