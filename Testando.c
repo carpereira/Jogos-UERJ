@@ -62,72 +62,72 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                          break;
                          }                
-                if (r.x=evt.motion.x, r.y=evt.motion.y){            
-                SDL_SetRenderDrawColor(ren, 255,255,255,0);                
-                SDL_SetRenderDrawColor(ren, 255,0,0,0);            
-                SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren);
-                    break;
-        }                      
-                if (r.x=evt.motion.x, r.y=evt.motion.y){       
-                SDL_SetRenderDrawColor(ren, 255,255,255,0);             
-                SDL_SetRenderDrawColor(ren, 176,224,230,0);            
-                SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren);
-                    break;
-            }                 
-                if (r.x=evt.motion.x, r.y=evt.motion.y){            
-                SDL_SetRenderDrawColor(ren, 255,255,255,0);            
-                SDL_SetRenderDrawColor(ren, 216,191,216,0);            
-                SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren);
-                    break;
+                    if (r.x=evt.motion.x, r.y=evt.motion.y){            
+                        SDL_SetRenderDrawColor(ren, 255,255,255,0);                
+                        SDL_SetRenderDrawColor(ren, 255,0,0,0);            
+                        SDL_RenderFillRect(ren, &r);                
+                        SDL_RenderPresent(ren);
+                        break;
+                        }                      
+                    if (r.x=evt.motion.x, r.y=evt.motion.y){       
+                        SDL_SetRenderDrawColor(ren, 255,255,255,0);             
+                        SDL_SetRenderDrawColor(ren, 176,224,230,0);            
+                        SDL_RenderFillRect(ren, &r);                
+                        SDL_RenderPresent(ren);
+                        break;
+                        }                 
+                    if (r.x=evt.motion.x, r.y=evt.motion.y){            
+                        SDL_SetRenderDrawColor(ren, 255,255,255,0);            
+                        SDL_SetRenderDrawColor(ren, 216,191,216,0);            
+                        SDL_RenderFillRect(ren, &r);                
+                        SDL_RenderPresent(ren);
+                        break;
         }                        
-                if (r.x=evt.motion.x, r.y=evt.motion.y){            
-                SDL_SetRenderDrawColor(ren, 255,255,255,0);                       
-                SDL_SetRenderDrawColor(ren, 255,165,0,0);           
-                SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren);
-                    break;
+                    if (r.x=evt.motion.x, r.y=evt.motion.y){            
+                        SDL_SetRenderDrawColor(ren, 255,255,255,0);                       
+                        SDL_SetRenderDrawColor(ren, 255,165,0,0);           
+                        SDL_RenderFillRect(ren, &r);                
+                        SDL_RenderPresent(ren);
+                        break;
         }                     
-                if (r.x=evt.motion.x, r.y=evt.motion.y){            
-                SDL_SetRenderDrawColor(ren, 255,255,255,0);            
-                SDL_SetRenderDrawColor(ren, 255,105,180,0);            
-                SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren);
-                    break;
-        }                   
-                if (r.x=evt.motion.x, r.y=evt.motion.y){            
-                SDL_SetRenderDrawColor(ren, 255,255,255,0);            
-                SDL_SetRenderDrawColor(ren, 245,222,179,0);            
-                SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren); 
-                    break;
-            }   
+                    if (r.x=evt.motion.x, r.y=evt.motion.y){            
+                        SDL_SetRenderDrawColor(ren, 255,255,255,0);            
+                        SDL_SetRenderDrawColor(ren, 255,105,180,0);            
+                        SDL_RenderFillRect(ren, &r);                
+                        SDL_RenderPresent(ren);
+                        break;
+                         }                   
+                    if (r.x=evt.motion.x, r.y=evt.motion.y){            
+                        SDL_SetRenderDrawColor(ren, 255,255,255,0);            
+                        SDL_SetRenderDrawColor(ren, 245,222,179,0);            
+                        SDL_RenderFillRect(ren, &r);                
+                        SDL_RenderPresent(ren); 
+                        break;
+                        }   
                 
-            case SDL_KEYDOWN:            
-            //SDL_SetRenderDrawColor(ren, 255,255,255,0);
-            //SDL_RenderClear(ren);
-            SDL_SetRenderDrawColor(ren, 0,0,255,0);
-            SDL_RenderFillRect(ren, &r);       
-            SDL_RenderPresent(ren); 
-            switch (evt.key.keysym.sym) {
-                case SDLK_UP:
-                    if (r.y>0){
-                        r.y -= 5;
-                        break;}
-                case SDLK_DOWN:
-                    if(r.y<190){
-                        r.y += 5;
-                        break;}
-                case SDLK_LEFT:
-                    if(r.x>0){
-                        r.x -= 5;
-                        break;}
-                case SDLK_RIGHT:
-                    if(r.x<190){
-                        r.x += 5;
-                    break;}                    
+                    case SDL_KEYDOWN:            
+                    SDL_SetRenderDrawColor(ren, 255,255,255,0);
+                    SDL_RenderClear(ren);
+                    SDL_SetRenderDrawColor(ren, 0,0,255,0);
+                    SDL_RenderFillRect(ren, &r);       
+                    SDL_RenderPresent(ren); 
+                    switch (evt.key.keysym.sym){
+                            case SDLK_UP:
+                            if (r.y>0){
+                                r.y -= 5;
+                                break;}
+                            case SDLK_DOWN:
+                            if(r.y<190){
+                                r.y += 5;
+                                break;}
+                            case SDLK_LEFT:
+                            if(r.x>0){
+                                r.x -= 5;
+                                break;}
+                            case SDLK_RIGHT:
+                            if(r.x<190){
+                                r.x += 5;
+                                break;}                    
             }
         } 
         }
