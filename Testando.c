@@ -14,6 +14,7 @@ int main (int argc, char* args[])
                       );
     SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
     bool quit = false;
+    int a;
 
     /* EXECUÇÃO */
     SDL_Rect r = { 100,100, 10,10 };    
