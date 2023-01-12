@@ -36,10 +36,13 @@ int main (int argc, char* args[])
                     
                     case SDL_MOUSEBUTTONDOWN:
                     for(a=0;a<10;a++){
-                        SDL_SetRenderDrawColor(ren,255,255,255,0);           
-                        SDL_SetRenderDrawColor(ren, 127,255,212,0);            
-                        SDL_RenderFillRect(ren, &r);                
-                        SDL_RenderPresent(ren);}
+                        if (r.x=evt.motion.x, r.y=evt.motion.y){
+                            SDL_SetRenderDrawColor(ren, 255,255,255,0);            
+                            SDL_SetRenderDrawColor(ren, 173,255,47,0);            
+                            SDL_RenderFillRect(ren, &r);                
+                            SDL_RenderPresent(ren);
+                            break;
+                         }}
                         
                         
                         
