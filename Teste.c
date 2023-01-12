@@ -90,7 +90,7 @@ int main (int argc, char* args[])
                         break;            
               }
                     } 
-        }
+        //}
         if (evt.type == SDL_QUIT){
           quit = true;
             break;
