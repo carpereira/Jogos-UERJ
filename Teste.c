@@ -45,8 +45,8 @@ int main (int argc, char* args[])
                         break;
                     case 2:                            
                         if (isevt){
-                        //while (r.x<280){                    
-                        r.x<280;
+                        while (r.x<280){                    
+                        //r.x<280;
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,255,0,0);
@@ -54,11 +54,11 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                         SDL_Delay(100);
                         r.x += 5;}
-                        break;
+                        break;}
                     case 3:                                
                         if (isevt){
-                        //while (s.y>0){                    
-                        s.y>0;
+                        while (s.y>0){                    
+                        //s.y>0;
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,0,255,0);
@@ -66,11 +66,11 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                         SDL_Delay(100);
                         s.y -= 5;}
-                        break;
+                        break;}
                     case 4:
                         if (isevt){
-                        //while (s.x>0){                    
-                        s.x>0;
+                        while (s.x>0){                    
+                        //s.x>0;
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,255,255,0);
@@ -78,7 +78,7 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                         SDL_Delay(100);
                         s.x -= 5;}
-                        break; 
+                        break;} 
                     case 5:                        
                         SDL_SetRenderDrawColor(ren, 0,0,0,0);
                         SDL_RenderClear(ren);
