@@ -47,8 +47,8 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);
                         //SDL_Delay(100);
-                        r.y += 5;}
-                        break;}
+                        r.y += 5;}}
+                        break;
                     case 2:                            
                         if (isevt){
                         while (r.x<280){                    
@@ -59,8 +59,8 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);
                         //SDL_Delay(100);
-                        r.x += 5;}
-                        break;}
+                        r.x += 5;}}
+                        break;
                     case 3:                                
                         if (isevt){
                         while (s.y>0){                    
@@ -71,8 +71,8 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
                         //SDL_Delay(100);
-                        s.y -= 5;}
-                        break;}
+                        s.y -= 5;}}
+                        break;
                     case 4:
                         if (isevt){
                         while (s.x>0){                    
@@ -83,8 +83,8 @@ int main (int argc, char* args[])
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);
                         //SDL_Delay(100);
-                        s.x -= 5;}
-                        break;} 
+                        s.x -= 5;}}
+                        break;
                     /*case 5:                        
                         SDL_SetRenderDrawColor(ren, 0,0,0,0);
                         SDL_RenderClear(ren);
