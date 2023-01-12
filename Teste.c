@@ -45,7 +45,7 @@ int main (int argc, char* args[])
                         SDL_SetRenderDrawColor(ren, 255,0,0,0);
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren); 
-                        r.y += 5;}
+                        r.y += 5;}}
                         //break;}
                     //case 2:                            
                         if (isevt){
@@ -55,7 +55,7 @@ int main (int argc, char* args[])
                         SDL_SetRenderDrawColor(ren, 0,255,0,0);
                         SDL_RenderFillRect(ren,&r);
                         SDL_RenderPresent(ren);                        
-                        r.x += 5;}
+                        r.x += 5;}}
                         //break;}
                    // case 3:                                
                         if (isevt){
@@ -65,7 +65,7 @@ int main (int argc, char* args[])
                         SDL_SetRenderDrawColor(ren, 0,0,255,0);
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);                        
-                        s.y -= 5;}
+                        s.y -= 5;}}
                         //break;}
                     //case 4:
                         if (isevt){
@@ -75,7 +75,7 @@ int main (int argc, char* args[])
                         SDL_SetRenderDrawColor(ren, 0,255,255,0);
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);                        
-                        s.x -= 5;}
+                        s.x -= 5;}}
                         //break;}
                     /*case 5:                        
                         SDL_SetRenderDrawColor(ren, 0,0,0,0);
