@@ -23,66 +23,57 @@ int main (int argc, char* args[])
     while(1){
         
     SDL_Event evt;        
-        
              
         int isevt = SDL_WaitEventTimeout(&evt,1000);
         
         if (isevt){ 
             if (evt.type == SDL_QUIT){
-          quit = true;
+            quit = true;
             break;
         }
         }
             
-            int i;
+           int i;
            for(i=1;i<=max;i++){
                 switch (i) {
                     case 1:
                         if (isevt){
-                        while (r.y<280){                    
-                        //r.y<280;
+                        while (r.y<280){                        
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 255,0,0,0);
                         SDL_RenderFillRect(ren,&r);
-                        SDL_RenderPresent(ren);
-                        //SDL_Delay(100);
+                        SDL_RenderPresent(ren);                        
                         r.y += 5;}}
                         break;
                     case 2:                            
                         if (isevt){
-                        while (r.x<280){                    
-                        //r.x<280;
+                        while (r.x<280){                        
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,255,0,0);
                         SDL_RenderFillRect(ren,&r);
-                        SDL_RenderPresent(ren);
-                        //SDL_Delay(100);
+                        SDL_RenderPresent(ren);                        
                         r.x += 5;}}
                         break;
                     case 3:                                
                         if (isevt){
-                        while (s.y>0){                    
-                        //s.y>0;
+                        while (s.y>0){                        
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,0,255,0);
                         SDL_RenderFillRect(ren,&s);
-                        SDL_RenderPresent(ren);
-                        //SDL_Delay(100);
+                        SDL_RenderPresent(ren);                        
                         s.y -= 5;}}
                         break;
                     case 4:
                         if (isevt){
-                        while (s.x>0){                    
-                        //s.x>0;
+                        while (s.x>0){                        
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 0,255,255,0);
                         SDL_RenderFillRect(ren,&s);
-                        SDL_RenderPresent(ren);
-                        //SDL_Delay(100);
+                        SDL_RenderPresent(ren);                        
                         s.x -= 5;}}
                         break;
                     /*case 5:                        
@@ -98,7 +89,7 @@ int main (int argc, char* args[])
                     } 
         //}
         
-    }     
+    //}     
     
     /* FINALIZACAO */
     SDL_DestroyRenderer(ren);
