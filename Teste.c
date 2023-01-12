@@ -78,7 +78,7 @@ int main (int argc, char* args[])
                         SDL_SetRenderDrawColor(ren, 0,255,255,0);
                         SDL_RenderFillRect(ren,&s);
                         SDL_RenderPresent(ren);}}
-                        else(
+                        else{
                         s.x -= 5;}//}
                         break;
                     /*case 5:                        
