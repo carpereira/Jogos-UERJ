@@ -22,8 +22,7 @@ int main (int argc, char* args[])
     
     while(1){
         
-    SDL_Event evt; 
-        
+    SDL_Event evt;        
         
              
         int isevt = SDL_WaitEventTimeout(&evt,1000);
@@ -40,8 +39,8 @@ int main (int argc, char* args[])
                 switch (i) {
                     case 1:
                         if (isevt){
-                        //while (r.y<280){                    
-                        r.y<280;
+                        while (r.y<280){                    
+                        //r.y<280;
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);
                         SDL_RenderClear(ren);
                         SDL_SetRenderDrawColor(ren, 255,0,0,0);
@@ -49,7 +48,7 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                         //SDL_Delay(100);
                         r.y += 5;}
-                        break;
+                        break;}
                     case 2:                            
                         if (isevt){
                         while (r.x<280){                    
