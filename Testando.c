@@ -35,8 +35,8 @@ int main (int argc, char* args[])
                     break;
                     
                     case SDL_MOUSEBUTTONDOWN:
-                    for(a=0;a<10;a++){
-                        if (r.x=evt.motion.x, r.y=evt.motion.y){
+                    if (r.x=evt.motion.x, r.y=evt.motion.y){
+                        for(a=0;a<10;a++){                        
                             SDL_SetRenderDrawColor(ren, 255,255,255,0);            
                             SDL_SetRenderDrawColor(ren, 173,255,47,0);            
                             SDL_RenderFillRect(ren, &r);                
