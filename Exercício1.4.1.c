@@ -56,7 +56,9 @@ int main (int argc, char* args[])
                 SDL_RenderFillRect(ren, &r);                
                 SDL_RenderPresent(ren); 
                         break;
-        //}    
+        //}
+                }
+            }
                 
         /*if(evt.type == SDL_MOUSEBUTTONDOWN){           
                 r.x=evt.motion.x, r.y=evt.motion.y;            
