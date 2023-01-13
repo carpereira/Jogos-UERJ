@@ -24,8 +24,12 @@ int main (int argc, char* args[])
     SDL_RenderPresent(ren);    
     
         while (1) {                      
-        SDL_WaitEvent(&evt);        
-        if (evt.type == SDL_MOUSEBUTTONDOWN){                        
+        SDL_WaitEvent(&evt); 
+        if (evt.type == SDL_MOUSEBUTTONDOWN){ 
+            int i;
+            for(i=1;i<=3;i++){
+                switch(i){
+                    case 1:
                 r.x=evt.motion.x, r.y=evt.motion.y;            
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);                
                 SDL_SetRenderDrawColor(ren, 255,255,0,0);            
@@ -33,7 +37,8 @@ int main (int argc, char* args[])
                 SDL_RenderPresent(ren);                
         }      
                         
-        if (evt.type == SDL_MOUSEBUTTONDOWN){        
+        //if (evt.type == SDL_MOUSEBUTTONDOWN){
+                case 2:
                 r.x=evt.motion.x, r.y=evt.motion.y;            
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);                
                 SDL_SetRenderDrawColor(ren, 0,255,0,0);            
@@ -41,7 +46,8 @@ int main (int argc, char* args[])
                 SDL_RenderPresent(ren);                
         }    
                         
-        /*if  (evt.type == SDL_MOUSEBUTTONDOWN){        
+        //if  (evt.type == SDL_MOUSEBUTTONDOWN){ 
+            case 3:
                 r.x=evt.motion.x, r.y=evt.motion.y;            
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);                
                 SDL_SetRenderDrawColor(ren, 255,0,0,0);            
@@ -49,7 +55,7 @@ int main (int argc, char* args[])
                 SDL_RenderPresent(ren);                
         }    
                 
-        if(evt.type == SDL_MOUSEBUTTONDOWN){           
+        /*if(evt.type == SDL_MOUSEBUTTONDOWN){           
                 r.x=evt.motion.x, r.y=evt.motion.y;            
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);             
                 SDL_SetRenderDrawColor(ren, 176,224,230,0);            
