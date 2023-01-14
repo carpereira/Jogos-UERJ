@@ -37,8 +37,8 @@ int main (int argc, char* args[])
                 i++;
             SDL_RenderPresent(ren);  
             }
-          else{
-              break;}
+          //else{
+              //break;}
         }      
                         
         /*if (evt.type == SDL_MOUSEBUTTONDOWN){                        
