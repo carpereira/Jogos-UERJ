@@ -30,26 +30,32 @@ int main (int argc, char* args[])
         if (evt.type == SDL_MOUSEBUTTONDOWN){
             int i;
             if(i<5){
+                int j;
+                for(j=1;j<5;j++){
+                switch(j){
+                    case 1:
                 r.x=evt.motion.x, r.y=evt.motion.y;            
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);                
                 SDL_SetRenderDrawColor(ren, 255,255,0,0);            
                 SDL_RenderFillRect(ren, &r);
-                i++;
+                //i++;
                 SDL_RenderPresent(ren);  
             }
           //else{
               //break;}
         }      
                         
-        /*if (evt.type == SDL_MOUSEBUTTONDOWN){                        
+        //if (evt.type == SDL_MOUSEBUTTONDOWN){ 
+            case 2:
             r.x=evt.motion.x, r.y=evt.motion.y;            
             SDL_SetRenderDrawColor(ren, 255,255,255,0);                
             SDL_SetRenderDrawColor(ren, 0,255,0,0);            
             SDL_RenderFillRect(ren, &r);                
             SDL_RenderPresent(ren);            
         }    
+        }
                         
-        if  (evt.type == SDL_MOUSEBUTTONDOWN){                        
+        /*if  (evt.type == SDL_MOUSEBUTTONDOWN){                        
             r.x=evt.motion.x, r.y=evt.motion.y;            
             SDL_SetRenderDrawColor(ren, 255,255,255,0);                
             SDL_SetRenderDrawColor(ren, 255,0,0,0);            
