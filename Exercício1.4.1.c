@@ -44,7 +44,7 @@ int main (int argc, char* args[])
             }
           //else{
               //break;}
-        }      
+        //}      
                         
         //if (evt.type == SDL_MOUSEBUTTONDOWN){ 
                     case 2:
