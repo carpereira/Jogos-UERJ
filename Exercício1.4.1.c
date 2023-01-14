@@ -25,7 +25,7 @@ int main (int argc, char* args[])
     
         while (1) {                      
         SDL_WaitEvent(&evt); 
-        while(SDL_PollEvent(&evt) !=0){
+        /*while(SDL_PollEvent(&evt) !=0){
             
         if (evt.type == SDL_MOUSEBUTTONDOWN){             
             r.x=evt.motion.x, r.y=evt.motion.y;            
@@ -106,7 +106,7 @@ int main (int argc, char* args[])
                 SDL_RenderFillRect(ren, &r);                
                 SDL_RenderPresent(ren);                
         }
-        }
+        }*/
          
         if (evt.type == SDL_QUIT){
             break;
