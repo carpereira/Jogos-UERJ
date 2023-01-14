@@ -31,7 +31,7 @@ int main (int argc, char* args[])
             int i;
             if(i<5){
                 int j;
-                for(j=1;j<5;j++){
+                for(j=1;j<=2;j++){
                 switch(j){
                     case 1:
                 r.x=evt.motion.x, r.y=evt.motion.y;            
