@@ -41,9 +41,9 @@ int main (int argc, char* args[])
                 i++;
                 SDL_RenderPresent(ren);
                         break;
-                }
-            }
-        }
+                //}
+            //}
+        //}
                         //break;
             //}
           //else{
