@@ -50,28 +50,29 @@ int main (int argc, char* args[])
               //break;}
         //}      
                         
-        /*if (evt.type == SDL_MOUSEBUTTONDOWN){ 
-                    case 2:
+        //if (evt.type == SDL_MOUSEBUTTONDOWN){ 
+                    case SDL_MOUSEBUTTONDOWN):
             r.x=evt.motion.x, r.y=evt.motion.y;            
             SDL_SetRenderDrawColor(ren, 255,255,255,0);                
             SDL_SetRenderDrawColor(ren, 0,255,0,0);            
             SDL_RenderFillRect(ren, &r);
                 i++;
             SDL_RenderPresent(ren);
-                //break;
+                break;
         //}    
         //}
         //}
         //}
                         
         //if  (evt.type == SDL_MOUSEBUTTONDOWN){ 
-            case 3:
+            case SDL_MOUSEBUTTONDOWN):
             r.x=evt.motion.x, r.y=evt.motion.y;            
             SDL_SetRenderDrawColor(ren, 255,255,255,0);                
             SDL_SetRenderDrawColor(ren, 255,0,0,0);            
             SDL_RenderFillRect(ren, &r);
                         i++;
-            SDL_RenderPresent(ren);            
+            SDL_RenderPresent(ren);
+            break;
         } 
                 }
             }
