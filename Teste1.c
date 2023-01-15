@@ -32,7 +32,7 @@ int main (int argc, char* args[])
             if(i<5){
                 //int j;
                 //for(j=1;j<=3;j++){
-                switch(event.type){
+                switch(evt.type){
                     case SDL_MOUSEBUTTONDOWN:
                 r.x=evt.motion.x, r.y=evt.motion.y;            
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);                
@@ -40,6 +40,8 @@ int main (int argc, char* args[])
                 SDL_RenderFillRect(ren, &r);
                 i++;
                 SDL_RenderPresent(ren);
+                        break;
+                }
             }
         }
                         //break;
