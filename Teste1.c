@@ -76,7 +76,7 @@ int main (int argc, char* args[])
         } 
                 }
             }
-        }
+        //}
                 
         /*if(evt.type == SDL_MOUSEBUTTONDOWN){           
                 r.x=evt.motion.x, r.y=evt.motion.y;            
