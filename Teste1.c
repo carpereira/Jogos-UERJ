@@ -24,32 +24,58 @@ int main (int argc, char* args[])
     SDL_RenderPresent(ren);    
     
         while (1) {                      
-        SDL_WaitEvent(&evt);        
-        if (evt.type == SDL_MOUSEBUTTONDOWN){                        
+        SDL_WaitEvent(&evt); 
+        while(SDL_PollEvent(&evt)){
+            
+        //if (evt.type == SDL_MOUSEBUTTONDOWN){
+            int i;
+            if(i<5){
+                //int j;
+                //for(j=1;j<=3;j++){
+                switch(event.type){
+                    case SDL_MOUSEBUTTONDOWN:
                 r.x=evt.motion.x, r.y=evt.motion.y;            
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);                
                 SDL_SetRenderDrawColor(ren, 255,255,0,0);            
-                SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren);                
-        }      
+                SDL_RenderFillRect(ren, &r);
+                i++;
+                SDL_RenderPresent(ren);
+            }
+        }
+                        //break;
+            //}
+          //else{
+              //break;}
+        //}      
                         
-        if (evt.type == SDL_MOUSEBUTTONDOWN){        
-                r.x=evt.motion.x, r.y=evt.motion.y;            
-                SDL_SetRenderDrawColor(ren, 255,255,255,0);                
-                SDL_SetRenderDrawColor(ren, 0,255,0,0);            
-                SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren);                
-        }    
+        /*if (evt.type == SDL_MOUSEBUTTONDOWN){ 
+                    case 2:
+            r.x=evt.motion.x, r.y=evt.motion.y;            
+            SDL_SetRenderDrawColor(ren, 255,255,255,0);                
+            SDL_SetRenderDrawColor(ren, 0,255,0,0);            
+            SDL_RenderFillRect(ren, &r);
+                i++;
+            SDL_RenderPresent(ren);
+                //break;
+        //}    
+        //}
+        //}
+        //}
                         
-        if  (evt.type == SDL_MOUSEBUTTONDOWN){        
-                r.x=evt.motion.x, r.y=evt.motion.y;            
-                SDL_SetRenderDrawColor(ren, 255,255,255,0);                
-                SDL_SetRenderDrawColor(ren, 255,0,0,0);            
-                SDL_RenderFillRect(ren, &r);                
-                SDL_RenderPresent(ren);                
-        }    
+        //if  (evt.type == SDL_MOUSEBUTTONDOWN){ 
+            case 3:
+            r.x=evt.motion.x, r.y=evt.motion.y;            
+            SDL_SetRenderDrawColor(ren, 255,255,255,0);                
+            SDL_SetRenderDrawColor(ren, 255,0,0,0);            
+            SDL_RenderFillRect(ren, &r);
+                        i++;
+            SDL_RenderPresent(ren);            
+        } 
+                }
+            }
+        }
                 
-        if(evt.type == SDL_MOUSEBUTTONDOWN){           
+        /*if(evt.type == SDL_MOUSEBUTTONDOWN){           
                 r.x=evt.motion.x, r.y=evt.motion.y;            
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);             
                 SDL_SetRenderDrawColor(ren, 176,224,230,0);            
@@ -103,8 +129,9 @@ int main (int argc, char* args[])
                 SDL_SetRenderDrawColor(ren, 127,255,212,0);            
                 SDL_RenderFillRect(ren, &r);                
                 SDL_RenderPresent(ren);                
-        }            
-        
+        }
+        }*/
+         
         if (evt.type == SDL_QUIT){
             break;
         }
@@ -134,7 +161,8 @@ int main (int argc, char* args[])
                     break;}                    
             }
         }
-    }
+        }
+    
 
    
     /* FINALIZACAO */
@@ -142,4 +170,5 @@ int main (int argc, char* args[])
     SDL_DestroyWindow(win);
     SDL_Quit();
 }
+
   
