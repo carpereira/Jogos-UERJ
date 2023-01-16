@@ -25,7 +25,6 @@ int main (int argc, char* args[])
     
         while (1) {                      
         SDL_WaitEvent(&evt); 
-        //while(SDL_PollEvent(&evt) !=0){
             
         if (evt.type == SDL_MOUSEBUTTONDOWN){
             int i;
@@ -48,8 +47,8 @@ int main (int argc, char* args[])
               //break;}
         //}      
                         
-        /*if (evt.type == SDL_MOUSEBUTTONDOWN){ 
-                    case 2:
+        //if (evt.type == SDL_MOUSEBUTTONDOWN){ 
+                    //case 2:
             r.x=evt.motion.x, r.y=evt.motion.y;            
             SDL_SetRenderDrawColor(ren, 255,255,255,0);                
             SDL_SetRenderDrawColor(ren, 0,255,0,0);            
@@ -62,7 +61,7 @@ int main (int argc, char* args[])
         //}
         //}
                         
-        //if  (evt.type == SDL_MOUSEBUTTONDOWN){ 
+        /*if  (evt.type == SDL_MOUSEBUTTONDOWN){ 
             case 3:
             r.x=evt.motion.x, r.y=evt.motion.y;            
             SDL_SetRenderDrawColor(ren, 255,255,255,0);                
