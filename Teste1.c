@@ -30,8 +30,7 @@ int main (int argc, char* args[])
            
         if (evt.type == SDL_MOUSEBUTTONDOWN){
             SDL_Point m = {evt.button.x, evt.button.y};
-            if (SDL_PointInRect(&m,&r){
-            
+            if (SDL_PointInRect(&m,&r){            
                 //r.x=evt.motion.x, r.y=evt.motion.y;            
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);                
                 SDL_SetRenderDrawColor(ren, 255,255,0,0);            
@@ -45,7 +44,7 @@ int main (int argc, char* args[])
             //r.x=evt.motion.x, r.y=evt.motion.y;            
             SDL_SetRenderDrawColor(ren, 255,255,255,0);                
             SDL_SetRenderDrawColor(ren, 0,255,0,0);            
-            SDL_RenderFillRect(ren, &r);             
+            SDL_RenderFillRect(ren, &r1);             
             SDL_RenderPresent(ren);
                 
         }    
