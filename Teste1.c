@@ -15,17 +15,19 @@ int main (int argc, char* args[])
     /* EXECUÇÃO */
     SDL_Rect r = { 100,100, 10,10 };
     SDL_Rect r1 =  { 100,100, 10,10 };   
-    SDL_Event evt;    
-    
+    //SDL_Event evt;    
+    while(1){
     SDL_SetRenderDrawColor(ren, 255,255,255,0);
     SDL_RenderClear(ren);
     SDL_SetRenderDrawColor(ren, 0,0,255,0);
     SDL_RenderFillRect(ren, &r);
     SDL_RenderFillRect(ren, &r1);
-    SDL_RenderPresent(ren);    
+    SDL_RenderPresent(ren);
+        
+        SDL_Event evt;
     
-        while (1) {                      
-        SDL_WaitEvent(&evt); 
+        //while (1) {                      
+        //SDL_WaitEvent(&evt); 
         //while(SDL_PollEvent(&evt)){
             
         if (evt.type == SDL_MOUSEBUTTONDOWN){
