@@ -19,7 +19,7 @@ int main (int argc, char* args[])
     /* EXECUÇÃO */
     SDL_Rect r = { 100,100, 10,10 };  
     
-    void onMouseButtonDown(SDL_Event&evt){
+    void onMouseButtonDown(SDL_Event &evt){
         if(event,button.button == SDL_BUTTON_LEFT){
             m_mouseButtonStates[LEFT] = true;
         }
