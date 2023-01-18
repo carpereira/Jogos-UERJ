@@ -55,15 +55,15 @@ int main (int argc, char* args[])
                     //if (r.x=evt.motion.x, r.y=evt.motion.y){
                     //for(a=0;a<10;a++){
                     //onMouseButtonDown(evt);
-                    r.x=evt.motion.x, r.y=evt.motion.y;
+                    /*r.x=evt.motion.x, r.y=evt.motion.y;
                         SDL_SetRenderDrawColor(ren,255,255,255,0);           
                         SDL_SetRenderDrawColor(ren, 127,255,212,0);            
                         SDL_RenderFillRect(ren, &r);
                         //a++;
                         SDL_RenderPresent(ren);
                         break;
-                        a++;
-                        } 
+                        //a++;
+                        } */
                         
                      /*if (r.x=evt.motion.x, r.y=evt.motion.y){
                          SDL_SetRenderDrawColor(ren, 255,255,255,0);            
