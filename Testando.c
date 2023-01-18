@@ -19,7 +19,7 @@ int main (int argc, char* args[])
     /* EXECUÇÃO */
     SDL_Rect r = { 100,100, 10,10 };  
     
-    void onMouseButtonDown(SDL_Event&Evt){
+    void onMouseButtonDown(SDL_Event&evt){
         if(event,button.button == SDL_BUTTON_LEFT){
             m_mouseButtonStates[LEFT] = true;
         }
@@ -43,7 +43,7 @@ int main (int argc, char* args[])
                     case SDL_MOUSEBUTTONDOWN:
                     //if (r.x=evt.motion.x, r.y=evt.motion.y){
                     //for(a=0;a<10;a++){
-                    onMouseButtonDown(event);
+                    onMouseButtonDown(evt);
                         if(r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);            
                         SDL_SetRenderDrawColor(ren, 173,255,47,0);            
@@ -56,7 +56,7 @@ int main (int argc, char* args[])
                         case SDL_MOUSEBUTTONDOWN:
                     //if (r.x=evt.motion.x, r.y=evt.motion.y){
                     //for(a=0;a<10;a++){
-                    onMouseButtonDown(event);
+                    onMouseButtonDown(evt);
                     if (r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren,255,255,255,0);           
                         SDL_SetRenderDrawColor(ren, 127,255,212,0);            
