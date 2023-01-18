@@ -17,7 +17,13 @@ int main (int argc, char* args[])
     int a;
 
     /* EXECUÇÃO */
-    SDL_Rect r = { 100,100, 10,10 };    
+    SDL_Rect r = { 100,100, 10,10 };  
+    
+    void onMouseButtonDown(SDL_Event&Evt){
+        if(event,button.button == SDL_BUTTON_LEFT){
+            m_mouseButtonStates[LEFT] = true;
+        }
+}
          
     SDL_Event evt;
     
@@ -36,8 +42,9 @@ int main (int argc, char* args[])
                     
                     case SDL_MOUSEBUTTONDOWN:
                     //if (r.x=evt.motion.x, r.y=evt.motion.y){
-                    for(a=0;a<10;a++){
-                        r.x=evt.motion.x, r.y=evt.motion.y;
+                    //for(a=0;a<10;a++){
+                    onMouseButtonDown(event);
+                        if(r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);            
                         SDL_SetRenderDrawColor(ren, 173,255,47,0);            
                         SDL_RenderFillRect(ren, &r);                
@@ -46,15 +53,19 @@ int main (int argc, char* args[])
                          }
                         
                         
-                        
-                    /*if (r.x=evt.motion.x, r.y=evt.motion.y){
+                        case SDL_MOUSEBUTTONDOWN:
+                    //if (r.x=evt.motion.x, r.y=evt.motion.y){
+                    //for(a=0;a<10;a++){
+                    onMouseButtonDown(event);
+                    if (r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren,255,255,255,0);           
                         SDL_SetRenderDrawColor(ren, 127,255,212,0);            
                         SDL_RenderFillRect(ren, &r);                
                         SDL_RenderPresent(ren);
                         break;
-                        }       
-                     if (r.x=evt.motion.x, r.y=evt.motion.y){
+                        } 
+                        
+                     /*if (r.x=evt.motion.x, r.y=evt.motion.y){
                          SDL_SetRenderDrawColor(ren, 255,255,255,0);            
                          SDL_SetRenderDrawColor(ren, 173,255,47,0);            
                          SDL_RenderFillRect(ren, &r);                
