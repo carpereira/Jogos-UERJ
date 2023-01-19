@@ -27,8 +27,8 @@ int main (int argc, char* args[])
     SDL_RenderFillRect(ren, &r);       
     SDL_RenderPresent(ren);
     
-    //while(1){
-    while(!quit){
+    while(1){
+    //while(!quit){
                        
         SDL_WaitEvent(&evt);
         
@@ -59,8 +59,7 @@ int main (int argc, char* args[])
                     case SDLK_RIGHT:
                     if(r.x<190){
                         r.x += 5;
-                        break;}
-            
+                        break;}            
            }
                     
             }
