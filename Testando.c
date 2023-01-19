@@ -63,7 +63,8 @@ int main (int argc, char* args[])
             }
            }
                     else{
-                      switch (evt.key.keysym.sym){ 
+                      //switch (evt.key.keysym.sym){ 
+                        switch (1){ 
                               
                     case SDLK_UP:
                     if (r.y>0){
