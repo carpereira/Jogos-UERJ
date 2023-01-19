@@ -78,7 +78,7 @@ int main (int argc, char* args[])
                     case SDLK_RIGHT:
                     if(r.x<190){
                         r.x += 5;
-                        break;  
+                        break;}  
                     }
             }
         }
