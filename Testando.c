@@ -21,7 +21,9 @@ int main (int argc, char* args[])
     
     
          
-   // SDL_Event evt;
+    SDL_Event evt;
+    
+    while(1){
     
     SDL_SetRenderDrawColor(ren, 255,255,255,0);
     SDL_RenderClear(ren);
@@ -29,10 +31,10 @@ int main (int argc, char* args[])
     SDL_RenderFillRect(ren, &r);       
     SDL_RenderPresent(ren); 
     
-    SDL_Event evt;
+    //SDL_Event evt;
                
-    while(!quit){
-        while(SDL_PollEvent(&evt)){
+    //while(!quit){
+        //while(SDL_PollEvent(&evt)){
             switch(evt.type){
                     case SDL_QUIT:
                     quit = true;
@@ -156,8 +158,8 @@ int main (int argc, char* args[])
                                 break;}                    
             }
        } 
-        }
-        }
+        //}
+        //}
         
     
      /* FINALIZACAO */
