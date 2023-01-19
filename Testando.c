@@ -128,13 +128,12 @@ int main (int argc, char* args[])
                          }                   
                     if (r.x=evt.motion.x, r.y=evt.motion.y){            
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);            
-                        SDL_SetRenderDrawColor(ren, 245,222,179,0);            
-                        SDL_RenderFillRect(ren, &r);                
+                        SDL_SetRenderDrawColor(ren, 245,222,179,0);
                         SDL_RenderPresent(ren); 
                         break;
                         }*/   
                 
-                        case SDL_KEYDOWN:            
+                    if(evt.type == SDL_KEYDOWN){            
                     SDL_SetRenderDrawColor(ren, 255,255,255,0);
                     SDL_RenderClear(ren);
                     SDL_SetRenderDrawColor(ren, 0,0,255,0);
@@ -160,7 +159,7 @@ int main (int argc, char* args[])
             }
        } 
         }
-        //}
+        }
         
     
      /* FINALIZACAO */
