@@ -59,7 +59,8 @@ int main (int argc, char* args[])
                     if(r.x<190){
                         r.x += 5;
                         break;}
-                    
+            }
+        }
                     
          if (evt.type == SDL_MOUSEBUTTONDOWN){
              for(a=0;a<10;a++){
@@ -153,12 +154,7 @@ int main (int argc, char* args[])
                         SDL_SetRenderDrawColor(ren, 255,105,180,0);            
                         SDL_RenderFillRect(ren, &r);                
                         SDL_RenderPresent(ren);
-                        break;
-                        // }                   
-                    
-                 }
-             }           
-            }
+                        break;           
        } 
         }
         }
