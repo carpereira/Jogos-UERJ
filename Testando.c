@@ -17,9 +17,7 @@ int main (int argc, char* args[])
     int a;
 
     /* EXECUÇÃO */
-    SDL_Rect r = { 100,100, 10,10 };  
-    
-    
+    SDL_Rect r = { 100,100, 10,10 };     
          
     SDL_Event evt;
     
@@ -73,7 +71,7 @@ int main (int argc, char* args[])
                     //if (r.x=evt.motion.x, r.y=evt.motion.y){
                      case 0:
                          r.x=evt.motion.x, r.y=evt.motion.y;
-                        SDL_SetRenderDrawColor(ren, 255,255,255,0);            
+                        //SDL_SetRenderDrawColor(ren, 255,255,255,0);            
                         SDL_SetRenderDrawColor(ren, 173,255,47,0);            
                         SDL_RenderFillRect(ren, &r);                        
                         SDL_RenderPresent(ren);
@@ -82,7 +80,7 @@ int main (int argc, char* args[])
                     //if (r.x=evt.motion.x, r.y=evt.motion.y){
                      case 1:
                          r.x=evt.motion.x, r.y=evt.motion.y;
-                        SDL_SetRenderDrawColor(ren,255,255,255,0);           
+                        //SDL_SetRenderDrawColor(ren,255,255,255,0);           
                         SDL_SetRenderDrawColor(ren, 127,255,212,0);            
                         SDL_RenderFillRect(ren, &r);                        
                         SDL_RenderPresent(ren);
