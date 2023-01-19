@@ -68,8 +68,8 @@ int main (int argc, char* args[])
             SDL_SetRenderDrawColor(ren, 0,0,255,0);
             SDL_RenderFillRect(ren, &r);       
             SDL_RenderPresent(ren);*/ 
-             //if(a<10){
-             for(a=0;a<10;a++){
+             if(a<10){
+             //for(a=0;a<10;a++){
                  switch(a){                    
                     
                      case 0:
