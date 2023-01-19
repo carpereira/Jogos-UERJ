@@ -66,6 +66,8 @@ int main (int argc, char* args[])
                  switch(a){
                     
                     //if (r.x=evt.motion.x, r.y=evt.motion.y){
+                     case 0:
+                         r.x=evt.motion.x, r.y=evt.motion.y;
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);            
                         SDL_SetRenderDrawColor(ren, 173,255,47,0);            
                         SDL_RenderFillRect(ren, &r);                        
@@ -73,6 +75,8 @@ int main (int argc, char* args[])
                         break;                        
                          //}                        
                     //if (r.x=evt.motion.x, r.y=evt.motion.y){
+                     case 1:
+                         r.x=evt.motion.x, r.y=evt.motion.y;
                         SDL_SetRenderDrawColor(ren,255,255,255,0);           
                         SDL_SetRenderDrawColor(ren, 127,255,212,0);            
                         SDL_RenderFillRect(ren, &r);                        
@@ -80,67 +84,78 @@ int main (int argc, char* args[])
                         break;                        
                         //}                        
                      //if (r.x=evt.motion.x, r.y=evt.motion.y){
+                     case 2:
+                         r.x=evt.motion.x, r.y=evt.motion.y;
                          SDL_SetRenderDrawColor(ren, 255,255,255,0);            
                          SDL_SetRenderDrawColor(ren, 173,255,47,0);            
                          SDL_RenderFillRect(ren, &r);                
                          SDL_RenderPresent(ren);
                          break;
                      //    }
-                    // if (r.x=evt.motion.x, r.y=evt.motion.y){            
+                    // if (r.x=evt.motion.x, r.y=evt.motion.y){
+                     case 3:
+                         r.x=evt.motion.x, r.y=evt.motion.y;
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);                
                         SDL_SetRenderDrawColor(ren, 255,255,0,0);            
                         SDL_RenderFillRect(ren, &r);                
                         SDL_RenderPresent(ren);
                          break;
                       //   }               
-                     //if (r.x=evt.motion.x, r.y=evt.motion.y){            
+                     //if (r.x=evt.motion.x, r.y=evt.motion.y){
+                     case 4:
+                         r.x=evt.motion.x, r.y=evt.motion.y;
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);                
                         SDL_SetRenderDrawColor(ren, 0,255,0,0);            
                         SDL_RenderFillRect(ren, &r);                
                         SDL_RenderPresent(ren);
                          break;
                          }                
-                   //if (r.x=evt.motion.x, r.y=evt.motion.y){            
+                   //if (r.x=evt.motion.x, r.y=evt.motion.y){
+                 case 5:
+                 r.x=evt.motion.x, r.y=evt.motion.y;
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);                
                         SDL_SetRenderDrawColor(ren, 255,0,0,0);            
                         SDL_RenderFillRect(ren, &r);                
                         SDL_RenderPresent(ren);
                         break;
                         //}                      
-                   // if (r.x=evt.motion.x, r.y=evt.motion.y){       
+                   // if (r.x=evt.motion.x, r.y=evt.motion.y){
+                 case 6:
+                 r.x=evt.motion.x, r.y=evt.motion.y;
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);             
                         SDL_SetRenderDrawColor(ren, 176,224,230,0);            
                         SDL_RenderFillRect(ren, &r);                
                         SDL_RenderPresent(ren);
                         break;
                      //   }                 
-                    //if (r.x=evt.motion.x, r.y=evt.motion.y){            
+                    //if (r.x=evt.motion.x, r.y=evt.motion.y){
+                 case 7:
+                 r.x=evt.motion.x, r.y=evt.motion.y;
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);            
                         SDL_SetRenderDrawColor(ren, 216,191,216,0);            
                         SDL_RenderFillRect(ren, &r);                
                         SDL_RenderPresent(ren);
                         break;
                     //}                        
-                    //if (r.x=evt.motion.x, r.y=evt.motion.y){            
+                    //if (r.x=evt.motion.x, r.y=evt.motion.y){
+                 case 8:
+                 r.x=evt.motion.x, r.y=evt.motion.y;
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);                       
                         SDL_SetRenderDrawColor(ren, 255,165,0,0);           
                         SDL_RenderFillRect(ren, &r);                
                         SDL_RenderPresent(ren);
                         break;
                    // }                     
-                   // if (r.x=evt.motion.x, r.y=evt.motion.y){            
+                   // if (r.x=evt.motion.x, r.y=evt.motion.y){
+                 case 9:
+                 r.x=evt.motion.x, r.y=evt.motion.y;
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);            
                         SDL_SetRenderDrawColor(ren, 255,105,180,0);            
                         SDL_RenderFillRect(ren, &r);                
                         SDL_RenderPresent(ren);
                         break;
                         // }                   
-                    //if (r.x=evt.motion.x, r.y=evt.motion.y){            
-                        SDL_SetRenderDrawColor(ren, 255,255,255,0);            
-                        SDL_SetRenderDrawColor(ren, 245,222,179,0);
-                        SDL_RenderPresent(ren); 
-                        break;
-                        } 
+                    
                  }
              }           
             }
