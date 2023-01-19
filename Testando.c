@@ -70,7 +70,7 @@ int main (int argc, char* args[])
             SDL_RenderPresent(ren);*/ 
              for(a=0;a<10;a++){
                  switch(a){                    
-                    //if (r.x=evt.motion.x, r.y=evt.motion.y){
+                    
                      case 0:
                          if(r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);            
@@ -79,7 +79,7 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                         break;                        
                          }                        
-                    //if (r.x=evt.motion.x, r.y=evt.motion.y){
+                    
                      case 1:
                          if(r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren,255,255,255,0);           
@@ -88,7 +88,7 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                         break;                        
                         }                        
-                     //if (r.x=evt.motion.x, r.y=evt.motion.y){
+                     
                      case 2:
                          if(r.x=evt.motion.x, r.y=evt.motion.y){
                          SDL_SetRenderDrawColor(ren, 255,255,255,0);            
@@ -97,7 +97,7 @@ int main (int argc, char* args[])
                          SDL_RenderPresent(ren);
                          break;
                      }
-                    // if (r.x=evt.motion.x, r.y=evt.motion.y){
+                    
                      case 3:
                          if(r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);                
@@ -106,7 +106,7 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                          break;
                       }               
-                     //if (r.x=evt.motion.x, r.y=evt.motion.y){
+                     
                      case 4:
                         if (r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);                
@@ -115,7 +115,7 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                          break;
                          }                
-                   //if (r.x=evt.motion.x, r.y=evt.motion.y){
+                   
                  case 5:
                  if (r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);                
@@ -124,7 +124,7 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                         break;
                         }                      
-                   // if (r.x=evt.motion.x, r.y=evt.motion.y){
+                   
                  case 6:
                  if(r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);             
@@ -133,7 +133,7 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                         break;
                      }                 
-                    //if (r.x=evt.motion.x, r.y=evt.motion.y){
+                    
                  case 7:
                  if (r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);            
@@ -142,7 +142,7 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                         break;
                     }                        
-                    //if (r.x=evt.motion.x, r.y=evt.motion.y){
+                    
                  case 8:
                  if (r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);                       
@@ -151,7 +151,7 @@ int main (int argc, char* args[])
                         SDL_RenderPresent(ren);
                         break;
                    }                     
-                   // if (r.x=evt.motion.x, r.y=evt.motion.y){
+                   
                  case 9:
                  if (r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);            
