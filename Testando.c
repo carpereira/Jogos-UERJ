@@ -60,29 +60,9 @@ int main (int argc, char* args[])
                     if(r.x<190){
                         r.x += 5;
                         break;}
-            }
+            
            }
-                    else{
-                      //switch (evt.key.keysym.sym){ 
-                        switch (1){ 
-                              
-                    case SDLK_UP:
-                    if (r.y>0){
-                        r.y -= 5;
-                        break;}
-                    case SDLK_DOWN:
-                    if (r.y<190){
-                        r.y += 5;
-                        break;}
-                    case SDLK_LEFT:
-                    if(r.x>0){
-                        r.x -= 5;
-                        break;}
-                    case SDLK_RIGHT:
-                    if(r.x<190){
-                        r.x += 5;
-                        break;}  
-                    }
+                    
             }
         }
                     
