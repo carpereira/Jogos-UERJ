@@ -2,7 +2,6 @@
 #include <SDL2/SDL.h>
 #include <stdbool.h>
 
-
 int main (int argc, char* args[])
 {
     /* INICIALIZACAO */
@@ -17,7 +16,7 @@ int main (int argc, char* args[])
     int a=0;
 
     /* EXECUÇÃO */
-    SDL_Rect r = { 100,100, 10,10 };
+    SDL_Rect r = {100,100,10,10};
     SDL_Rect s = {100,100,10,10};
     SDL_Event evt;    
    
@@ -28,13 +27,7 @@ int main (int argc, char* args[])
     SDL_RenderPresent(ren);
     
     while(1){
-        
-        /*SDL_SetRenderDrawColor(ren, 255,255,255,0);
-        SDL_RenderClear(ren);
-        SDL_SetRenderDrawColor(ren, 0,0,255,0);
-        SDL_RenderFillRect(ren, &r);       
-        SDL_RenderPresent(ren);*/
-        
+                       
         SDL_WaitEvent(&evt);
         
         if(evt.type == SDL_QUIT){
