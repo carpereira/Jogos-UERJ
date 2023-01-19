@@ -60,6 +60,7 @@ int main (int argc, char* args[])
                         r.x += 5;
                         break;}
             }
+           }
                     else{
                       switch (evt.key.keysym.sym){                    
                     case SDLK_UP:
