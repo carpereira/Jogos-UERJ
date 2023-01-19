@@ -36,7 +36,8 @@ int main (int argc, char* args[])
                     break;}
         
         if(evt.type == SDL_KEYDOWN){
-           //if(a==0){ 
+           //if(a==0){
+            while(!quit){
             SDL_SetRenderDrawColor(ren, 255,255,255,0);
             SDL_RenderClear(ren);
             SDL_SetRenderDrawColor(ren, 0,0,255,0);
@@ -59,7 +60,7 @@ int main (int argc, char* args[])
                     if(r.x<190){
                         r.x += 5;
                         break;}            
-           //}
+           }
                     
             }
         }
