@@ -32,6 +32,7 @@ int main (int argc, char* args[])
     SDL_RenderPresent(ren); 
     
     //SDL_Event evt;
+        SDL_WaitEvent(&evt);
                
     //while(!quit){
         //while(SDL_PollEvent(&evt)){
