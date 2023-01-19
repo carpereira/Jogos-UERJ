@@ -140,7 +140,7 @@ int main (int argc, char* args[])
                         SDL_SetRenderDrawColor(ren, 245,222,179,0);
                         SDL_RenderPresent(ren); 
                         break;
-                        //} 
+                        } 
                  }
              }           
             }
