@@ -69,7 +69,7 @@ int main (int argc, char* args[])
             SDL_RenderFillRect(ren, &r);       
             SDL_RenderPresent(ren);*/ 
              if(a<10){
-             for(a=0;a<10;a++){
+             //for(a=0;a<10;a++){
                  switch(a){                    
                     
                      case 0:
@@ -169,7 +169,7 @@ int main (int argc, char* args[])
                      a++;
                         SDL_RenderPresent(ren);
                         break;}           
-       } 
+       //} 
              }
         }
         }
