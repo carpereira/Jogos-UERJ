@@ -59,6 +59,7 @@ int main (int argc, char* args[])
                     if(r.x<190){
                         r.x += 5;
                         break;}
+            }
                     else{
                       switch (evt.key.keysym.sym){                    
                     case SDLK_UP:
