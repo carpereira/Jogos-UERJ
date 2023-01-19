@@ -69,7 +69,7 @@ int main (int argc, char* args[])
             SDL_RenderFillRect(ren, &r);       
             SDL_RenderPresent(ren);*/ 
              if(a<10){
-             //for(a=0;a<10;a++){
+             for(a=0;a<10;a++){
                  switch(a){                    
                     
                      case 0:
@@ -85,7 +85,8 @@ int main (int argc, char* args[])
                          if(r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren,255,255,255,0);           
                         SDL_SetRenderDrawColor(ren, 127,255,212,0);            
-                        SDL_RenderFillRect(ren, &r);                        
+                        SDL_RenderFillRect(ren, &r);
+                              a++;
                         SDL_RenderPresent(ren);
                         break;                        
                         }                        
@@ -94,7 +95,8 @@ int main (int argc, char* args[])
                          if(r.x=evt.motion.x, r.y=evt.motion.y){
                          SDL_SetRenderDrawColor(ren, 255,255,255,0);            
                          SDL_SetRenderDrawColor(ren, 173,255,47,0);            
-                         SDL_RenderFillRect(ren, &r);                
+                         SDL_RenderFillRect(ren, &r); 
+                              a++;
                          SDL_RenderPresent(ren);
                          break;
                      }
@@ -103,7 +105,8 @@ int main (int argc, char* args[])
                          if(r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);                
                         SDL_SetRenderDrawColor(ren, 255,255,0,0);            
-                        SDL_RenderFillRect(ren, &r);                
+                        SDL_RenderFillRect(ren, &r); 
+                              a++;
                         SDL_RenderPresent(ren);
                          break;
                       }               
@@ -112,7 +115,8 @@ int main (int argc, char* args[])
                         if (r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);                
                         SDL_SetRenderDrawColor(ren, 0,255,0,0);            
-                        SDL_RenderFillRect(ren, &r);                
+                        SDL_RenderFillRect(ren, &r); 
+                             a++;
                         SDL_RenderPresent(ren);
                          break;
                          }                
@@ -121,7 +125,8 @@ int main (int argc, char* args[])
                  if (r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);                
                         SDL_SetRenderDrawColor(ren, 255,0,0,0);            
-                        SDL_RenderFillRect(ren, &r);                
+                        SDL_RenderFillRect(ren, &r); 
+                      a++;
                         SDL_RenderPresent(ren);
                         break;
                         }                      
@@ -130,7 +135,8 @@ int main (int argc, char* args[])
                  if(r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);             
                         SDL_SetRenderDrawColor(ren, 176,224,230,0);            
-                        SDL_RenderFillRect(ren, &r);                
+                        SDL_RenderFillRect(ren, &r);
+                      a++;
                         SDL_RenderPresent(ren);
                         break;
                      }                 
@@ -139,7 +145,8 @@ int main (int argc, char* args[])
                  if (r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);            
                         SDL_SetRenderDrawColor(ren, 216,191,216,0);            
-                        SDL_RenderFillRect(ren, &r);                
+                        SDL_RenderFillRect(ren, &r); 
+                      a++;
                         SDL_RenderPresent(ren);
                         break;
                     }                        
@@ -148,7 +155,8 @@ int main (int argc, char* args[])
                  if (r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);                       
                         SDL_SetRenderDrawColor(ren, 255,165,0,0);           
-                        SDL_RenderFillRect(ren, &r);                
+                        SDL_RenderFillRect(ren, &r); 
+                      a++;
                         SDL_RenderPresent(ren);
                         break;
                    }                     
@@ -157,10 +165,11 @@ int main (int argc, char* args[])
                  if (r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);            
                         SDL_SetRenderDrawColor(ren, 255,105,180,0);            
-                        SDL_RenderFillRect(ren, &r);                
+                        SDL_RenderFillRect(ren, &r); 
+                     a++;
                         SDL_RenderPresent(ren);
                         break;}           
-       //} 
+       } 
              }
         }
         }
