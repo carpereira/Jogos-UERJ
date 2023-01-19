@@ -36,10 +36,12 @@ int main (int argc, char* args[])
                
     //while(!quit){
         //while(SDL_PollEvent(&evt)){
-            switch(evt.type){
-                    case SDL_QUIT:
+        if(evt.type == SDL_QUIT){
                     quit = true;
-                    break;
+                    break;}
+        
+            switch(evt.type){
+                    
                     
                     case SDL_MOUSEBUTTONDOWN:
                     //if (r.x=evt.motion.x, r.y=evt.motion.y){
