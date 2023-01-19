@@ -24,21 +24,41 @@ int main (int argc, char* args[])
     SDL_Event evt;
     
     while(1){
-    
-    SDL_SetRenderDrawColor(ren, 255,255,255,0);
-    SDL_RenderClear(ren);
-    SDL_SetRenderDrawColor(ren, 0,0,255,0);
-    SDL_RenderFillRect(ren, &r);       
-    SDL_RenderPresent(ren); 
-    
-    //SDL_Event evt;
+        SDL_SetRenderDrawColor(ren, 255,255,255,0);
+        SDL_RenderClear(ren);
+        SDL_SetRenderDrawColor(ren, 0,0,255,0);
+        SDL_RenderFillRect(ren, &r);       
+        SDL_RenderPresent(ren);
+        
         SDL_WaitEvent(&evt);
-               
-    //while(!quit){
-        //while(SDL_PollEvent(&evt)){
+        
         if(evt.type == SDL_QUIT){
                     quit = true;
                     break;}
+        
+        if(evt.type == SDL_KEYDOWN){ 
+            SDL_SetRenderDrawColor(ren, 255,255,255,0);
+            SDL_RenderClear(ren);
+            SDL_SetRenderDrawColor(ren, 0,0,255,0);
+            SDL_RenderFillRect(ren, &r);       
+            SDL_RenderPresent(ren); 
+            switch (evt.key.keysym.sym){
+                    case SDLK_UP:
+                    if (r.y>0){
+                        r.y -= 5;
+                        break;}
+                    case SDLK_DOWN:
+                    if (r.y<190){
+                        r.y += 5;
+                        break;}
+                    case SDLK_LEFT:
+                    if(r.x>0){
+                        r.x -= 5;
+                        break;}
+                    case SDLK_RIGHT:
+                    if(r.x<190){
+                        r.x += 5;
+                        break;}           
         
             /*switch(evt.type){
                     
@@ -135,29 +155,7 @@ int main (int argc, char* args[])
                         break;
                         }*/   
                 
-                    if(evt.type == SDL_KEYDOWN){            
-                    SDL_SetRenderDrawColor(ren, 255,255,255,0);
-                    SDL_RenderClear(ren);
-                    SDL_SetRenderDrawColor(ren, 0,0,255,0);
-                    SDL_RenderFillRect(ren, &r);       
-                    SDL_RenderPresent(ren); 
-                    switch (evt.key.keysym.sym){
-                            case SDLK_UP:
-                            if (r.y>0){
-                                r.y -= 5;
-                                break;}
-                            case SDLK_DOWN:
-                            if(r.y<190){
-                                r.y += 5;
-                                break;}
-                            case SDLK_LEFT:
-                            if(r.x>0){
-                                r.x -= 5;
-                                break;}
-                            case SDLK_RIGHT:
-                            if(r.x<190){
-                                r.x += 5;
-                                break;}                    
+                             
             //}
        } 
         }
