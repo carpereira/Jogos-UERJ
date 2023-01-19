@@ -63,9 +63,13 @@ int main (int argc, char* args[])
         }
                     
          if (evt.type == SDL_MOUSEBUTTONDOWN){
+            SDL_SetRenderDrawColor(ren, 255,255,255,0);
+            SDL_RenderClear(ren);
+            SDL_SetRenderDrawColor(ren, 0,0,255,0);
+            SDL_RenderFillRect(ren, &r);       
+            SDL_RenderPresent(ren); 
              for(a=0;a<10;a++){
-                 switch(a){
-                    
+                 switch(a){                    
                     //if (r.x=evt.motion.x, r.y=evt.motion.y){
                      case 0:
                          r.x=evt.motion.x, r.y=evt.motion.y;
