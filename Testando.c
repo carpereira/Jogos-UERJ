@@ -65,7 +65,7 @@ int main (int argc, char* args[])
              for(a=0;a<10;a++){
                  switch(a){
                     
-                    i//f (r.x=evt.motion.x, r.y=evt.motion.y){
+                    //if (r.x=evt.motion.x, r.y=evt.motion.y){
                         SDL_SetRenderDrawColor(ren, 255,255,255,0);            
                         SDL_SetRenderDrawColor(ren, 173,255,47,0);            
                         SDL_RenderFillRect(ren, &r);                        
