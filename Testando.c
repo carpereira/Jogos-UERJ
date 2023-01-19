@@ -86,6 +86,7 @@ int main (int argc, char* args[])
                         r.x += 5;
                         break;} 
             }
+            }
         }
                     
          if (evt.type == SDL_MOUSEBUTTONDOWN){
