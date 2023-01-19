@@ -46,7 +46,7 @@ int main (int argc, char* args[])
             SDL_RenderClear(ren);
             SDL_SetRenderDrawColor(ren, 0,0,255,0);
             SDL_RenderFillRect(ren, &r);       
-            SDL_RenderPresent(ren);*/
+            SDL_RenderPresent(ren);
             switch (evt.key.keysym.sym){                    
                     case SDLK_UP:
                     if (r.y>0){
