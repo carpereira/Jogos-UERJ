@@ -27,7 +27,8 @@ int main (int argc, char* args[])
     SDL_RenderFillRect(ren, &r);       
     SDL_RenderPresent(ren);
     
-    while(1){
+    //while(1){
+    while(!quit){
                        
         SDL_WaitEvent(&evt);
         
