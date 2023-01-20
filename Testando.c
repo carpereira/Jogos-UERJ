@@ -28,9 +28,9 @@ int main (int argc, char* args[])
         SDL_Event evt;
         Uint32 antes = SDL_GetTicks();        
         
-        int AUX_WaitEventTimeoutCount = SDL_WaitEventTimeout(&evt,espera);
+        int isevt = SDL_AUX_WaitEventTimeoutCount(&evt,espera);
         
-        if(AUX_WaitEventTimeoutCount){
+        if(isevt){
             espera -= (SDL_GetTicks() - antes);            
             if (espera<0){
                 espera = 0;
