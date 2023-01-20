@@ -18,6 +18,7 @@ int main (int argc, char* args[])
     /* EXECUÇÃO */
     SDL_Rect r = {100,100,10,10};
     SDL_Rect s = {100,100,10,10};
+    SDL_Rect t = {100,100,10,10};
     
     SDL_Event evt;    
    
@@ -62,29 +63,29 @@ int main (int argc, char* args[])
            }
                     
             }
-            else{
+            else{                
                 SDL_SetRenderDrawColor(ren, 255,255,255,0);
-            //SDL_RenderClear(ren);
-            SDL_SetRenderDrawColor(ren, 0,0,255,0);
-            SDL_RenderFillRect(ren, &r);       
-            SDL_RenderPresent(ren);
-            switch (evt.key.keysym.sym){                    
-                    case SDLK_UP:
-                    if (r.y>0){
-                        r.y -= 5;
-                        break;}
-                    case SDLK_DOWN:
-                    if (r.y<190){
-                        r.y += 5;
-                        break;}
-                    case SDLK_LEFT:
-                    if(r.x>0){
-                        r.x -= 5;
-                        break;}
-                    case SDLK_RIGHT:
-                    if(r.x<190){
-                        r.x += 5;
-                        break;} 
+            SDL_RenderClear(ren);
+                SDL_SetRenderDrawColor(ren, 0,0,255,0);
+                SDL_RenderFillRect(ren, &t);       
+                SDL_RenderPresent(ren);                
+                switch (evt.key.keysym.sym){
+                        case SDLK_UP:
+                        if (t.y>0){
+                            t.y -= 5;
+                            break;}
+                        case SDLK_DOWN:
+                        if (t.y<190){
+                            t.y += 5;
+                            break;}
+                        case SDLK_LEFT:
+                        if(t.x>0){
+                            t.x -= 5;
+                            break;}
+                        case SDLK_RIGHT:
+                        if(t.x<190){
+                            t.x += 5;
+                            break;} 
             }
             }
         }
